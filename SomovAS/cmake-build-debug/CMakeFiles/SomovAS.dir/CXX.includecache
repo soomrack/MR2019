@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/811243/CLionProjects/MR2019/SomovAS/main.cpp
-iostream
--
+C:/Users/811243/CLionProjects/MR2019/SomovAS/test.cpp
 test.h
 C:/Users/811243/CLionProjects/MR2019/SomovAS/test.h
+iostream
+-
 clocale
 -
 

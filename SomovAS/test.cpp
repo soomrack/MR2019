@@ -2,6 +2,7 @@
 #include <iostream>
 #include <clocale>
 using namespace std;
+
 class Question1{
 public:
     string name;
@@ -12,54 +13,83 @@ public:
     string ans2;
     string ans3;
     string ans4;
-    void foo();
-};
-Question1 Question1(string question = "What scientist wrote the book <Origin of species>?", string ans1 = "Charls Darwin", string ans2 = "Aristotel")
-Question1 Question1(string ans3 = "Thomas Edison", string ans4 = "Alexandr Greyam Bell")
-Question1::foo(){
-    cout << Question1.question << endl;
-    cout << Question1.ans1 << endl << Question1.ans2 << endl << Question1.ans3 << endl << Question1.ans4 << endl;
-    cin >> ans;
-    while(ans != Question1.ans1){
-        cout << "Wrong, try again" << endl;
+    void foo(){
+        cout << question << endl;
+        cout << ans1 << endl << ans2 << endl << ans3 << endl << ans4 << endl;
         cin >> ans;
+        while(ans != ans1){
+            cout << "Wrong, try again" << endl;
+            cin >> ans;
+        }
+        cout << "Well, lets continue" << endl;
+        count++;
     }
-    cout << "Well, lets continue" << endl;
-    Question1.count++;
-}
-class Question2:Question1{
-public:
-    Question1 Question1(string question = "This Belgian Catholic priest was the first to propose the big Bang theory",\
-    string ans1 = "Jorj Lemetr", string ans2 = "Lui Paster")
-    Question1 Question1(string ans3 = "Nicola Tesla", string ans4 = "Charls Babbidj")
+    Question1(){
+        count = 0;
+        question = "What scientist wrote the book <Origin of species>?";
+        ans1 = "Charls Darwin";
+        ans2 = "Aristotel";
+        ans3 = "Thomas Edison";
+        ans4 = "Alexandr Greyam Bell";
+    }
 };
-class Question3:Question1{
+
+class Question2: public Question1{
 public:
-    Question1 Question1(string question = "And which Scottish-born American inventor was the first to get a patent for a phone?",\
-    string ans1 = "Alexandr Greyam Bell", string ans2 = "Samyel Morse")
-    Question1 Question1(string ans3 = "Stiv Jobs", string ans4 = "Alexandr Landau")
+    Question2(){
+        question = "This Belgian Catholic priest was the first to propose the big Bang theory";
+        ans1 = "Jorj Lemetr";
+        ans2 = "Lui Paster";
+        ans3 = "Nicola Tesla";
+        ans4 = "Charls Babbidj";
+    }
 };
-class Question4:Question1{
+
+class Question3: public Question1{
 public:
-    Question1 Question1(string question = "Who discovered electricity after experimenting with a kite during a storm?", \
-    string ans1 = "Benjamin Franklin", string ans2 = "Nicola Tesla")
-    Question1 Question1(string ans3 = "Tomas Edison", string ans4 = "Albert Einstein")
+    Question3(){
+        question = "And which Scottish-born American inventor was the first to get a patent for a phone?";
+        ans1 = "Alexandr Greyam Bell";
+        ans2 = "Samyel Morse";
+        ans3 = "Stiv Jobs";
+        ans4 = "Alexandr Landau";
+    }
 };
-class Question5:Question1{
+class Question4: public Question1{
 public:
-    Question1 Question1(string question = "Which French virologist discovered HIV in 1983?", string ans1 = "Luk Montanie", \
-    string ans2 = "Lui Paster")
-    Question1 Question1(string ans3 = "Samyel Morse", string ans4 = "Gotfried Leibniz")
+    Question4(){
+        question = "Who discovered electricity after experimenting with a kite during a storm?";
+        ans1 = "Benjamin Franklin";
+        ans2 = "Nicola Tesla";
+        ans3 = "Tomas Edison";
+        ans4 = "Albert Einstein";
+    }
+};
+class Question5: public Question1{
+public:
+    Question5(){
+        question = "Which French virologist discovered HIV in 1983?";
+        ans1 = "Luk Montanie";
+        ans2 = "Lui Paster";
+        ans3 = "Samyel Morse";
+        ans4 = "Gotfried Leibniz";
+    }
 };
 void test(){
-    cout << "Hi, what's your name?";
-    cin >> Question1.name;
-    cout << "Welcome, " << name << endl << " Let's check your science knowledge" << endl;
-    Question1.foo();
-    Question2.foo();
-    Question3.foo();
-    Question4.foo();
-    Question5.foo();
-    cout << "Congratulation, you answer all  " << Question1.count << " question, you know history well" << endl;
-    cout << "See you next time, " << name << ')';
+    setlocale(LC_ALL,"RUS");
+    Question1 Q1;
+    Question2 Q2;
+    Question3 Q3;
+    Question4 Q4;
+    Question5 Q5;
+    cout << "Hi тивирп, what's your name?";
+    cin >> Q1.name;
+    cout << "Welcome, " << Q1.name << endl << " Let's check your science knowledge" << endl;
+    Q1.foo();
+    Q2.foo();
+    Q3.foo();
+    Q4.foo();
+    Q5.foo();
+    cout << "Congratulation, you answer all  " << Q1.count << " question, you know history well" << endl;
+    cout << "See you next time, " << Q1.name << ')';
 }
