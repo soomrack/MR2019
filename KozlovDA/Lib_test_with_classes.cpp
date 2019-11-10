@@ -11,9 +11,9 @@ void ba_dom_tss(int dots) {
 void processing_of_answer(std::string right_answer, std::string answer) {
 	setlocale(LC_ALL, "Russian");
 	while (answer != right_answer) {
-		std::cout << "Íåâåðíî. Ïîïðîáóéòå åùå ðàç." << '\n';
+		std::cout << "ÃÃ¥Ã¢Ã¥Ã°Ã­Ã®. ÃÃ®Ã¯Ã°Ã®Ã¡Ã³Ã©Ã²Ã¥ Ã¥Ã¹Ã¥ Ã°Ã Ã§." << '\n';
 		std::cin >> answer;
 	}
-	std::cout << "Âåðíî\n" << '\n';
+	std::cout << "Ã‚Ã¥Ã°Ã­Ã®\n" << '\n';
 	Sleep(500);
 }
