@@ -51,7 +51,7 @@ public:
         question = "And which Scottish-born American inventor was the first to get a patent for a phone?";
         ans1 = "Alexandr Greyam Bell";
         ans2 = "Samyel Morse";
-        ans3 = "Stiv Jobs";
+        ans3 = "Stiv Job"; //bez b
         ans4 = "Alexandr Landau";
     }
 };
