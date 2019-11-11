@@ -77,11 +77,6 @@ public:
 }Q5;
 void test(){
     setlocale(LC_ALL,"RUS");
-    Question1 Q1;
-    Question2 Q2;
-    Question3 Q3;
-    Question4 Q4;
-    Question5 Q5;
     cout << "Hi тивирп, what's your name?";
     cin >> Q1.name;
     cout << "Welcome, " << Q1.name << endl << " Let's check your science knowledge" << endl;

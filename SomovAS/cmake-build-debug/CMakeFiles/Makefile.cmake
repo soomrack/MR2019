@@ -54,4 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/SomovAS.dir/DependInfo.cmake"
+  "CMakeFiles/mylib.dir/DependInfo.cmake"
   )

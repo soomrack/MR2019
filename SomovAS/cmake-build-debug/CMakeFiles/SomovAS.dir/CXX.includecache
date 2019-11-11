@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/811243/CLionProjects/MR2019/SomovAS/test.cpp
+C:/Users/811243/CLionProjects/MR2019/SomovAS/main.cpp
 test.h
 C:/Users/811243/CLionProjects/MR2019/SomovAS/test.h
-iostream
--
-clocale
--
+../YakimenkoGK/LibExp_Yakimenko/sumator.h
+C:/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.h
 
 C:/Users/811243/CLionProjects/MR2019/SomovAS/test.h
+
+C:/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.h
 

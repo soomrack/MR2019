@@ -3,6 +3,7 @@
 
 CMakeFiles/SomovAS.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/SomovAS.dir/main.cpp.obj: ../test.h
+CMakeFiles/SomovAS.dir/main.cpp.obj: C:/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.h
 
 CMakeFiles/SomovAS.dir/test.cpp.obj: ../test.cpp
 CMakeFiles/SomovAS.dir/test.cpp.obj: ../test.h

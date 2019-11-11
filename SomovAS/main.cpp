@@ -1,7 +1,7 @@
-#include <iostream>
 #include "test.h"
-#include <clocale>
+#include "../YakimenkoGK/LibExp_Yakimenko/sumator.h"
 using namespace std;
 int main(){
-    test();
+ //   test();
+ sum();
 }

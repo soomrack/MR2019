@@ -122,6 +122,46 @@ SomovAS/fast:
 	$(MAKE) -f CMakeFiles\SomovAS.dir\build.make CMakeFiles/SomovAS.dir/build
 .PHONY : SomovAS/fast
 
+#=============================================================================
+# Target rules for targets named mylib
+
+# Build rule for target.
+mylib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mylib
+.PHONY : mylib
+
+# fast build rule for target.
+mylib/fast:
+	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/build
+.PHONY : mylib/fast
+
+C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.obj: C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.obj
+
+.PHONY : C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.obj
+
+# target to build an object file
+C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.obj:
+	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.obj
+.PHONY : C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.obj
+
+C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.i: C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.i
+
+.PHONY : C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.i
+
+# target to preprocess a source file
+C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.i:
+	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.i
+.PHONY : C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.i
+
+C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.s: C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.s
+
+.PHONY : C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.s
+
+# target to generate assembly for a file
+C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.s:
+	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.s
+.PHONY : C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -183,8 +223,12 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... SomovAS
+	@echo ... mylib
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.obj
+	@echo ... C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.i
+	@echo ... C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
