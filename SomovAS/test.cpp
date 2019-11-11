@@ -32,7 +32,7 @@ public:
         ans3 = "Thomas Edison";
         ans4 = "Alexandr Greyam Bell";
     }
-};
+}Q1;
 
 class Question2: public Question1{
 public:
@@ -43,7 +43,7 @@ public:
         ans3 = "Nicola Tesla";
         ans4 = "Charls Babbidj";
     }
-};
+}Q2;
 
 class Question3: public Question1{
 public:
@@ -51,10 +51,10 @@ public:
         question = "And which Scottish-born American inventor was the first to get a patent for a phone?";
         ans1 = "Alexandr Greyam Bell";
         ans2 = "Samyel Morse";
-        ans3 = "Stiv Jobs";
+        //ans3 = "Stiv Jobs";
         ans4 = "Alexandr Landau";
     }
-};
+}Q3;
 class Question4: public Question1{
 public:
     Question4(){
@@ -64,7 +64,7 @@ public:
         ans3 = "Tomas Edison";
         ans4 = "Albert Einstein";
     }
-};
+}Q4;
 class Question5: public Question1{
 public:
     Question5(){
@@ -74,14 +74,9 @@ public:
         ans3 = "Samyel Morse";
         ans4 = "Gotfried Leibniz";
     }
-};
+}Q5;
 void test(){
     setlocale(LC_ALL,"RUS");
-    Question1 Q1;
-    Question2 Q2;
-    Question3 Q3;
-    Question4 Q4;
-    Question5 Q5;
     cout << "Hi тивирп, what's your name?";
     cin >> Q1.name;
     cout << "Welcome, " << Q1.name << endl << " Let's check your science knowledge" << endl;
