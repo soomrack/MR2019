@@ -1,26 +1,9 @@
 #include <iostream>
 #include <stdint.h>
-#include "questions.h"
 #include <string>
+#include "questions.h"
 
-/*using namespace std;
-
-class Question
-{
-    private:
-        string question;
-        string answer;
-        string right_answer;
-        string getNextQuestion(int32_t);
-    public:
-        Question();
-        void enterQuestion(string &, basic_string<char>);
-        void printQuestion(string &);
-        void getRightAnswer(int32_t, string);
-        void enterYourAnswer(string);
-        bool checkAnswer(string, string);
-        void startTest();
-};
+using namespace std;
 
 Question::Question()
 {
@@ -127,11 +110,4 @@ void Question::startTest()
             score++;
         printScore(score);
     }
-}*/
-
-int main()
-{
-    Question Test = Question();
-    Test.startTest();
-    while(1);
 }
