@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdint.h>
 #include <string>
 
 using namespace std;
@@ -12,7 +13,7 @@ class Question
         string getNextQuestion(int32_t);
     public:
         Question();
-        void enterQuestion(string &, string &);
+        void enterQuestion(string &, basic_string<char>);
         void printQuestion(string &);
         void getRightAnswer(int32_t, string);
         void enterYourAnswer(string);
@@ -40,7 +41,7 @@ string Question::getNextQuestion(int32_t number_of_question)
         case 4:
             return "\nsizeof(int8_t) = ";
         case 5:
-            return "\nSpeed of ligth (m/s) = ";
+            return "\nSpeed of light (m/s) = ";
         case 6:
             return "\nAnswer to the Ultimate Question of Life, the Universe, and Everything: ";
         case 7:
@@ -85,7 +86,7 @@ void Question::getRightAnswer(int32_t number_of_question, string right_answer)
     }
 }
 
-void Question::enterQuestion(string &question, string &next_question)
+void Question::enterQuestion(string &question, basic_string<char> next_question)
 {
     question = next_question;
 }
