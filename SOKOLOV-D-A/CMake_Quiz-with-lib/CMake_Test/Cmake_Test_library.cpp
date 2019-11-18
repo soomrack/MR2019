@@ -1,15 +1,21 @@
 #include "CMake_Test_library.h"
-std::vector<List> questions;
-size_t size = 0;
-void addQuestion(std::string question, std::string answer)
+const unsigned int count_of_questions = 3;
+std::vector<List> questions(count_of_questions);
+
+
+void addQuestion()
 {
 	
-	questions[size].question = question;
-	questions[size].answer = answer;
-	size++;
-
+	questions.at(0).question = "Какого цвета спина первого апреля? (именительный падеж) \n";
+	questions.at(0).answer = "Белый";
+	questions.at(1).question = "Президент РФ \n";
+	questions.at(1).answer = "Путин";
+	questions.at(2).question = "Какой сегодня год? \n";
+	questions.at(2).answer = "2019";
 }
-void initTest(size_t count_of_questions) {
+void initTest()
+{
+	addQuestion();
 	
 	int points = 0;
 	for (unsigned int i = 0; i < count_of_questions; ++i) {
