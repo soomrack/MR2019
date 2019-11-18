@@ -2,8 +2,7 @@
 #include <string.h>
 #include <vector>
 #include <iostream>
-extern void addQuestion(std::string question, std::string answer);
-extern void initTest(size_t count_of_questions);
+extern void initTest();
 class List {
 public:
 	std::string question; //Вопрос
