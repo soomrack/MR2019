@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-class Question {
+class Quuestion {
 public:
     string question;
     string var1 ;
@@ -14,7 +14,7 @@ public:
     string user_answer ;
     string right_answer ;
 
-    Question();
+    Quuestion();
 
     void scan_answer() {
         cin >> user_answer;
