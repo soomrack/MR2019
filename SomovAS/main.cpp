@@ -1,8 +1,7 @@
-#include <iostream>
 #include "test.h"
-#include <clocale>
+#include "../YakimenkoGK/LibExp_Yakimenko/sumator.h"
 using namespace std;
 int main(){
-    setlocale(LC_ALL,"RUS");
-    test();
+ //   test();
+ sum();
 }
