@@ -1,0 +1,7 @@
+C:/Users/denis/source/repos/Testik_by_teacher/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/denis/source/repos/Testik_by_teacher/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/denis/source/repos/Testik_by_teacher/out/build/x64-Debug/Testik_by_teacher/CMakeFiles/Testik_by_teacher.dir
+C:/Users/denis/source/repos/Testik_by_teacher/out/build/x64-Debug/Testik_by_teacher/CMakeFiles/api.dir
+C:/Users/denis/source/repos/Testik_by_teacher/out/build/x64-Debug/Testik_by_teacher/CMakeFiles/rebuild_cache.dir
+C:/Users/denis/source/repos/Testik_by_teacher/out/build/x64-Debug/Testik_by_teacher/CMakeFiles/quest.dir
+C:/Users/denis/source/repos/Testik_by_teacher/out/build/x64-Debug/Testik_by_teacher/CMakeFiles/edit_cache.dir
