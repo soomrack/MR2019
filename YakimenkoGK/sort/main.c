@@ -107,14 +107,17 @@ void mergeSortTRUE(int *a, int n)
         int l = 0;      // левая граница участка
         int m = l + step;  // середина участка
         int r = l + step * 2;  // правая граница участка
-        do
-        {
-            m = m < n ? m : n;  // сортируемый участок не выходит за границы последовательности
-            r = r < n ? r : n;
+        while (l<n){
+            //m = m < n ? m : n;
+            if (m>=n){ m=n;}
+            // сортируемый участок не выходит за границы последовательности
+            if (r>=n){ r=n;}
+            //r = r < n ? r : n;
+
             int i1 = l, i2 = m; // индексы сравниваемых элементов
             for (; i1 < m && i2 < r; ) // пока i1 не дошёл до середины и i2 не дошёл до конца
             {
-                if (a[i1] < a[i2]) { temp[index++] = a[i1++]; } // заполняем участок результирующей последовательности
+                if (a[i1] < a[i2]) { temp[index] = a[i1]; index++; i1++;} // заполняем участок результирующей последовательности
                 else { temp[index++] = a[i2++]; }
             }
             // Или i1 < m или i2 < r - только один из операторов while может выполниться
@@ -123,7 +126,7 @@ void mergeSortTRUE(int *a, int n)
             l += step * 2; // перемещаемся на следующий сортируемый участок
             m += step * 2;
             r += step * 2;
-        } while (l < n); // пока левая граница сортируемого участка - в пределах последоватльности
+        }  // пока левая граница сортируемого участка - в пределах последоватльности
         for (int i = 0; i < n; i++) // переносим сформированный массив обратно в a
             a[i] = temp[i];
         step *= 2; // увеличиваем в 2 раза шаг разбиения
@@ -166,12 +169,57 @@ int32_t getOrderStatistic( int32_t * arr, uint32_t size, uint32_t j )
     return array[j];
 }
 
+void mergesort( int32_t * arr, uint32_t size){
+    int result_arr[size]; // Additional(result) array
+    int step = 1; // The step of partitioning the array
+
+    while (step < size){ // If step == size, the array is already sorted
+          int r = 0; // Index of result_arr
+          int left_border = 0; // Left border of the sortable bloc
+          int median = left_border + step; // Median of the sortable bloc
+          int right_border = left_border + step*2; // Right border of the sortable bloc
+
+          while (left_border < size){ // If left_border == size, array is ended
+                if (median >= size) { median = size; }              // Bloc dont overflow
+                if (right_border >= size) { right_border = size; }  // __________________
+                int i1 = left_border, i2 = median; // The indexes of the compared elements
+                //START "MERGE"
+                while (i1 < median && i2 < right_border){ // Compare elements and
+                      if (arr[i1] < arr[i2]){             // min element add to result_arr
+                          result_arr[r] = arr[i1];
+                          r++; i1++;
+                      }
+                      else {
+                          result_arr[r] = arr[i2];
+                          r++; i2++;
+                      }
+                }
+
+                while (i1 < median){           // Add the remaining elements
+                      result_arr[r] = arr[i1]; // to the array after the comparison
+                      r++; i1++;               // (only one "while" can be run)
+                }
+
+                while (i2 < right_border){     // Add the remaining elements
+                      result_arr[r] = arr[i2]; // to the array after the comparison
+                      r++; i2++;               // (only one "while" can be run)
+                }
+
+                left_border += step*2;  //
+                median += step*2;       // Update borders to move to the next bloc
+                right_border += step*2; //
+          }
+          memcpy(arr,result_arr, sizeof(int)*size); // Update original array
+          step *= 2; // Update step
+    }
+
+}
 int main() {
     int a[8] = {6, 2, 3, 1, 20, 4, 0, 50};
 
-    mergeSortTRUE(a, 7);
+    mergesort(a, 8);
 
-    for (int i =0; i<7; i++){
+    for (int i =0; i<8; i++){
         printf(" %d ", a[i]);
     }
     return 0;
