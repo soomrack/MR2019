@@ -26,8 +26,3 @@ int main() {
     RandomTest::loadTest(questions, 5, student);
 }
 
-
-/*
-int main() {
-    printf("ddd");
-}*/
