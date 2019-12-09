@@ -1,4 +1,4 @@
-﻿//asd
+//asd
 //asd
 
 #include <iostream>

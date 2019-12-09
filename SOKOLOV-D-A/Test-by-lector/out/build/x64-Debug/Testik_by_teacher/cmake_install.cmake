@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/denis/source/repos/Testik_by_teacher/Testik_by_teacher
+# Install script for directory: C:/Users/anana/source/repos/soomrack/MR2019/SOKOLOV-D-A/Test-by-lector/Testik_by_teacher
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/denis/source/repos/Testik_by_teacher/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/anana/Source/Repos/soomrack/MR2019/SOKOLOV-D-A/Test-by-lector/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
