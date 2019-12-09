@@ -1,0 +1,69 @@
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+class Test {
+public:
+    int32_t human_answer;
+    int32_t correct_answer;
+    int32_t score = 0;
+    vector <string> question;
+    void function( ){
+        int32_t reset;
+        do {
+            reset = 0;
+            for(uint32_t i = 0; i < question.size(); i++)
+                cout << question[i] << " ";
+            cout << endl;
+            printf("Your choice: ");
+            cin >> human_answer;
+            if(human_answer == correct_answer) {
+                printf("Correctly");
+                cout << endl;
+                score++;
+            }if((human_answer > 4) || (human_answer < 0)) {
+                printf("Error");
+                cout << endl;
+                reset = 1;
+                continue;
+            }else{
+                printf("Mistake");
+                cout << endl;
+            }
+        }while (reset == 1);
+    }
+};
+
+int main() {
+    Test question_1;
+    question_1.question.emplace_back("When wasn the first world war?\n1. 1913 - 1918\n2. 1914 - 1919\n3. 1914 - 1918n\n4. 1912 - 1916");
+    question_1.correct_answer = 3;
+    question_1.function();
+
+    Test question_2;
+    question_2.question.emplace_back("The most popular element in the world?\n1. H\n2. Ne\n3. Fe\n4. C");
+    question_2.correct_answer = 1;
+    question_2.function();
+
+    Test question_3;
+    question_3.question.emplace_back("In what year founded Moscow?\n1. 1123\n2. 1147\n3. 1136\n4. 1154");
+    question_3.correct_answer = 2;
+    question_3.function();
+
+    Test question_4;
+    question_4.question.emplace_back("The result is 12*6\n1. 70\n2. 68\n3. 74\n4. 72");
+    question_4.correct_answer = 4;
+    question_4.function();
+
+    Test question_5;
+    question_5.question.emplace_back("The largest planet in the solar system?\n1. Jupiter\n2. Saturn\n3. Mars\n4. Neptune");
+    question_5.correct_answer = 1;
+    question_5.function();
+
+    Test question_6;
+    question_6.question.emplace_back("The record running speed of a human?\n1. 40 km / h\n2. 30 km / h\n3. 25 km / h\n4. 45 km / h");
+    question_6.correct_answer = 1;
+    question_6.function();
+
+    cout << "Correct answer: " << question_1.score + question_2.score + question_3.score + question_4.score + question_5.score + question_6.score << endl;
+}

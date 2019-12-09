@@ -1,6 +1,8 @@
 #include <iostream>
 #include "RandomTest.h"
 
+// Comment 3
+
 int main() {
     Question question1 = *new Question("When was the first world war?",
                                        "1913 - 1918",

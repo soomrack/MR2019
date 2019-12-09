@@ -162,6 +162,33 @@ C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.s:
 	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.s
 .PHONY : C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.s
 
+Exz/Exz.obj: Exz/Exz.cpp.obj
+
+.PHONY : Exz/Exz.obj
+
+# target to build an object file
+Exz/Exz.cpp.obj:
+	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/Exz/Exz.cpp.obj
+.PHONY : Exz/Exz.cpp.obj
+
+Exz/Exz.i: Exz/Exz.cpp.i
+
+.PHONY : Exz/Exz.i
+
+# target to preprocess a source file
+Exz/Exz.cpp.i:
+	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/Exz/Exz.cpp.i
+.PHONY : Exz/Exz.cpp.i
+
+Exz/Exz.s: Exz/Exz.cpp.s
+
+.PHONY : Exz/Exz.s
+
+# target to generate assembly for a file
+Exz/Exz.cpp.s:
+	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/Exz/Exz.cpp.s
+.PHONY : Exz/Exz.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -229,6 +256,9 @@ help:
 	@echo ... C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.obj
 	@echo ... C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.i
 	@echo ... C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.s
+	@echo ... Exz/Exz.obj
+	@echo ... Exz/Exz.i
+	@echo ... Exz/Exz.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
