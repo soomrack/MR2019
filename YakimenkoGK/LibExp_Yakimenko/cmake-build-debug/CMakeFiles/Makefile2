@@ -49,19 +49,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko
+CMAKE_SOURCE_DIR = C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/LibExp_Yakimenko.dir
@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakime
 CMakeFiles/LibExp_Yakimenko.dir/all:
 	$(MAKE) -f CMakeFiles\LibExp_Yakimenko.dir\build.make CMakeFiles/LibExp_Yakimenko.dir/depend
 	$(MAKE) -f CMakeFiles\LibExp_Yakimenko.dir\build.make CMakeFiles/LibExp_Yakimenko.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target LibExp_Yakimenko"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target LibExp_Yakimenko"
 .PHONY : CMakeFiles/LibExp_Yakimenko.dir/all
 
 # Include target in all.
@@ -80,9 +80,9 @@ all: CMakeFiles/LibExp_Yakimenko.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LibExp_Yakimenko.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles 3
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/LibExp_Yakimenko.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/LibExp_Yakimenko.dir/rule
 
 # Convenience name for target.
