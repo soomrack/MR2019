@@ -1,5 +1,4 @@
 #include <stdio.h>
-//test
 int reset;
 int question_1;
 int question_2;
@@ -16,7 +15,7 @@ int main()
     do {
         reset = 0;
         printf("When was the first world war?\n");
-        printf("1. 1913 - 1928\n");
+        printf("1. 1913 - 1918\n");
         printf("2. 1914 - 1919\n");
         printf("3. 1914 - 1918\n");
         printf("4. 1912 - 1916\n");
