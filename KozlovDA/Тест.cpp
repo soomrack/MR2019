@@ -1,4 +1,7 @@
-﻿#include <iostream>
+// test 01
+// test 02
+
+#include <iostream>
 #include <ctime>
 #include <windows.h>
 #include "TestLib.h"
