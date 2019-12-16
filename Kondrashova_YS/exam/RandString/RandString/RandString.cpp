@@ -46,6 +46,7 @@ int main()
 	//printf("%s\n", stroka);
 	return 0;
 };
-//8989
-//yfif
+//jjjjjjjo
+//Yana
+//1
 

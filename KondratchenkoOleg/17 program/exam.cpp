@@ -5,7 +5,7 @@ using namespace std;
 const int N1 = 5;
 const int N2 = 6;
 
-int array_1[N1] = {1,2,3,4,5};
+int arrway_1[N1] = {1,2,3,4,5};
 int array_2[N2] = {5,7,3,9,5,3};
 bool flag;
 int SP;
@@ -37,7 +37,7 @@ int SP;
 int main()
 {
 	//Вывод двух массивов
-	cout << "First array: ";
+	scout << "First array: ";
 	for (int i = 0; i < N1; i++) 
 	{
 		cout << array_1[i] << " ";
