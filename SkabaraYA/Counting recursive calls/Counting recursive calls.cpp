@@ -1,6 +1,6 @@
 ﻿#include <stdio.h>
 #include <stdint.h>
-rehcfxxxxx
+
 int32_t getFibonacci(int n)
 {
 
