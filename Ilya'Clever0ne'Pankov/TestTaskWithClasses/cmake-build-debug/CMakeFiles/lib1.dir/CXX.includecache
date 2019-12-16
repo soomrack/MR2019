@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/For Administrator/GitHub/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.h
+string.h
+-
+vector
+-
+iostream
+-
+
+D:/For Administrator/GitHub/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/Cmake_Test_library.cpp
+CMake_Test_library.h
+D:/For Administrator/GitHub/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.h
+
