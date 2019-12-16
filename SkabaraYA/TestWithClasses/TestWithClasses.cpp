@@ -12,7 +12,7 @@ void answer_chek(string right_answer, string answer) {
 	}
 	else {
 		score++;
-		cout << "Верно\n" << '\n' << '\n';
+		cout << "Верно \n" << '\n' << '\n';
 	}
 }
 
