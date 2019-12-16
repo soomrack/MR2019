@@ -2,7 +2,7 @@
 #include <string>
 #include <windows.h>
 using namespace std;
-ААААААААА ГДЕ КОНФЛИКТ ГДЕ ГДЕ ГДЕ 
+
 int score = 0;
 
 void answer_chek(string right_answer, string answer) {
