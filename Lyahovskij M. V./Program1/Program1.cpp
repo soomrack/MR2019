@@ -1,4 +1,4 @@
-// rewrite test 1 o
+// rewrite test 1 +1
 // test 2
 
 #include <iostream>
