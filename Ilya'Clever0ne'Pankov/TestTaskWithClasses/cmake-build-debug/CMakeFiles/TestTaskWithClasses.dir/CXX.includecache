@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/main.cpp
+questions.h
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/questions.h
+mylib.h
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/mylib.h
+../../SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.h
+D:/For Administrator/GitHub/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.h
+stdint.h
+-
+
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/mylib.h
+iostream
+-
+conio.h
+-
+windows.h
+-
+
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/questions.h
+string
+-
+
+D:/For Administrator/GitHub/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.h
+string.h
+-
+vector
+-
+iostream
+-
+
