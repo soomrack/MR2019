@@ -4,7 +4,7 @@
 #include <locale.h>
 #include <Windows.h>
 #include <conio.h>
-
+ 
 
 
 void test(const char Question[], const char trueAnswer[]) {
@@ -14,10 +14,10 @@ void test(const char Question[], const char trueAnswer[]) {
 	scanf_s("%s", Answer, 20);
 	if (strcmp(Answer, trueAnswer) == 0)
 	{
-		printf("Верно\n");
+		printf("Г‚ГҐГ°Г­Г®\n");
 	}
 	else
-		printf("Неверно\n");
+		printf("ГЌГҐГўГҐГ°Г­Г®\n");
 }
 
 void TESTING() {
@@ -28,13 +28,13 @@ void TESTING() {
 	char otvet[20];
 
 	char Q[5][30] = {
-		{"В каком городе жил Карлсон?"},
+		{"Г‚ ГЄГ ГЄГ®Г¬ ГЈГ®Г°Г®Г¤ГҐ Г¦ГЁГ« ГЉГ Г°Г«Г±Г®Г­?"},
 		{"2*3"},
-		{"Год крещения Руси"},
+		{"ГѓГ®Г¤ ГЄГ°ГҐГ№ГҐГ­ГЁГї ГђГіГ±ГЁ"},
 	};
 
 	char tA[5][30] = {
-		{"Стокгольм"},
+		{"Г‘ГІГ®ГЄГЈГ®Г«ГјГ¬"},
 		{"6"},
 		{"988"},
 	};
