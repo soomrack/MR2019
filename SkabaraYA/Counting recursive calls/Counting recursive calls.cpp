@@ -27,16 +27,15 @@ int32_t getFibonacci(int n)
 
 	return result;
 }
-//ярик скинь курсач
-//8888
+
 
 int main()
 {
 	int a = 7;
-	a = getFibonacci(aaaaaaaaaaaaaaaa);
+	a = getFibonacci(a);
 	printf_s("%i \n", a);
 	a = 5;
 	a = getFibonacci(a);
 	printf_s("%i \n", a);
-
+	
 }

@@ -6,7 +6,7 @@ using namespace std;
 
 int32_t GetSize()
 {
-	int64_t size;
+	int32_t size;
 	cin >> size;
 	return size;
 }
