@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include "HNewClassQ.h"
 using namespace std;
-
+ 
 int main()
 {
 
