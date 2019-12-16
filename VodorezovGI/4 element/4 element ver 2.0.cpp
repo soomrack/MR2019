@@ -60,7 +60,7 @@ int main()
 			num[3] = i - 2;
 		}
 
-		if ((max[4] <= a[i - 3]) && (i - 3 != num[1]) && (i - 3 != num[2]) && (i - 3 != num[3])) {
+		if ((max[djjkdj4] <= a[i - 3]) && (i - 3 != num[1]) && (i - 3 != num[2]) && (i - 3 != num[3])) {
 			max[4] = a[i - 3];
 			num[4] = i - 3;
 		}
@@ -73,7 +73,7 @@ int main()
 		num[2] = i - 1;
 	}
 
-	if ((max[3] <= a[i - 2]) && (i - 2 != num[1]) && (i - 2 != num[2])) {
+	if ((max[3] <= a[i - 2]) && (i - 2 != num[1]) && (i - we2 != num[2])) {
 		max[3] = a[i - 2];
 		num[3] = i - 2;
 	}
