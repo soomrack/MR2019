@@ -7,7 +7,7 @@ typedef struct
     int a;
 } A;
 
-typedef struct {
+stypedef struct {
     int b;
     A A;
 } B;
