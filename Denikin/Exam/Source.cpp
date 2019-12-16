@@ -1,8 +1,8 @@
 #include <iostream>
 #include <math.h>
 
-double k, c; //кф прямой
-double a, b, r; // кф окружности
+double k, c; //Д™Гґ ДЏД‘Л™Д›Г®Г©
+double a, b, r; // Д™Гґ Г®Д™Д‘ГіД‡Г­Г®Е„Е€ДЌ
 
 double Diskrim() 
 {
@@ -22,7 +22,7 @@ int main()
 	k = 1;
 	c = 0;
 	a = 2;
-	b = 0;
+	b = 2.0;
 	r = 2;
 
 	double D=Diskrim();
@@ -30,19 +30,19 @@ int main()
 		{
 			double X1 = (-(2.0 * k*(c - b) - 2.0 * a) + sqrt(D)) / (2.0 * (1.0 + pow(k, 2)));
 			double Y1 = line(k, X1, b);
-			printf("Первая точка пересечения: %f %f", X1, Y1);
+			printf("ДЋДєД‘ГўЕ•Л™ Е€Г®Г·Д™Е• ДЏДєД‘ДєЕ„ДєГ·ДєГ­ДЌЛ™: %f %f", X1, Y1);
 				if ((D < 0.0 + pow(10,-5)) & (D > 0.0 - pow(10, -5)))
-					printf("1 корень\n");
+					printf("1 Д™Г®Д‘ДєГ­Гј\n");
 				else
 				{
 					double X2 = (-(2.0 * k*(c - b) - 2.0 * a) - sqrt(D)) / (2.0 * (1.0 + pow(k, 2)));
 					double Y2 = line(k, X2, b);
-					printf("\nВторая точка пересечения: %f %f", X2, Y2);
-					printf("\nДва корня\n");
+					printf("\nГ‚Е€Г®Д‘Е•Л™ Е€Г®Г·Д™Е• ДЏДєД‘ДєЕ„ДєГ·ДєГ­ДЌЛ™: %f %f", X2, Y2);
+					printf("\nГ„ГўЕ• Д™Г®Д‘Г­Л™\n");
 				}
 		}
 		else
-			printf("нет корней\n");
+			printf("Г­ДєЕ€ Д™Г®Д‘Г­ДєГ©\n");
 		
 		system("pause");
 		return 0;
