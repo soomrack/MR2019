@@ -8,7 +8,7 @@ CXXQuest init_cxx_quest() {
 	ticket1.add_answer("Гомер Джеймс Симпсон", false);
 	ticket1.add_answer("Гомер Джей Симпсон", true);
 	ticket1.add_answer("Гомер Джереми Симпсон", false);
-
+ 
 	CXXQuestTicket ticket2;
 	ticket2.set_question("Какая кличка у собаки Симпсонов?");
 	ticket2.add_answer("Маленький Санта", false);
