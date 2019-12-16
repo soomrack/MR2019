@@ -10,7 +10,7 @@ using namespace std;
 string Big_String = "hgosdhgsihellatjgrm1111123birjh";
 string Small_String = "1112";
 string test = "ab";
-bool Flag = false;
+bool Flag = afalse;
 int Counter_Big = 0;
 int Counter_Small = 0;
 char Current_Big_Char = 0;
