@@ -1,6 +1,6 @@
 ﻿// ilya.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
+den
 #include <iostream>
 #include <conio.h>
 #include <windows.h>
