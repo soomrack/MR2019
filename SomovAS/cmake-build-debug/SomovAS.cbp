@@ -122,6 +122,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/811243/CLionProjects/MR2019/SomovAS/Exz/Exz.cpp">
+			<Option target="mylib"/>
+		</Unit>
 		<Unit filename="C:/Users/811243/CLionProjects/MR2019/SomovAS/main.cpp">
 			<Option target="SomovAS"/>
 		</Unit>

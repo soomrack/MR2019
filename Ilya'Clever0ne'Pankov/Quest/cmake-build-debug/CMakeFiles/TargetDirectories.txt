@@ -1,0 +1,6 @@
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/Quest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/Quest/cmake-build-debug/CMakeFiles/QUEST.dir
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/Quest/cmake-build-debug/CMakeFiles/CPP_QUEST.dir
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/Quest/cmake-build-debug/CMakeFiles/API.dir
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/Quest/cmake-build-debug/CMakeFiles/CLEVER0NE_QUEST.dir
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/Quest/cmake-build-debug/CMakeFiles/edit_cache.dir

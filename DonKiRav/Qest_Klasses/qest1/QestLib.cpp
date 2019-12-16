@@ -1,6 +1,6 @@
 #include "QestLib.h"
 
-Question::Question() {
+Quuestion::Quuestion() {
     question = "";
     var1 = "";
     var2 = "";

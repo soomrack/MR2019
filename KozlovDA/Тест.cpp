@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <ctime>
 #include <windows.h>
 #include "TestLib.h"
@@ -14,7 +14,7 @@ int main() {
 	cout << "Тест на психологический возраст\n" << endl;
 	Sleep(1000);
 
-	cout << "Введите номер буквы в" << endl << "1.в  2.г  3.е  4.Ё" << endl;
+	cout << "Напечатайте номер буквы в" << endl << "1.в  2.г  3.е  4.Ё" << endl;
 	cin >> answer;
 	processing_of_question('1', answer);
 

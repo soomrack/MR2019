@@ -1,0 +1,3 @@
+file(REMOVE_RECURSE
+  "libCPP_QUEST.a"
+)
