@@ -6,7 +6,7 @@ double a, b, r; // ęô îęđóćíîńňč
 
 double Diskrim() 
 {
-	float D = pow(2*k*(c-b)-2*a,2)-4*(k*k+1)*(a*a+pow(c-b,2)-r*r);
+	float D2 = pow(2*k*(c-b)-2*a,2)-4*(k*k+1)*(a*a+pow(c-b,2)-r*r);
 	return D;
 }
 
