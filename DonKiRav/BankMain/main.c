@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-   double KreditProz = 12500.0;
+   double KreditProz = 125.0;
    double DepozitProz = 108.0;
    long int BunkAkk = 20000000;
    long int Sum =1000000;
@@ -9,7 +9,7 @@ int main() {
    long int Depositors = 0;
    long int MaxMounthKreditors = 25;
    long int Time = 12*5;
-   long int MDepozitors[Time];
+   long int Depozitors[Time];
 
    int b = 0;
 
