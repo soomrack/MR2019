@@ -1,7 +1,7 @@
 ﻿// ConsoleApplication25.cpp: определяет точку входа для консольного приложения.
 //
-den
-den
+//den
+//den
 #include "stdafx.h"
 #include "api.h"
 #include "cpp_quest.h"
