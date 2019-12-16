@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SomovAS.dir/api.cpp.obj"
   "CMakeFiles/SomovAS.dir/main.cpp.obj"
   "CMakeFiles/SomovAS.dir/test.cpp.obj"
   "SomovAS.exe"

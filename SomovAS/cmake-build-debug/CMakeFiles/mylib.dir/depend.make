@@ -4,5 +4,3 @@
 CMakeFiles/mylib.dir/C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.obj: C:/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp
 CMakeFiles/mylib.dir/C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.obj: C:/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.h
 
-CMakeFiles/mylib.dir/Exz/Exz.cpp.obj: ../Exz/Exz.cpp
-

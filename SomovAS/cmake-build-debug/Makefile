@@ -162,32 +162,32 @@ C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.s:
 	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.s
 .PHONY : C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.s
 
-Exz/Exz.obj: Exz/Exz.cpp.obj
+api.obj: api.cpp.obj
 
-.PHONY : Exz/Exz.obj
+.PHONY : api.obj
 
 # target to build an object file
-Exz/Exz.cpp.obj:
-	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/Exz/Exz.cpp.obj
-.PHONY : Exz/Exz.cpp.obj
+api.cpp.obj:
+	$(MAKE) -f CMakeFiles\SomovAS.dir\build.make CMakeFiles/SomovAS.dir/api.cpp.obj
+.PHONY : api.cpp.obj
 
-Exz/Exz.i: Exz/Exz.cpp.i
+api.i: api.cpp.i
 
-.PHONY : Exz/Exz.i
+.PHONY : api.i
 
 # target to preprocess a source file
-Exz/Exz.cpp.i:
-	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/Exz/Exz.cpp.i
-.PHONY : Exz/Exz.cpp.i
+api.cpp.i:
+	$(MAKE) -f CMakeFiles\SomovAS.dir\build.make CMakeFiles/SomovAS.dir/api.cpp.i
+.PHONY : api.cpp.i
 
-Exz/Exz.s: Exz/Exz.cpp.s
+api.s: api.cpp.s
 
-.PHONY : Exz/Exz.s
+.PHONY : api.s
 
 # target to generate assembly for a file
-Exz/Exz.cpp.s:
-	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/Exz/Exz.cpp.s
-.PHONY : Exz/Exz.cpp.s
+api.cpp.s:
+	$(MAKE) -f CMakeFiles\SomovAS.dir\build.make CMakeFiles/SomovAS.dir/api.cpp.s
+.PHONY : api.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -256,9 +256,9 @@ help:
 	@echo ... C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.obj
 	@echo ... C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.i
 	@echo ... C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.s
-	@echo ... Exz/Exz.obj
-	@echo ... Exz/Exz.i
-	@echo ... Exz/Exz.s
+	@echo ... api.obj
+	@echo ... api.i
+	@echo ... api.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

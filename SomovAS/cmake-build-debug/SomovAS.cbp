@@ -122,8 +122,11 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/811243/CLionProjects/MR2019/SomovAS/Exz/Exz.cpp">
-			<Option target="mylib"/>
+		<Unit filename="C:/Users/811243/CLionProjects/MR2019/SomovAS/api.cpp">
+			<Option target="SomovAS"/>
+		</Unit>
+		<Unit filename="C:/Users/811243/CLionProjects/MR2019/SomovAS/api.h">
+			<Option target="SomovAS"/>
 		</Unit>
 		<Unit filename="C:/Users/811243/CLionProjects/MR2019/SomovAS/main.cpp">
 			<Option target="SomovAS"/>
@@ -132,6 +135,9 @@
 			<Option target="SomovAS"/>
 		</Unit>
 		<Unit filename="C:/Users/811243/CLionProjects/MR2019/SomovAS/test.h">
+			<Option target="SomovAS"/>
+		</Unit>
+		<Unit filename="C:/Users/811243/CLionProjects/MR2019/SomovAS/try.h">
 			<Option target="SomovAS"/>
 		</Unit>
 		<Unit filename="C:/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp">

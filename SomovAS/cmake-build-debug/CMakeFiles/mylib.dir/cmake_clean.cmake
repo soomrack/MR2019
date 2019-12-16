@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mylib.dir/C_/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp.obj"
-  "CMakeFiles/mylib.dir/Exz/Exz.cpp.obj"
   "libmylib.a"
   "libmylib.pdb"
 )

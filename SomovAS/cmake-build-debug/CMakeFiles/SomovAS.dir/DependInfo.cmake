@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/811243/CLionProjects/MR2019/SomovAS/api.cpp" "C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/CMakeFiles/SomovAS.dir/api.cpp.obj"
   "C:/Users/811243/CLionProjects/MR2019/SomovAS/main.cpp" "C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/CMakeFiles/SomovAS.dir/main.cpp.obj"
   "C:/Users/811243/CLionProjects/MR2019/SomovAS/test.cpp" "C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/CMakeFiles/SomovAS.dir/test.cpp.obj"
   )

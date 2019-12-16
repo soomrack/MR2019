@@ -3,7 +3,7 @@
 #include <clocale>
 using namespace std;
 
-class Question1{
+/*class Question1{
 public:
     string name;
     int count;
@@ -87,4 +87,20 @@ void test(){
     Q5.foo();
     cout << "Congratulation, you answer all  " << Q1.count << " question, you know history well" << endl;
     cout << "See you next time, " << Q1.name << ')';
+}*/
+CXXQuest init_cxx_quest() {
+    CXXQuestTicket ticket;
+    ticket.set_question("Range of int variable is:");
+    ticket.add_answer("[0, 32255]", false);
+    ticket.add_answer("[-32768, 32767]", true);
+
+    CXXQuest quest;
+    quest.add_ticket(ticket);
+    return quest;
+}
+void CXXQuest::print_hello() {
+    cout << endl << "Start new CXXQuest" << endl;
+}
+void CXXQuest::print_farewell() {
+    cout << endl << "Quest CXX finished" << endl;
 }
