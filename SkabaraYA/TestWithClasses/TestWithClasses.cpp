@@ -15,7 +15,7 @@ void answer_chek(string right_answer, string answer) {
 		cout << "Верно \n" << '\n' << '\n';
 	}
 }
-
+jhyyi.l
 class Question
 {
 public:
