@@ -1,4 +1,7 @@
-﻿#include <iostream>
+// test 1
+// test 2
+
+#include <iostream>
 #include <string>
 //две строки, вернуть номер элемента с первым символом короткой строки в большой
 
