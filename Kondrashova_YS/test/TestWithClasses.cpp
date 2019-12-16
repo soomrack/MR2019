@@ -8,11 +8,11 @@ int score = 0;
 void answer_chek(string right_answer, string answer) {
 
 	if (answer != right_answer) {
-		cout << "ГЌГҐГўГҐГ°Г­Г®" << '\n' << '\n';
+		cout << "Неверно" << '\n' << '\n';
 	}
 	else {
 		score++;
-		cout << "Г‚ГҐГ°Г­Г®\n" << '\n' << '\n';
+		cout << "Верно\n" << '\n' << '\n';
 	}
 }
 
@@ -20,7 +20,7 @@ class Question
 {
 public:
 	string question;
-	strineg answers;
+	string answers;
 	string right_answer;
 
 	void quest()
@@ -28,7 +28,7 @@ public:
 		string users_answer;
 		cout << question << '\n';
 		cout << answers << '\n';
-		dcin >> users_answer;
+		cin >> users_answer;
 		answer_chek(right_answer, users_answer);
 	}
 };
@@ -38,18 +38,19 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 
-	Question q1{ "Г‚ ГЄГ ГЄГ®Г¬ ГЈГ®Г°Г®Г¤ГҐ Г¦ГЁГ« ГЉГ Г°Г«Г±Г®Г­?", "1.ГЊГ®Г±ГЄГўГ   2.ГЊГ®Г±ГЄГўГ   3.Г­ГҐ ГЊГ®Г±ГЄГўГ   4.Г‘ГІГ®ГЄГЈГ®Г«ГјГ¬", "4" };
+	Question q1{ "В каком городе жил Карлсон?", "1.Москва  2.Москва  3.не Москва  4.Стокгольм", "4" };
 	q1.quest();
 
-	Question q2{ "2*3", "1.Гў  2.6  3.ГџГ°ГЁГЄ  4.ВЁ", "2" };
+	Question q2{ "2*3", "1.в  2.6  3.Ярик  4.Ё", "2" };
 	q2.quest();
 
-	Question q3{ "ГѓГ®Г¤ ГЄГ°ГҐГ№ГҐГ­ГЁГї ГђГіГ±ГЁ", "1.2020  2.988  3.0  4.666", "2" };
+	Question q3{ "Год крещения Руси", "1.2020  2.988  3.0  4.666", "2" };
 	q3.quest();
 
-	cout << '\n' << "ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г ГўГЁГ«ГјГ­Г»Гµ Г®ГІГўГҐГІГ®Гў:\n";
+	cout << '\n' << "Количество правильных ответов:\n";
 	cout << score << '\n' << '\n';
 
 	system("pause");
 	return 0;
 }
+//done
