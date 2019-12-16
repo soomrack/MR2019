@@ -2,7 +2,7 @@
 #include <string>
 #include <windows.h>
 using namespace std;
-uwu
+
 int score = 0;
 
 void answer_chek(string right_answer, string answer) {
@@ -12,7 +12,7 @@ void answer_chek(string right_answer, string answer) {
 	}changes
 	else {
 		score++;
-		cout << "Верно \n" << '\n' << '\n';
+		cout << "Верно\n" << '\n' << '\n';
 	}
 }
 
