@@ -40,3 +40,4 @@ void final_test() {
 	}
 	cout << "Правильных ответов:" << right << endl;
 }
+//456
