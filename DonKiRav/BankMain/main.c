@@ -9,7 +9,7 @@ int main() {
    long int Depositors = 0;
    long int MaxMounthKreditors = 25;
    long int Time = 12*5;
-   long int MDepozitors[Time];
+   long int Depozitors[Time];
 
    int b = 0;
 

@@ -3,22 +3,22 @@
 
 #include "api.h"
 
-class CXXQuestTicket : public Ticket {
-public:	CXXQuestTicket() {};
-	  ~CXXQuestTicket() {};
+class DENQuestTicket : public Ticket {
+public:	DENQuestTicket() {};
+	  ~DENQuestTicket() {};
 
 };
 
-class CXXQuest : public Quest {
+class DENQuest : public Quest {
 public:
-	CXXQuest() {};
-	~CXXQuest() {};
+	DENQuest() {};
+	~DENQuest() {};
 private:
 	virtual void print_hello();
 	virtual void print_farewell();
 
 };
 
-CXXQuest init_cxx_quest();
+DENQuest init_cxx_quest();
 
 #endif
