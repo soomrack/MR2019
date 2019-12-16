@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <alg.h>
 #include <math.h>
-
+//d
 void sort( int32_t * arr, uint32_t size){
     int result_arr[size]; // Additional(result) array
     int step = 1; // The step of partitioning the array
