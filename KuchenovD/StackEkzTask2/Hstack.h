@@ -10,7 +10,7 @@ private:
 public:
 	Stack()
 	{
-		top = 0;
+		top = -1;
 	}
 	void push(int var)
 	{
@@ -20,5 +20,13 @@ public:
 	{
 		return st[top--];
 	}
+	void StackShow()
+	{
+		int i = top;
+		cout << endl;
+		for (i; i >= 0; i--)
+		{
+			cout << st[i] << endl;
+		}
+	}
 };
-
