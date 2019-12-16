@@ -1,0 +1,6 @@
+C:/Users/anana/source/repos/soomrack/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/anana/source/repos/soomrack/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/anana/source/repos/soomrack/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/out/build/x64-Debug/CMake_Test/CMakeFiles/rebuild_cache.dir
+C:/Users/anana/source/repos/soomrack/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/out/build/x64-Debug/CMake_Test/CMakeFiles/CMake_Test.dir
+C:/Users/anana/source/repos/soomrack/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/out/build/x64-Debug/CMake_Test/CMakeFiles/CMake_Test_library.dir
+C:/Users/anana/source/repos/soomrack/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/out/build/x64-Debug/CMake_Test/CMakeFiles/edit_cache.dir

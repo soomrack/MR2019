@@ -9,7 +9,7 @@ void answer_chek(string right_answer, string answer) {
 
 	if (answer != right_answer) {
 		cout << "Неверно" << '\n' << '\n';
-	}
+	}changes
 	else {
 		score++;
 		cout << "Верно\n" << '\n' << '\n';
