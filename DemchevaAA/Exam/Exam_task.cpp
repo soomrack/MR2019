@@ -10,7 +10,7 @@ int32_t GetSize()
 	cin >> size;
 	return size;
 }
-int32_t Sort(int32_t* ArrayToSort, int32_t size)
+il32_t Sort(int32_t* ArrayToSort, int32_t size)
 {
 	int32_t keeperMax1 = ArrayToSort[0];
 	int32_t keeperMax2 = ArrayToSort[0];
