@@ -4,13 +4,13 @@ using namespace std;
 class Stack
 {
 private:
-	enum { MAX = 10 };
+	enum { MAX = 5 };
 	int st[MAX];
 	int top;
 public:
 	Stack()
 	{
-		top = 0;
+		top = -1;
 	}
 	void push(int var)
 	{
@@ -20,5 +20,13 @@ public:
 	{
 		return st[top--];
 	}
+	void StackShow()
+	{
+		int i = top;
+		cout << endl;
+		for (i; i >= 0; i--)
+		{
+			cout << st[i] << endl;
+		}
+	}
 };
-

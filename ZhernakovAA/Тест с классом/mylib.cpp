@@ -15,5 +15,5 @@ int process_answer(string answer, string users_answer)
 		return 1;
 	}
 }
-//5
-//5
+//12345
+//12345
