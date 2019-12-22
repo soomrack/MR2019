@@ -3,8 +3,8 @@
 
 int main() {
 	Person student;
-	CXXQuest cxx_quest = init_cxx_quest();
-	cxx_quest.run(student);
+	DENQuest den_quest = init_cxx_quest();
+	den_quest.run(student);
 	student.print_stat();
 	system("pause");
 	return 0;

@@ -1,0 +1,4 @@
+D:/GitHub/MR2019/KondratchenkoOleg/quizz with library/out/build/x64-Debug/CMakeFiles/quizz_library.dir
+D:/GitHub/MR2019/KondratchenkoOleg/quizz with library/out/build/x64-Debug/CMakeFiles/quizz_main.dir
+D:/GitHub/MR2019/KondratchenkoOleg/quizz with library/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/GitHub/MR2019/KondratchenkoOleg/quizz with library/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

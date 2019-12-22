@@ -4,7 +4,7 @@ using namespace std;
 class Stack
 {
 private:
-	enum { MAX = 10 };
+	enum { MAX = 5 };
 	int st[MAX];
 	int top;
 public:

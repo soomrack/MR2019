@@ -1,43 +1,43 @@
 #include "quest.h"
 #include <iostream>
-CXXQuest init_cxx_quest() {
+DENQuest init_cxx_quest() {
 	setlocale(LC_ALL, "RUSSIAN");
-	CXXQuestTicket ticket1;
-	ticket1.set_question("question1");
-	ticket1.add_answer("1940", false);
-	ticket1.add_answer("1939", true);
-	ticket1.add_answer("1917", false);
-	ticket1.add_answer("1941", false);
+	DENQuestTicket ticket1;
+	ticket1.set_question("1-55?");
+	ticket1.add_answer("-53", false);
+	ticket1.add_answer("-54", true);
+	ticket1.add_answer("-55", false);
+	ticket1.add_answer("-56", false);
 
-	CXXQuestTicket ticket2;
-	ticket2.set_question("question2");
-	ticket2.add_answer("1", false);
-	ticket2.add_answer("2", false);
-	ticket2.add_answer("3", true);
-	ticket2.add_answer("4", false);
+	DENQuestTicket ticket2;
+	ticket2.set_question("22+1");
+	ticket2.add_answer("12", false);
+	ticket2.add_answer("24", false);
+	ticket2.add_answer("23", true);
+	ticket2.add_answer("214", false);
 
-	CXXQuestTicket ticket3;
-	ticket3.set_question("question3");
-	ticket3.add_answer("1888", false);
-	ticket3.add_answer("1927", true);
-	ticket3.add_answer("2018", false);
-	ticket3.add_answer("1934", false);
+	DENQuestTicket ticket3;
+	ticket3.set_question("1/0");
+	ticket3.add_answer("0", false);
+	ticket3.add_answer("8", true);
+	ticket3.add_answer("1", false);
+	ticket3.add_answer("2", false);
 
-	CXXQuestTicket ticket4;
-	ticket4.set_question("question4");
+	DENQuestTicket ticket4;
+	ticket4.set_question("3*0");
+	ticket4.add_answer("3", false);
 	ticket4.add_answer("1", false);
-	ticket4.add_answer("2", false);
-	ticket4.add_answer("3", true);
+	ticket4.add_answer("0", true);
 	ticket4.add_answer("4", false);
 
-	CXXQuestTicket ticket5;
-	ticket5.set_question("question5");
-	ticket5.add_answer("46", false);
-	ticket5.add_answer("68", false);
-	ticket5.add_answer("38", false);
-	ticket5.add_answer("120", true);
+	DENQuestTicket ticket5;
+	ticket5.set_question("0-0");
+	ticket5.add_answer("8", false);
+	ticket5.add_answer("2", false);
+	ticket5.add_answer("1", false);
+	ticket5.add_answer("0", true);
 
-	CXXQuest quest;
+	DENQuest quest;
 	quest.add_ticket(ticket1);
 	quest.add_ticket(ticket2);
 	quest.add_ticket(ticket3);
@@ -45,11 +45,11 @@ CXXQuest init_cxx_quest() {
 	quest.add_ticket(ticket5);
 	return quest;
 }
-void CXXQuest::print_hello() {
+void DENQuest::print_hello() {
 	std::cout << "Start new Test" << "\n";
 	return;
 }
-void CXXQuest::print_farewell() {
+void DENQuest::print_farewell() {
 	std::cout << "\n" << "Test finished" << "\n";
 	return;
 }
