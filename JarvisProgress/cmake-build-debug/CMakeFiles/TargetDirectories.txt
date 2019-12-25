@@ -1,3 +1,0 @@
-C:/Users/811243/CLionProjects/MR2019/JarvisProgress/cmake-build-debug/CMakeFiles/JarvisProgress.dir
-C:/Users/811243/CLionProjects/MR2019/JarvisProgress/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/811243/CLionProjects/MR2019/JarvisProgress/cmake-build-debug/CMakeFiles/rebuild_cache.dir
