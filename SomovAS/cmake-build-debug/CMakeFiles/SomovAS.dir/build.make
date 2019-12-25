@@ -108,7 +108,6 @@ SomovAS.exe: CMakeFiles/SomovAS.dir/main.cpp.obj
 SomovAS.exe: CMakeFiles/SomovAS.dir/test.cpp.obj
 SomovAS.exe: CMakeFiles/SomovAS.dir/api.cpp.obj
 SomovAS.exe: CMakeFiles/SomovAS.dir/build.make
-SomovAS.exe: libmylib.a
 SomovAS.exe: CMakeFiles/SomovAS.dir/linklibs.rsp
 SomovAS.exe: CMakeFiles/SomovAS.dir/objects1.rsp
 SomovAS.exe: CMakeFiles/SomovAS.dir/link.txt

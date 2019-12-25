@@ -53,13 +53,11 @@ CMAKE_BINARY_DIR = C:\Users\811243\CLionProjects\MR2019\SomovAS\cmake-build-debu
 
 # The main recursive "all" target.
 all: CMakeFiles/SomovAS.dir/all
-all: CMakeFiles/mylib.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles/SomovAS.dir/clean
-clean: CMakeFiles/mylib.dir/clean
 
 .PHONY : clean
 
@@ -72,7 +70,7 @@ preinstall:
 # Target rules for target CMakeFiles/SomovAS.dir
 
 # All Build rule for target.
-CMakeFiles/SomovAS.dir/all: CMakeFiles/mylib.dir/all
+CMakeFiles/SomovAS.dir/all:
 	$(MAKE) -f CMakeFiles\SomovAS.dir\build.make CMakeFiles/SomovAS.dir/depend
 	$(MAKE) -f CMakeFiles\SomovAS.dir\build.make CMakeFiles/SomovAS.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\811243\CLionProjects\MR2019\SomovAS\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target SomovAS"
@@ -80,7 +78,7 @@ CMakeFiles/SomovAS.dir/all: CMakeFiles/mylib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SomovAS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\811243\CLionProjects\MR2019\SomovAS\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\811243\CLionProjects\MR2019\SomovAS\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/SomovAS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\811243\CLionProjects\MR2019\SomovAS\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/SomovAS.dir/rule
@@ -94,33 +92,6 @@ SomovAS: CMakeFiles/SomovAS.dir/rule
 CMakeFiles/SomovAS.dir/clean:
 	$(MAKE) -f CMakeFiles\SomovAS.dir\build.make CMakeFiles/SomovAS.dir/clean
 .PHONY : CMakeFiles/SomovAS.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/mylib.dir
-
-# All Build rule for target.
-CMakeFiles/mylib.dir/all:
-	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/depend
-	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\811243\CLionProjects\MR2019\SomovAS\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target mylib"
-.PHONY : CMakeFiles/mylib.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/mylib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\811243\CLionProjects\MR2019\SomovAS\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mylib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\811243\CLionProjects\MR2019\SomovAS\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/mylib.dir/rule
-
-# Convenience name for target.
-mylib: CMakeFiles/mylib.dir/rule
-
-.PHONY : mylib
-
-# clean rule for target.
-CMakeFiles/mylib.dir/clean:
-	$(MAKE) -f CMakeFiles\mylib.dir\build.make CMakeFiles/mylib.dir/clean
-.PHONY : CMakeFiles/mylib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

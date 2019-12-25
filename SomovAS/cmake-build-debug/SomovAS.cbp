@@ -59,48 +59,6 @@
 					<DistClean command="C:/PROGRA~1/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="mylib">
-				<Option output="C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/libmylib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~1/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 mylib"/>
-					<CompileFile command="C:/PROGRA~1/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mylib/fast">
-				<Option output="C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/libmylib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~1/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 mylib/fast"/>
-					<CompileFile command="C:/PROGRA~1/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug"/>
 				<Option type="4"/>
@@ -136,12 +94,6 @@
 		</Unit>
 		<Unit filename="C:/Users/811243/CLionProjects/MR2019/SomovAS/test.h">
 			<Option target="SomovAS"/>
-		</Unit>
-		<Unit filename="C:/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp">
-			<Option target="mylib"/>
-		</Unit>
-		<Unit filename="C:/Users/811243/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.h">
-			<Option target="mylib"/>
 		</Unit>
 		<Unit filename="C:/Users/811243/CLionProjects/MR2019/SomovAS/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
