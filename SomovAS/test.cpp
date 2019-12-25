@@ -90,9 +90,9 @@ void test(){
 }*/
 CXXQuest init_cxx_quest() {
     CXXQuestTicket ticket;
-    ticket.set_question("Range of int variable is:");
-    ticket.add_answer("[0, 32255]", false);
-    ticket.add_answer("[-32768, 32767]", true);
+    ticket.set_question("Is 13 prime number:");
+    ticket.add_answer("NO", false);
+    ticket.add_answer("YES", true);
 
     CXXQuest quest;
     quest.add_ticket(ticket);
