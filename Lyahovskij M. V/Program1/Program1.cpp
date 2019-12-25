@@ -1,4 +1,8 @@
-﻿#include <iostream>
+// rewrite test 1 +1
+// test 2
+//tesst 3
+
+#include <iostream>
 #include <string>
 //две строки, вернуть номер элемента с первым символом короткой строки в большой
 

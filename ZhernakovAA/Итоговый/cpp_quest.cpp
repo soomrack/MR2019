@@ -2,6 +2,13 @@
 #include <iostream>
 CXXQuest init_cxx_quest() {
 	setlocale(LC_ALL, "RUSSIAN");
+
+	CXXQuestTicket ticket_m1;
+	ticket_m1.set_multi();
+
+	CXXQuestTicket ticket_m2;
+	ticket_m2.set_multi();
+
 	CXXQuestTicket ticket1;
 	ticket1.set_question("В каком году началась Вторая Мировая война?");
 	ticket1.add_answer("1940", false);
@@ -45,6 +52,7 @@ CXXQuest init_cxx_quest() {
 	quest.add_ticket(ticket5);
 	return quest;
 }
+
 void CXXQuest::print_hello() {
 	std::cout << "Start new Test" << "\n";
 	return;

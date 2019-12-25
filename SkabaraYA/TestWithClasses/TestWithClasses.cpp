@@ -1,55 +1,44 @@
-﻿#include <iostream>
-#include <string>
-#include <windows.h>
-using namespace std;
+﻿// NaEkzamen.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+//
 
-int score = 0;
+#include <stdio.h>
+#include <stdint.h>
 
-void answer_chek(string right_answer, string answer) {
-
-	if (answer != right_answer) {
-		cout << "Неверно" << '\n' << '\n';
-	}
-	else {
-		score++;
-		cout << "Верно\n" << '\n' << '\n';
-	}
-}
-
-class Question
+int32_t getFibonacci(int n)
 {
-public:
-	string question;
-	string answers;
-	string right_answer;
 
-	void quest()
-	{
-		string users_answer;
-		cout << question << '\n';
-		cout << answers << '\n';
-		cin >> users_answer;
-		answer_chek(right_answer, users_answer);
+	static int maxDeep = -1;
+	static int currentDeep = -1;
+
+	currentDeep++;
+	if (currentDeep > maxDeep) {
+		maxDeep = currentDeep;
 	}
-};
+
+	int result = 1;
+	if (n != 1 && n != 2) {
+		result = getFibonacci(n - 1) + getFibonacci(n - 2);
+	}
+
+	currentDeep--;
+
+	if (currentDeep == -1) {
+		printf_s("%i\n", maxDeep);
+		maxDeep = 0;
+		currentDeep = -1;
+	}
+
+	return result;
+}
 
 
 int main()
 {
-	setlocale(LC_ALL, "Russian");
+	int a = 7;
+	a = getFibonacci(a);
+	printf_s("%i \n", a);
+	a = 5;
+	a = getFibonacci(a);
+	printf_s("%i\n", a);
 
-	Question q1{ "В каком городе жил Карлсон?", "1.Москва  2.Москва  3.не Москва  4.Стокгольм", "4" };
-	q1.quest();
-
-	Question q2{ "2*3", "1.в  2.6  3.Ярик  4.Ё", "2" };
-	q2.quest();
-
-	Question q3{ "Год крещения Руси", "1.2020  2.988  3.0  4.666", "2" };
-	q3.quest();
-
-	cout << '\n' << "Ваш результат:\n";
-	cout << score << '\n' << '\n';
-
-	system("pause");
-	return 0;
 }

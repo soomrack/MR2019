@@ -46,4 +46,6 @@ int main()
 	//printf("%s\n", stroka);
 	return 0;
 };
+//end
+//of all
 

@@ -3,7 +3,7 @@
 
 #include "api.h"
 
-class CXXQuestTicket : public Ticket {
+class CXXQuestTicket : public Ticket, public Multi {
 public:	CXXQuestTicket() {};
 	  ~CXXQuestTicket() {};
 
@@ -16,7 +16,6 @@ public:
 private:
 	virtual void print_hello();
 	virtual void print_farewell();
-
 };
 
 CXXQuest init_cxx_quest();
