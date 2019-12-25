@@ -1,6 +1,6 @@
 The system is: Windows - 10.0.18362 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/gcc.exe 
+Compiler: C:/MinGW/bin/gcc.exe 
 Build flags: 
 Id flags:  
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/g++.exe 
+Compiler: C:/MinGW/bin/g++.exe 
 Build flags: 
 Id flags:  
 
@@ -23,214 +23,203 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/a.exe"
+The CXX compiler identification is GNU, found in "C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_0f277/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_0f277.dir\build.make CMakeFiles/cmTC_0f277.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0f277.dir/testCCompiler.c.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe    -o CMakeFiles\cmTC_0f277.dir\testCCompiler.c.obj   -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_0f277.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0f277.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0f277.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_0f277.dir/objects.a @CMakeFiles\cmTC_0f277.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_0f277.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0f277.exe -Wl,--out-implib,libcmTC_0f277.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0f277.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_408dc/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_408dc.dir\build.make CMakeFiles/cmTC_408dc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_408dc.dir/testCCompiler.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_408dc.dir\testCCompiler.c.obj   -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_408dc.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_408dc.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_408dc.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_408dc.dir/objects.a @CMakeFiles\cmTC_408dc.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_408dc.dir/objects.a -Wl,--no-whole-archive  -o cmTC_408dc.exe -Wl,--out-implib,libcmTC_408dc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_408dc.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_70a96/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_70a96.dir\build.make CMakeFiles/cmTC_70a96.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_70a96.dir/CMakeCCompilerABI.c.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe   -v -o CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c"
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_cb055/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_cb055.dir\build.make CMakeFiles/cmTC_cb055.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb055.dir/CMakeCCompilerABI.c.obj
+C:\MinGW\bin\gcc.exe   -v -o CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c"
 Using built-in specs.
-COLLECT_GCC=C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe
-Target: i686-w64-mingw32
-Configured with: ../../../src/gcc-8.1.0/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-pkgversion='i686-posix-dwarf-rev0, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS=' -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/lib -L/c/mingw810/prerequisites/i686-zlib-static/lib -L/c/mingw810/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
-Thread model: posix
-gcc version 8.1.0 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/cc1.exe -quiet -v -iprefix C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/ -D_REENTRANT C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i686 -auxbase-strip CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\nne_l\AppData\Local\Temp\ccLuBXvU.s
-GNU C17 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) version 8.1.0 (i686-w64-mingw32)
-	compiled by GNU C version 8.1.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.18-GMP
-
+COLLECT_GCC=C:\MinGW\bin\gcc.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\79191\AppData\Local\Temp\ccx92gY8.s
+GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
+	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version 0.15
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include"
-ignoring nonexistent directory "C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/../../../../include"
-ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"
-ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"
-ignoring nonexistent directory "C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/mingw/include"
+ignoring nonexistent directory "c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"
+ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../include"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"
+ignoring nonexistent directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
+ignoring duplicate directory "/mingw/include"
 #include "..." search starts here:
 #include <...> search starts here:
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include
+ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include
+ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include
+ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed
 End of search list.
-GNU C17 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) version 8.1.0 (i686-w64-mingw32)
-	compiled by GNU C version 8.1.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.18-GMP
-
+GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
+	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version 0.15
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: e06e4963445adb9452054627e12eacb8
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj C:\Users\nne_l\AppData\Local\Temp\ccLuBXvU.s
-GNU assembler version 2.30 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.30
-COMPILER_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/
-LIBRARY_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
-Linking C executable cmTC_70a96.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_70a96.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_70a96.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_70a96.dir/objects.a @CMakeFiles\cmTC_70a96.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_70a96.dir/objects.a -Wl,--no-whole-archive  -o cmTC_70a96.exe -Wl,--out-implib,libcmTC_70a96.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Compiler executable checksum: 384cad586f05ed581a9c068b2f18b408
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj C:\Users\79191\AppData\Local\Temp\ccx92gY8.s
+GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+Linking C executable cmTC_cb055.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_cb055.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_cb055.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_cb055.dir/objects.a @CMakeFiles\cmTC_cb055.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_cb055.dir/objects.a -Wl,--no-whole-archive  -o cmTC_cb055.exe -Wl,--out-implib,libcmTC_cb055.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
-COLLECT_GCC=C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe
-COLLECT_LTO_WRAPPER=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/lto-wrapper.exe
-Target: i686-w64-mingw32
-Configured with: ../../../src/gcc-8.1.0/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-pkgversion='i686-posix-dwarf-rev0, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS=' -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/lib -L/c/mingw810/prerequisites/i686-zlib-static/lib -L/c/mingw810/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
-Thread model: posix
-gcc version 8.1.0 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) 
-COMPILER_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/
-LIBRARY_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_70a96.exe' '-mtune=generic' '-march=i686'
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/collect2.exe -plugin C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/liblto_plugin-0.dll -plugin-opt=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\nne_l\AppData\Local\Temp\ccabcn8m.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 -m i386pe -Bdynamic -o cmTC_70a96.exe C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtbegin.o -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0 -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../.. --whole-archive CMakeFiles\cmTC_70a96.dir/objects.a --no-whole-archive --out-implib libcmTC_70a96.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_70a96.exe' '-mtune=generic' '-march=i686'
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC=C:\MinGW\bin\gcc.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cb055.exe' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\79191\AppData\Local\Temp\ccAoJmVF.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_cb055.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_cb055.dir/objects.a --no-whole-archive --out-implib libcmTC_cb055.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cb055.exe' '-mtune=generic' '-march=i586'
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include]
-    add: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed]
-    add: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include]
+    add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include]
+    add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include]
+    add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed]
   end of search list found
-  collapse include dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include]
-  collapse include dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed]
-  collapse include dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/i686-w64-mingw32/include]
-  implicit include dirs: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include;C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed;C:/Users/nne_l/.CLion2019.2/Min/mingw32/i686-w64-mingw32/include]
+  collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include]
+  collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include] ==> [C:/MinGW/include]
+  collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
+  implicit include dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0/include;C:/MinGW/include;C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_70a96/fast ]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_70a96.dir\build.make CMakeFiles/cmTC_70a96.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_70a96.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe   -v -o CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_cb055/fast ]
+  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_cb055.dir\build.make CMakeFiles/cmTC_cb055.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_cb055.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\MinGW\bin\gcc.exe   -v -o CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c"]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe]
-  ignore line: [Target: i686-w64-mingw32]
-  ignore line: [Configured with: ../../../src/gcc-8.1.0/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-pkgversion='i686-posix-dwarf-rev0, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS=' -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/lib -L/c/mingw810/prerequisites/i686-zlib-static/lib -L/c/mingw810/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.1.0 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/cc1.exe -quiet -v -iprefix C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/ -D_REENTRANT C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i686 -auxbase-strip CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\nne_l\AppData\Local\Temp\ccLuBXvU.s]
-  ignore line: [GNU C17 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) version 8.1.0 (i686-w64-mingw32)]
-  ignore line: [	compiled by GNU C version 8.1.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.18-GMP]
-  ignore line: []
+  ignore line: [COLLECT_GCC=C:\MinGW\bin\gcc.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\79191\AppData\Local\Temp\ccx92gY8.s]
+  ignore line: [GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version 0.15]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include"]
-  ignore line: [ignoring nonexistent directory "C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/../../../../include"]
-  ignore line: [ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"]
-  ignore line: [ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"]
-  ignore line: [ignoring nonexistent directory "C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/mingw/include"]
+  ignore line: [ignoring nonexistent directory "c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
+  ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"]
+  ignore line: [ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../include"]
+  ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
+  ignore line: [ignoring duplicate directory "/mingw/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include]
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed]
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include]
+  ignore line: [ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include]
+  ignore line: [ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include]
+  ignore line: [ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed]
   ignore line: [End of search list.]
-  ignore line: [GNU C17 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) version 8.1.0 (i686-w64-mingw32)]
-  ignore line: [	compiled by GNU C version 8.1.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.18-GMP]
-  ignore line: []
+  ignore line: [GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version 0.15]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: e06e4963445adb9452054627e12eacb8]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj C:\Users\nne_l\AppData\Local\Temp\ccLuBXvU.s]
-  ignore line: [GNU assembler version 2.30 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.30]
-  ignore line: [COMPILER_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/]
-  ignore line: [LIBRARY_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_70a96.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
-  ignore line: [Linking C executable cmTC_70a96.exe]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_70a96.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_70a96.dir/objects.a]
-  ignore line: [C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_70a96.dir/objects.a @CMakeFiles\cmTC_70a96.dir\objects1.rsp]
-  ignore line: [C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_70a96.dir/objects.a -Wl,--no-whole-archive  -o cmTC_70a96.exe -Wl,--out-implib,libcmTC_70a96.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Compiler executable checksum: 384cad586f05ed581a9c068b2f18b408]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj C:\Users\79191\AppData\Local\Temp\ccx92gY8.s]
+  ignore line: [GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28]
+  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
+  ignore line: [c:/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
+  ignore line: [c:/mingw/bin/../lib/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_cb055.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [Linking C executable cmTC_cb055.exe]
+  ignore line: ["C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_cb055.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_cb055.dir/objects.a]
+  ignore line: [C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_cb055.dir/objects.a @CMakeFiles\cmTC_cb055.dir\objects1.rsp]
+  ignore line: [C:\MinGW\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_cb055.dir/objects.a -Wl,--no-whole-archive  -o cmTC_cb055.exe -Wl,--out-implib,libcmTC_cb055.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/lto-wrapper.exe]
-  ignore line: [Target: i686-w64-mingw32]
-  ignore line: [Configured with: ../../../src/gcc-8.1.0/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-pkgversion='i686-posix-dwarf-rev0, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS=' -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/lib -L/c/mingw810/prerequisites/i686-zlib-static/lib -L/c/mingw810/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.1.0 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) ]
-  ignore line: [COMPILER_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/]
-  ignore line: [LIBRARY_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_70a96.exe' '-mtune=generic' '-march=i686']
-  link line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/collect2.exe -plugin C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/liblto_plugin-0.dll -plugin-opt=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\nne_l\AppData\Local\Temp\ccabcn8m.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 -m i386pe -Bdynamic -o cmTC_70a96.exe C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtbegin.o -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0 -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../.. --whole-archive CMakeFiles\cmTC_70a96.dir/objects.a --no-whole-archive --out-implib libcmTC_70a96.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtend.o]
-    arg [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/collect2.exe] ==> ignore
+  ignore line: [COLLECT_GCC=C:\MinGW\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
+  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
+  ignore line: [c:/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
+  ignore line: [c:/mingw/bin/../lib/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cb055.exe' '-mtune=generic' '-march=i586']
+  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\79191\AppData\Local\Temp\ccAoJmVF.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_cb055.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_cb055.dir/objects.a --no-whole-archive --out-implib libcmTC_cb055.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
-    arg [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/liblto_plugin-0.dll] ==> ignore
-    arg [-plugin-opt=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\nne_l\AppData\Local\Temp\ccabcn8m.res] ==> ignore
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\79191\AppData\Local\Temp\ccAoJmVF.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
     arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
     arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
     arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
     arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
     arg [-plugin-opt=-pass-through=-luser32] ==> ignore
     arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-    arg [-plugin-opt=-pass-through=-liconv] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
     arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
     arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [--sysroot=C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32] ==> ignore
-    arg [-m] ==> ignore
-    arg [i386pe] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_70a96.exe] ==> ignore
-    arg [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> ignore
-    arg [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtbegin.o] ==> ignore
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0]
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc]
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib]
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib]
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib]
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../..] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../..]
+    arg [cmTC_cb055.exe] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> ignore
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0]
+    arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_70a96.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_cb055.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_70a96.dll.a] ==> ignore
+    arg [libcmTC_cb055.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -241,50 +230,46 @@ Parsed C implicit link information from above output:
     arg [-lmoldname] ==> lib [moldname]
     arg [-lmingwex] ==> lib [mingwex]
     arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [-lpthread] ==> lib [pthread]
     arg [-ladvapi32] ==> lib [advapi32]
     arg [-lshell32] ==> lib [shell32]
     arg [-luser32] ==> lib [user32]
     arg [-lkernel32] ==> lib [kernel32]
-    arg [-liconv] ==> lib [iconv]
     arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc] ==> lib [gcc]
     arg [-lgcc_eh] ==> lib [gcc_eh]
     arg [-lmoldname] ==> lib [moldname]
     arg [-lmingwex] ==> lib [mingwex]
     arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtend.o] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> ignore
   remove lib [gcc_eh]
   remove lib [msvcrt]
   remove lib [gcc_eh]
   remove lib [msvcrt]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/i686-w64-mingw32/lib]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/i686-w64-mingw32/lib]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../..] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib]
-  implicit libs: [mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex]
-  implicit dirs: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0;C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc;C:/Users/nne_l/.CLion2019.2/Min/mingw32/i686-w64-mingw32/lib;C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0]
+  collapse library dir [c:/mingw/bin/../lib/gcc] ==> [C:/MinGW/lib/gcc]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> [C:/MinGW/mingw32/lib]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> [C:/MinGW/lib]
+  implicit libs: [mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
+  implicit dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0;C:/MinGW/lib/gcc;C:/MinGW/mingw32/lib;C:/MinGW/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_1fb25/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_1fb25.dir\build.make CMakeFiles/cmTC_1fb25.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1fb25.dir/feature_tests.c.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe   -std=c11 -o CMakeFiles\cmTC_1fb25.dir\feature_tests.c.obj   -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.c
-Linking C executable cmTC_1fb25.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1fb25.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_1fb25.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_1fb25.dir/objects.a @CMakeFiles\cmTC_1fb25.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_1fb25.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1fb25.exe -Wl,--out-implib,libcmTC_1fb25.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1fb25.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_63a5e/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_63a5e.dir\build.make CMakeFiles/cmTC_63a5e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63a5e.dir/feature_tests.c.obj
+C:\MinGW\bin\gcc.exe   -std=c11 -o CMakeFiles\cmTC_63a5e.dir\feature_tests.c.obj   -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.c
+Linking C executable cmTC_63a5e.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_63a5e.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_63a5e.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_63a5e.dir/objects.a @CMakeFiles\cmTC_63a5e.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_63a5e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_63a5e.exe -Wl,--out-implib,libcmTC_63a5e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_63a5e.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -294,19 +279,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/Yaki
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_46e45/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_46e45.dir\build.make CMakeFiles/cmTC_46e45.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_46e45.dir/feature_tests.c.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe   -std=c99 -o CMakeFiles\cmTC_46e45.dir\feature_tests.c.obj   -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.c
-Linking C executable cmTC_46e45.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_46e45.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_46e45.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_46e45.dir/objects.a @CMakeFiles\cmTC_46e45.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_46e45.dir/objects.a -Wl,--no-whole-archive  -o cmTC_46e45.exe -Wl,--out-implib,libcmTC_46e45.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_46e45.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_3c1fa/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_3c1fa.dir\build.make CMakeFiles/cmTC_3c1fa.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c1fa.dir/feature_tests.c.obj
+C:\MinGW\bin\gcc.exe   -std=c99 -o CMakeFiles\cmTC_3c1fa.dir\feature_tests.c.obj   -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.c
+Linking C executable cmTC_3c1fa.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3c1fa.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3c1fa.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_3c1fa.dir/objects.a @CMakeFiles\cmTC_3c1fa.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_3c1fa.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3c1fa.exe -Wl,--out-implib,libcmTC_3c1fa.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3c1fa.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -316,19 +301,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/Yaki
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_72786/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_72786.dir\build.make CMakeFiles/cmTC_72786.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_72786.dir/feature_tests.c.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe   -std=c90 -o CMakeFiles\cmTC_72786.dir\feature_tests.c.obj   -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.c
-Linking C executable cmTC_72786.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_72786.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_72786.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_72786.dir/objects.a @CMakeFiles\cmTC_72786.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_72786.dir/objects.a -Wl,--no-whole-archive  -o cmTC_72786.exe -Wl,--out-implib,libcmTC_72786.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_72786.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_0483e/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0483e.dir\build.make CMakeFiles/cmTC_0483e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0483e.dir/feature_tests.c.obj
+C:\MinGW\bin\gcc.exe   -std=c90 -o CMakeFiles\cmTC_0483e.dir\feature_tests.c.obj   -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.c
+Linking C executable cmTC_0483e.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0483e.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0483e.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_0483e.dir/objects.a @CMakeFiles\cmTC_0483e.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_0483e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0483e.exe -Wl,--out-implib,libcmTC_0483e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0483e.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -336,233 +321,226 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/Yaki
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_81274/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_81274.dir\build.make CMakeFiles/cmTC_81274.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_81274.dir/testCXXCompiler.cxx.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe     -o CMakeFiles\cmTC_81274.dir\testCXXCompiler.cxx.obj -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTC_81274.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_81274.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_81274.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_81274.dir/objects.a @CMakeFiles\cmTC_81274.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_81274.dir/objects.a -Wl,--no-whole-archive  -o cmTC_81274.exe -Wl,--out-implib,libcmTC_81274.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_81274.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_b16b3/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b16b3.dir\build.make CMakeFiles/cmTC_b16b3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b16b3.dir/testCXXCompiler.cxx.obj
+C:\MinGW\bin\g++.exe     -o CMakeFiles\cmTC_b16b3.dir\testCXXCompiler.cxx.obj -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_b16b3.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b16b3.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_b16b3.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_b16b3.dir/objects.a @CMakeFiles\cmTC_b16b3.dir\objects1.rsp
+C:\MinGW\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_b16b3.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b16b3.exe -Wl,--out-implib,libcmTC_b16b3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b16b3.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_b6def/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_b6def.dir\build.make CMakeFiles/cmTC_b6def.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b6def.dir/CMakeCXXCompilerABI.cpp.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe    -v -o CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp"
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_ac869/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_ac869.dir\build.make CMakeFiles/cmTC_ac869.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ac869.dir/CMakeCXXCompilerABI.cpp.obj
+C:\MinGW\bin\g++.exe    -v -o CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp"
 Using built-in specs.
-COLLECT_GCC=C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe
-Target: i686-w64-mingw32
-Configured with: ../../../src/gcc-8.1.0/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-pkgversion='i686-posix-dwarf-rev0, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS=' -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/lib -L/c/mingw810/prerequisites/i686-zlib-static/lib -L/c/mingw810/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
-Thread model: posix
-gcc version 8.1.0 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/cc1plus.exe -quiet -v -iprefix C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/ -D_REENTRANT C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i686 -auxbase-strip CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\nne_l\AppData\Local\Temp\ccWGEeNk.s
-GNU C++14 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) version 8.1.0 (i686-w64-mingw32)
-	compiled by GNU C version 8.1.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.18-GMP
-
+COLLECT_GCC=C:\MinGW\bin\g++.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\79191\AppData\Local\Temp\ccYrVl20.s
+GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
+	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15
+warning: MPC header version 1.0.2 differs from library version 1.0.3.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"
-ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"
-ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"
-ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include"
-ignoring nonexistent directory "C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/../../../../include"
-ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"
-ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"
-ignoring nonexistent directory "C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/mingw/include"
+ignoring nonexistent directory "c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/mingw32"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/backward"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"
+ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../include"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"
+ignoring nonexistent directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
+ignoring duplicate directory "/mingw/include"
 #include "..." search starts here:
 #include <...> search starts here:
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include
+ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++
+ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32
+ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward
+ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include
+ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include
+ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed
 End of search list.
-GNU C++14 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) version 8.1.0 (i686-w64-mingw32)
-	compiled by GNU C version 8.1.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.18-GMP
-
+GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
+	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15
+warning: MPC header version 1.0.2 differs from library version 1.0.3.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 363c147591782b306ba23bb274599884
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\nne_l\AppData\Local\Temp\ccWGEeNk.s
-GNU assembler version 2.30 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.30
-COMPILER_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/
-LIBRARY_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
-Linking CXX executable cmTC_b6def.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b6def.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_b6def.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_b6def.dir/objects.a @CMakeFiles\cmTC_b6def.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_b6def.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b6def.exe -Wl,--out-implib,libcmTC_b6def.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Compiler executable checksum: af09a87986453bf79da3565f33c7648f
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\79191\AppData\Local\Temp\ccYrVl20.s
+GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+Linking CXX executable cmTC_ac869.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ac869.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ac869.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_ac869.dir/objects.a @CMakeFiles\cmTC_ac869.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_ac869.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ac869.exe -Wl,--out-implib,libcmTC_ac869.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
-COLLECT_GCC=C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe
-COLLECT_LTO_WRAPPER=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/lto-wrapper.exe
-Target: i686-w64-mingw32
-Configured with: ../../../src/gcc-8.1.0/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-pkgversion='i686-posix-dwarf-rev0, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS=' -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/lib -L/c/mingw810/prerequisites/i686-zlib-static/lib -L/c/mingw810/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
-Thread model: posix
-gcc version 8.1.0 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) 
-COMPILER_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/
-LIBRARY_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/;C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6def.exe' '-shared-libgcc' '-mtune=generic' '-march=i686'
- C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/collect2.exe -plugin C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/liblto_plugin-0.dll -plugin-opt=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\nne_l\AppData\Local\Temp\ccTChwfQ.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_b6def.exe C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtbegin.o -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0 -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../.. --whole-archive CMakeFiles\cmTC_b6def.dir/objects.a --no-whole-archive --out-implib libcmTC_b6def.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6def.exe' '-shared-libgcc' '-mtune=generic' '-march=i686'
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC=C:\MinGW\bin\g++.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls
+Thread model: win32
+gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ac869.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\79191\AppData\Local\Temp\cctdJLFm.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_ac869.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_ac869.dir/objects.a --no-whole-archive --out-implib libcmTC_ac869.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ac869.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++]
-    add: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32]
-    add: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward]
-    add: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include]
-    add: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed]
-    add: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include]
+    add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++]
+    add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/mingw32]
+    add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/backward]
+    add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include]
+    add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include]
+    add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed]
   end of search list found
-  collapse include dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++]
-  collapse include dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32]
-  collapse include dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward]
-  collapse include dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include]
-  collapse include dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed]
-  collapse include dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/i686-w64-mingw32/include]
-  implicit include dirs: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++;C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32;C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward;C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include;C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed;C:/Users/nne_l/.CLion2019.2/Min/mingw32/i686-w64-mingw32/include]
+  collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++]
+  collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/mingw32] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32]
+  collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/backward] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward]
+  collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include]
+  collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include] ==> [C:/MinGW/include]
+  collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
+  implicit include dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++;C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32;C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward;C:/MinGW/lib/gcc/mingw32/6.3.0/include;C:/MinGW/include;C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_b6def/fast ]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_b6def.dir\build.make CMakeFiles/cmTC_b6def.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_b6def.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe    -v -o CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_ac869/fast ]
+  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_ac869.dir\build.make CMakeFiles/cmTC_ac869.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_ac869.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\MinGW\bin\g++.exe    -v -o CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp"]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe]
-  ignore line: [Target: i686-w64-mingw32]
-  ignore line: [Configured with: ../../../src/gcc-8.1.0/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-pkgversion='i686-posix-dwarf-rev0, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS=' -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/lib -L/c/mingw810/prerequisites/i686-zlib-static/lib -L/c/mingw810/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.1.0 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/cc1plus.exe -quiet -v -iprefix C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/ -D_REENTRANT C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i686 -auxbase-strip CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\nne_l\AppData\Local\Temp\ccWGEeNk.s]
-  ignore line: [GNU C++14 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) version 8.1.0 (i686-w64-mingw32)]
-  ignore line: [	compiled by GNU C version 8.1.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.18-GMP]
-  ignore line: []
+  ignore line: [COLLECT_GCC=C:\MinGW\bin\g++.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/6.3.0/ C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\79191\AppData\Local\Temp\ccYrVl20.s]
+  ignore line: [GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15]
+  ignore line: [warning: MPC header version 1.0.2 differs from library version 1.0.3.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"]
-  ignore line: [ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"]
-  ignore line: [ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"]
-  ignore line: [ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include"]
-  ignore line: [ignoring nonexistent directory "C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/../../../../include"]
-  ignore line: [ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"]
-  ignore line: [ignoring duplicate directory "C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/../../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"]
-  ignore line: [ignoring nonexistent directory "C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/mingw/include"]
+  ignore line: [ignoring nonexistent directory "c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
+  ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++"]
+  ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/mingw32"]
+  ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/backward"]
+  ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"]
+  ignore line: [ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../include"]
+  ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
+  ignore line: [ignoring duplicate directory "/mingw/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++]
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32]
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward]
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include]
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed]
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include]
+  ignore line: [ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++]
+  ignore line: [ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32]
+  ignore line: [ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward]
+  ignore line: [ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include]
+  ignore line: [ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include]
+  ignore line: [ c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed]
   ignore line: [End of search list.]
-  ignore line: [GNU C++14 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) version 8.1.0 (i686-w64-mingw32)]
-  ignore line: [	compiled by GNU C version 8.1.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.18-GMP]
-  ignore line: []
+  ignore line: [GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15]
+  ignore line: [warning: MPC header version 1.0.2 differs from library version 1.0.3.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 363c147591782b306ba23bb274599884]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  ignore line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\nne_l\AppData\Local\Temp\ccWGEeNk.s]
-  ignore line: [GNU assembler version 2.30 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.30]
-  ignore line: [COMPILER_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/]
-  ignore line: [LIBRARY_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_b6def.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  ignore line: [Linking CXX executable cmTC_b6def.exe]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b6def.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_b6def.dir/objects.a]
-  ignore line: [C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_b6def.dir/objects.a @CMakeFiles\cmTC_b6def.dir\objects1.rsp]
-  ignore line: [C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_b6def.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b6def.exe -Wl,--out-implib,libcmTC_b6def.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Compiler executable checksum: af09a87986453bf79da3565f33c7648f]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\79191\AppData\Local\Temp\ccYrVl20.s]
+  ignore line: [GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28]
+  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
+  ignore line: [c:/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
+  ignore line: [c:/mingw/bin/../lib/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ac869.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  ignore line: [Linking CXX executable cmTC_ac869.exe]
+  ignore line: ["C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ac869.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ac869.dir/objects.a]
+  ignore line: [C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_ac869.dir/objects.a @CMakeFiles\cmTC_ac869.dir\objects1.rsp]
+  ignore line: [C:\MinGW\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_ac869.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ac869.exe -Wl,--out-implib,libcmTC_ac869.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/lto-wrapper.exe]
-  ignore line: [Target: i686-w64-mingw32]
-  ignore line: [Configured with: ../../../src/gcc-8.1.0/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpfr=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-mpc=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-isl=/c/mingw810/prerequisites/i686-w64-mingw32-static --with-pkgversion='i686-posix-dwarf-rev0, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS=' -I/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/include -I/c/mingw810/prerequisites/i686-zlib-static/include -I/c/mingw810/prerequisites/i686-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32/opt/lib -L/c/mingw810/prerequisites/i686-zlib-static/lib -L/c/mingw810/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.1.0 (i686-posix-dwarf-rev0, Built by MinGW-W64 project) ]
-  ignore line: [COMPILER_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/]
-  ignore line: [LIBRARY_PATH=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/]
-  ignore line: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6def.exe' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  link line: [ C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/collect2.exe -plugin C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/liblto_plugin-0.dll -plugin-opt=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\nne_l\AppData\Local\Temp\ccTChwfQ.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_b6def.exe C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtbegin.o -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0 -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib -LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../.. --whole-archive CMakeFiles\cmTC_b6def.dir/objects.a --no-whole-archive --out-implib libcmTC_b6def.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtend.o]
-    arg [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/collect2.exe] ==> ignore
+  ignore line: [COLLECT_GCC=C:\MinGW\bin\g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
+  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
+  ignore line: [c:/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
+  ignore line: [c:/mingw/bin/../lib/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ac869.exe' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\79191\AppData\Local\Temp\cctdJLFm.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_ac869.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_ac869.dir/objects.a --no-whole-archive --out-implib libcmTC_ac869.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
-    arg [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/liblto_plugin-0.dll] ==> ignore
-    arg [-plugin-opt=C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../libexec/gcc/i686-w64-mingw32/8.1.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\nne_l\AppData\Local\Temp\ccTChwfQ.res] ==> ignore
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\79191\AppData\Local\Temp\cctdJLFm.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
     arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
     arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
     arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
     arg [-plugin-opt=-pass-through=-luser32] ==> ignore
     arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-    arg [-plugin-opt=-pass-through=-liconv] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
     arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-    arg [--sysroot=C:/mingw810/i686-810-posix-dwarf-rt_v6-rev0/mingw32] ==> ignore
-    arg [-m] ==> ignore
-    arg [i386pe] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-u] ==> ignore
     arg [___register_frame_info] ==> ignore
     arg [-u] ==> ignore
     arg [___deregister_frame_info] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_b6def.exe] ==> ignore
-    arg [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> ignore
-    arg [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtbegin.o] ==> ignore
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0]
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc]
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib]
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib]
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib]
-    arg [-LC:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../..] ==> dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../..]
+    arg [cmTC_ac869.exe] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> ignore
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0]
+    arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_b6def.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_ac869.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_b6def.dll.a] ==> ignore
+    arg [libcmTC_ac869.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -574,123 +552,44 @@ Parsed CXX implicit link information from above output:
     arg [-lmoldname] ==> lib [moldname]
     arg [-lmingwex] ==> lib [mingwex]
     arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [-lpthread] ==> lib [pthread]
     arg [-ladvapi32] ==> lib [advapi32]
     arg [-lshell32] ==> lib [shell32]
     arg [-luser32] ==> lib [user32]
     arg [-lkernel32] ==> lib [kernel32]
-    arg [-liconv] ==> lib [iconv]
     arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
     arg [-lmoldname] ==> lib [moldname]
     arg [-lmingwex] ==> lib [mingwex]
     arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/crtend.o] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> ignore
   remove lib [msvcrt]
   remove lib [msvcrt]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib/../lib] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/i686-w64-mingw32/lib]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../lib] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/lib] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/i686-w64-mingw32/lib]
-  collapse library dir [C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../..] ==> [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib]
-  implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc_s;gcc;moldname;mingwex]
-  implicit dirs: [C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc/i686-w64-mingw32/8.1.0;C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib/gcc;C:/Users/nne_l/.CLion2019.2/Min/mingw32/i686-w64-mingw32/lib;C:/Users/nne_l/.CLion2019.2/Min/mingw32/lib]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0]
+  collapse library dir [c:/mingw/bin/../lib/gcc] ==> [C:/MinGW/lib/gcc]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> [C:/MinGW/mingw32/lib]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> [C:/MinGW/lib]
+  implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex]
+  implicit dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0;C:/MinGW/lib/gcc;C:/MinGW/mingw32/lib;C:/MinGW/lib]
   implicit fwks: []
 
 
 
 
-Detecting CXX [-std=c++2a] compiler features compiled with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_30a34/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_30a34.dir\build.make CMakeFiles/cmTC_30a34.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_30a34.dir/feature_tests.cxx.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe    -std=c++2a -o CMakeFiles\cmTC_30a34.dir\feature_tests.cxx.obj -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_30a34.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_30a34.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_30a34.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_30a34.dir/objects.a @CMakeFiles\cmTC_30a34.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_30a34.dir/objects.a -Wl,--no-whole-archive  -o cmTC_30a34.exe -Wl,--out-implib,libcmTC_30a34.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_30a34.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:1cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:1cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:1cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:1cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:1cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:1cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:1cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++17] compiler features compiled with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_ff492/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_ff492.dir\build.make CMakeFiles/cmTC_ff492.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ff492.dir/feature_tests.cxx.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe    -std=c++17 -o CMakeFiles\cmTC_ff492.dir\feature_tests.cxx.obj -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_ff492.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ff492.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ff492.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_ff492.dir/objects.a @CMakeFiles\cmTC_ff492.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_ff492.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ff492.exe -Wl,--out-implib,libcmTC_ff492.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ff492.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_50e6a/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_50e6a.dir\build.make CMakeFiles/cmTC_50e6a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_50e6a.dir/feature_tests.cxx.obj
+C:\MinGW\bin\g++.exe    -std=c++1z -o CMakeFiles\cmTC_50e6a.dir\feature_tests.cxx.obj -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_50e6a.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_50e6a.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_50e6a.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_50e6a.dir/objects.a @CMakeFiles\cmTC_50e6a.dir\objects1.rsp
+C:\MinGW\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_50e6a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_50e6a.exe -Wl,--out-implib,libcmTC_50e6a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_50e6a.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -753,19 +652,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/Yaki
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_1cde8/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_1cde8.dir\build.make CMakeFiles/cmTC_1cde8.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1cde8.dir/feature_tests.cxx.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe    -std=c++14 -o CMakeFiles\cmTC_1cde8.dir\feature_tests.cxx.obj -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_1cde8.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1cde8.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_1cde8.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_1cde8.dir/objects.a @CMakeFiles\cmTC_1cde8.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_1cde8.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1cde8.exe -Wl,--out-implib,libcmTC_1cde8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1cde8.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_4b7ab/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_4b7ab.dir\build.make CMakeFiles/cmTC_4b7ab.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4b7ab.dir/feature_tests.cxx.obj
+C:\MinGW\bin\g++.exe    -std=c++14 -o CMakeFiles\cmTC_4b7ab.dir\feature_tests.cxx.obj -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_4b7ab.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_4b7ab.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_4b7ab.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_4b7ab.dir/objects.a @CMakeFiles\cmTC_4b7ab.dir\objects1.rsp
+C:\MinGW\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_4b7ab.dir/objects.a -Wl,--no-whole-archive  -o cmTC_4b7ab.exe -Wl,--out-implib,libcmTC_4b7ab.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_4b7ab.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -828,19 +727,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/Yaki
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_c6de8/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_c6de8.dir\build.make CMakeFiles/cmTC_c6de8.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c6de8.dir/feature_tests.cxx.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe    -std=c++11 -o CMakeFiles\cmTC_c6de8.dir\feature_tests.cxx.obj -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_c6de8.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c6de8.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_c6de8.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_c6de8.dir/objects.a @CMakeFiles\cmTC_c6de8.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_c6de8.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c6de8.exe -Wl,--out-implib,libcmTC_c6de8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c6de8.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_3cecc/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_3cecc.dir\build.make CMakeFiles/cmTC_3cecc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3cecc.dir/feature_tests.cxx.obj
+C:\MinGW\bin\g++.exe    -std=c++11 -o CMakeFiles\cmTC_3cecc.dir\feature_tests.cxx.obj -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_3cecc.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3cecc.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3cecc.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_3cecc.dir/objects.a @CMakeFiles\cmTC_3cecc.dir\objects1.rsp
+C:\MinGW\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_3cecc.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3cecc.exe -Wl,--out-implib,libcmTC_3cecc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3cecc.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -903,19 +802,19 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/Yaki
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe cmTC_7c857/fast 
-C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_7c857.dir\build.make CMakeFiles/cmTC_7c857.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7c857.dir/feature_tests.cxx.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe    -std=c++98 -o CMakeFiles\cmTC_7c857.dir\feature_tests.cxx.obj -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_7c857.exe
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7c857.dir\link.txt --verbose=1
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_7c857.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\cmTC_7c857.dir/objects.a @CMakeFiles\cmTC_7c857.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_7c857.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7c857.exe -Wl,--out-implib,libcmTC_7c857.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7c857.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_0063d/fast 
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0063d.dir\build.make CMakeFiles/cmTC_0063d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0063d.dir/feature_tests.cxx.obj
+C:\MinGW\bin\g++.exe    -std=c++98 -o CMakeFiles\cmTC_0063d.dir\feature_tests.cxx.obj -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_0063d.exe
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0063d.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0063d.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_0063d.dir/objects.a @CMakeFiles\cmTC_0063d.dir\objects1.rsp
+C:\MinGW\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_0063d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0063d.exe -Wl,--out-implib,libcmTC_0063d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0063d.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

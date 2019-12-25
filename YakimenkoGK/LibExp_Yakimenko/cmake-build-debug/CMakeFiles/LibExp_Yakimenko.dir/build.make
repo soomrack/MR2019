@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko
+CMAKE_SOURCE_DIR = C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LibExp_Yakimenko.dir/depend.make
@@ -58,29 +58,29 @@ include CMakeFiles/LibExp_Yakimenko.dir/flags.make
 
 CMakeFiles/LibExp_Yakimenko.dir/main.cpp.obj: CMakeFiles/LibExp_Yakimenko.dir/flags.make
 CMakeFiles/LibExp_Yakimenko.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LibExp_Yakimenko.dir/main.cpp.obj"
-	C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LibExp_Yakimenko.dir\main.cpp.obj -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LibExp_Yakimenko.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LibExp_Yakimenko.dir\main.cpp.obj -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\main.cpp
 
 CMakeFiles/LibExp_Yakimenko.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibExp_Yakimenko.dir/main.cpp.i"
-	C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\main.cpp > CMakeFiles\LibExp_Yakimenko.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\main.cpp > CMakeFiles\LibExp_Yakimenko.dir\main.cpp.i
 
 CMakeFiles/LibExp_Yakimenko.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibExp_Yakimenko.dir/main.cpp.s"
-	C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\main.cpp -o CMakeFiles\LibExp_Yakimenko.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\main.cpp -o CMakeFiles\LibExp_Yakimenko.dir\main.cpp.s
 
 CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.obj: CMakeFiles/LibExp_Yakimenko.dir/flags.make
 CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.obj: ../sumator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.obj"
-	C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LibExp_Yakimenko.dir\sumator.cpp.obj -c C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\sumator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LibExp_Yakimenko.dir\sumator.cpp.obj -c C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\sumator.cpp
 
 CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.i"
-	C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\sumator.cpp > CMakeFiles\LibExp_Yakimenko.dir\sumator.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\sumator.cpp > CMakeFiles\LibExp_Yakimenko.dir\sumator.cpp.i
 
 CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.s"
-	C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\sumator.cpp -o CMakeFiles\LibExp_Yakimenko.dir\sumator.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\sumator.cpp -o CMakeFiles\LibExp_Yakimenko.dir\sumator.cpp.s
 
 # Object files for target LibExp_Yakimenko
 LibExp_Yakimenko_OBJECTS = \
@@ -96,7 +96,7 @@ LibExp_Yakimenko.exe: CMakeFiles/LibExp_Yakimenko.dir/build.make
 LibExp_Yakimenko.exe: CMakeFiles/LibExp_Yakimenko.dir/linklibs.rsp
 LibExp_Yakimenko.exe: CMakeFiles/LibExp_Yakimenko.dir/objects1.rsp
 LibExp_Yakimenko.exe: CMakeFiles/LibExp_Yakimenko.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LibExp_Yakimenko.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LibExp_Yakimenko.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\LibExp_Yakimenko.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +109,6 @@ CMakeFiles/LibExp_Yakimenko.dir/clean:
 .PHONY : CMakeFiles/LibExp_Yakimenko.dir/clean
 
 CMakeFiles/LibExp_Yakimenko.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug C:\Users\nne_l\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\LibExp_Yakimenko.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug C:\Users\79191\CLionProjects\MR2019\YakimenkoGK\LibExp_Yakimenko\cmake-build-debug\CMakeFiles\LibExp_Yakimenko.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LibExp_Yakimenko.dir/depend
 

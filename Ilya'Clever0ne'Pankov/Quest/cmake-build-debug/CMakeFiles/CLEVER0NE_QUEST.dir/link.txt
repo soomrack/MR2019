@@ -1,0 +1,2 @@
+C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe qc libCLEVER0NE_QUEST.a  CMakeFiles/CLEVER0NE_QUEST.dir/clever0ne_quest.cpp.obj
+C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ranlib.exe libCLEVER0NE_QUEST.a

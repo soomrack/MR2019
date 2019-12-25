@@ -1,0 +1,3 @@
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/untitled1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/untitled1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
