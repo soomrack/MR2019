@@ -1,6 +1,8 @@
 #include "api.h"
 #include <iostream>
 #include <set>
+#include <cstdlib>
+#include <ctime>
 
 void Ticket::set_question(const std::string question) {
 	this->question = question;
@@ -11,6 +13,7 @@ Ticket::Ticket(const Ticket& ticket) {
 	answers = ticket.answers;
 
 }
+
 void Ticket::add_answer(const std::string answer, const bool is_correct) {
 	Answer struct_answer;
 	struct_answer.is_correct = is_correct;
@@ -28,16 +31,17 @@ int Quest::run(Person& student) {
 		current_ticket != tickets.end();
 		current_ticket++) {
 		current_ticket->run(student);
+
 	}
 	print_farewell();
 	return 0;
 }
 void Quest::print_hello() {
-	std::cout << "\n" << "Start new Test" << "\n";
+	std::cout << "\n " << "Start new Quest" << "\n";
 	return;
 }
 void Quest::print_farewell() {
-	std::cout << "\n" << "Test finished" << "\n";
+	std::cout << "\n " << "Quest finished" << "\n";
 	return;
 }
 int Ticket::run(Person& student) {
@@ -71,3 +75,30 @@ void Person::print_stat() {
 	std::cout << "\n" << "Your score is " << score << "\n";
 	return;
 }
+
+void Multi::set_multi() {
+	srand(static_cast<unsigned int>(time(0)));
+	int number1 = rand() % 256;
+	int number2 = rand() % 256;
+	int answer;
+	std::cout << number1 << "*" << number2 << std::endl;
+	std::cin >> answer;
+	if (answer == number1 * number2) 
+		std::cout << "Right answer" << std::endl;
+	else
+		std::cout << "Wrong answer" << std::endl;
+	return;
+}
+//int Multi::run(Person& student) {
+//	srand(static_cast<unsigned int>(time(0)));
+//	int number1 = rand() % 256;
+//	int number2 = rand() % 256;
+//	int answer;
+//	std::cout << number1 << "*" << number2 << std::endl;
+//	std::cin >> answer;
+//	if (answer == number1 * number2)
+//		std::cout << "Right answer" << std::endl;
+//	else
+//		std::cout << "Wrong answer" << std::endl;
+//	return 0;
+//};

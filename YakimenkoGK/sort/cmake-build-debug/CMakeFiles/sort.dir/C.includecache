@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/sort/main.c
+stdio.h
+-
+stdint.h
+-
+string.h
+-
+stdlib.h
+-
+alg.h
+-
+math.h
+-
+

@@ -1,0 +1,3 @@
+C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/cmake-build-debug/CMakeFiles/Yakimenko_test.dir
+C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir

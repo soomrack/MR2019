@@ -30,6 +30,7 @@ public:
 private:
 	std::string question;
 	std::list<Answer> answers;
+
 };
 
 class Quest {
@@ -37,12 +38,19 @@ private:
 	std::vector<Ticket> tickets;
 	virtual void print_hello();
 	virtual void print_farewell();
-public: 
-	Quest() {};
-	~Quest() {};
+public: Quest() {};
+	  ~Quest() {};
 public:
 	int run(Person& student);
 	void add_ticket(const Ticket ticket);//construct of copies
+};
+
+class Multi {
+
+public:
+	void set_multi();
+	//int run(Person& student);
+
 };
 
 #endif
