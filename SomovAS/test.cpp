@@ -97,7 +97,7 @@ CXXQuest init_cxx_quest() {
     CXXQuest quest;
     quest.add_ticket(ticket);
     return quest;
-}
+}//hgj
 void CXXQuest::print_hello() {
     cout << endl << "Start new CXXQuest" << endl;
 }
