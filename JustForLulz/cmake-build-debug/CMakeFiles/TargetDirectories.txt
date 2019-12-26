@@ -1,0 +1,3 @@
+C:/Users/nne_l/CLionProjects/MR2019/JustForLulz/cmake-build-debug/CMakeFiles/JustForLulz.dir
+C:/Users/nne_l/CLionProjects/MR2019/JustForLulz/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nne_l/CLionProjects/MR2019/JustForLulz/cmake-build-debug/CMakeFiles/rebuild_cache.dir
