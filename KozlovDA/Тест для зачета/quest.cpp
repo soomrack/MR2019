@@ -1,55 +1,119 @@
 #include "quest.h"
 #include <iostream>
-DENQuest init_cxx_quest() {
-	setlocale(LC_ALL, "RUSSIAN");
-	DENQuestTicket ticket1;
-	ticket1.set_question("1-55?");
-	ticket1.add_answer("-53", false);
-	ticket1.add_answer("-54", true);
-	ticket1.add_answer("-55", false);
-	ticket1.add_answer("-56", false);
+#include <set>
 
-	DENQuestTicket ticket2;
-	ticket2.set_question("22+1");
-	ticket2.add_answer("12", false);
-	ticket2.add_answer("24", false);
-	ticket2.add_answer("23", true);
-	ticket2.add_answer("214", false);
+DENQuest init_den_quest() {
+	DENQuestTicket1 ticket1;
+	ticket1.set_question("22-15?");
+	ticket1.add_answer("12", false);
+	ticket1.add_answer("7", true);
+	ticket1.add_answer("8", false);
+	ticket1.add_answer("9", false);
 
-	DENQuestTicket ticket3;
-	ticket3.set_question("1/0");
-	ticket3.add_answer("0", false);
-	ticket3.add_answer("8", true);
-	ticket3.add_answer("1", false);
-	ticket3.add_answer("2", false);
+	DENQuestTicket2 ticket2;
+	ticket2.set_question("The capital of Belarus?");
+	ticket2.add_answer("Kiyv", false);
+	ticket2.add_answer("Brest", false);
+	ticket2.add_answer("Minsk", true);
+	ticket2.add_answer("Praga", false);
 
-	DENQuestTicket ticket4;
-	ticket4.set_question("3*0");
-	ticket4.add_answer("3", false);
-	ticket4.add_answer("1", false);
-	ticket4.add_answer("0", true);
-	ticket4.add_answer("4", false);
-
-	DENQuestTicket ticket5;
-	ticket5.set_question("0-0");
-	ticket5.add_answer("8", false);
-	ticket5.add_answer("2", false);
-	ticket5.add_answer("1", false);
-	ticket5.add_answer("0", true);
+	DENQuestTicket2 ticket3;
+	ticket3.set_question("In Africa");
+	ticket3.add_answer("Iran", false);
+	ticket3.add_answer("Egypet", true);
+	ticket3.add_answer("Irak", false);
+	ticket3.add_answer("Australia", false);
 
 	DENQuest quest;
-	quest.add_ticket(ticket1);
-	quest.add_ticket(ticket2);
-	quest.add_ticket(ticket3);
-	quest.add_ticket(ticket4);
-	quest.add_ticket(ticket5);
+	quest.add_ticket(&ticket1);
+	quest.add_ticket(&ticket2);
+	quest.add_ticket(&ticket3);
 	return quest;
 }
-void DENQuest::print_hello() {
-	std::cout << "Start new Test" << "\n";
+int DENQuestTicket1::run(Person& student) 
+{
+	//Print questions
+	int number_of_answer = 0;
+	std::set<int> current_answers;
+	std::cout << "\n" << question << std::endl;
+	for (std::list<Answer>::iterator current_answer = answers.begin();
+		current_answer != answers.end();
+		current_answer++) 
+	{
+		number_of_answer++;
+		if (current_answer->is_correct) 
+		{
+			current_answers.insert(number_of_answer);
+		}
+		std::cout << number_of_answer << ")" << current_answer->answer << "\n";
+	}
+	//Print user response
+	std::cout << "Enter number of correct answer." << "\n\n";
+	//Get user answer
+	std::string response;
+	std::cin >> response;
+	//Check response
+	bool result = current_answers.find(std::stoi(response)) != current_answers.end();
+	//Save result
+	if (result) 
+	{
+		student.score++;
+	}
+	return 0;
+}
+int DENQuestTicket2::run(Person& student) 
+{
+	int number_of_answer = 0;
+	std::set<std::string> current_answers;
+	std::cout << "\n" << question << '\n' << '\n';
+	for (std::list<Answer>::iterator current_answer = answers.begin();
+		current_answer != answers.end();
+		current_answer++) 
+	{
+		number_of_answer++;
+		if (current_answer->is_correct) 
+		{
+			current_answers.insert(current_answer->answer);
+		}
+		std::cout << current_answer->answer << "\n";
+	}
+	//Print user response
+	std::cout << "Enter your answer." << "\n\n";
+	//Get user answer
+	std::string response;
+	std::cin >> response;
+	//Check response
+	bool result = current_answers.find(response) != current_answers.end();
+	//Save result
+	if (result) 
+	{
+		student.score++;
+	}
+	return 0;
+}
+void DENQuest::print_hello() 
+{
+	std::cout << "Start new Test with 2 types of tickets" << "\n";
 	return;
 }
-void DENQuest::print_farewell() {
+void DENQuest::print_farewell() 
+{
 	std::cout << "\n" << "Test finished" << "\n";
 	return;
+}
+void DENQuest::add_ticket(Ticket* ticket)
+{
+	tickets.push_back(ticket);
+}
+int DENQuest::run(Person& student)
+{
+	print_hello();
+	for (std::vector<Ticket*>::iterator current_ticket = tickets.begin();
+		current_ticket != tickets.end();
+		++current_ticket)
+	{
+		(*current_ticket)->run(student);
+	}
+	print_farewell();
+	return 0;
 }
