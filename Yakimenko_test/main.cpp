@@ -1,6 +1,13 @@
+#include "myTestLib.h"
 #include <iostream>
+#include "stdlib.h"
+#include "stdlib.h"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+#include <iostream>
+int main()
+{
+    system("chcp 1251 > null");
+    startTest();
+    system("pause>>null");
     return 0;
 }

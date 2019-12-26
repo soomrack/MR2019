@@ -149,6 +149,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Yakimenko_test.dir\build.make CMakeFiles/Yakimenko_test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+myTestLib.obj: myTestLib.cpp.obj
+
+.PHONY : myTestLib.obj
+
+# target to build an object file
+myTestLib.cpp.obj:
+	$(MAKE) -f CMakeFiles\Yakimenko_test.dir\build.make CMakeFiles/Yakimenko_test.dir/myTestLib.cpp.obj
+.PHONY : myTestLib.cpp.obj
+
+myTestLib.i: myTestLib.cpp.i
+
+.PHONY : myTestLib.i
+
+# target to preprocess a source file
+myTestLib.cpp.i:
+	$(MAKE) -f CMakeFiles\Yakimenko_test.dir\build.make CMakeFiles/Yakimenko_test.dir/myTestLib.cpp.i
+.PHONY : myTestLib.cpp.i
+
+myTestLib.s: myTestLib.cpp.s
+
+.PHONY : myTestLib.s
+
+# target to generate assembly for a file
+myTestLib.cpp.s:
+	$(MAKE) -f CMakeFiles\Yakimenko_test.dir\build.make CMakeFiles/Yakimenko_test.dir/myTestLib.cpp.s
+.PHONY : myTestLib.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,6 +188,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... myTestLib.obj
+	@echo ... myTestLib.i
+	@echo ... myTestLib.s
 .PHONY : help
 
 

@@ -83,6 +83,12 @@
 		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/main.cpp">
 			<Option target="Yakimenko_test"/>
 		</Unit>
+		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/myTestLib.cpp">
+			<Option target="Yakimenko_test"/>
+		</Unit>
+		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/myTestLib.h">
+			<Option target="Yakimenko_test"/>
+		</Unit>
 		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

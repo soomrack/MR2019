@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Yakimenko_test.dir/main.cpp.obj"
+  "CMakeFiles/Yakimenko_test.dir/myTestLib.cpp.obj"
   "Yakimenko_test.pdb"
   "Yakimenko_test.exe"
   "Yakimenko_test.exe.manifest"
