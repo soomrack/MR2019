@@ -8,7 +8,7 @@ int main()
 {
 	int a;
 
-	setlocale(LC_ALL, "Russian");
+	sеtlocale(LC_ALL, "Russian");
 
 	a = 0;
 	cout << "1. Ваше любимое занятие? \n 1) спать \n 2) гулять \n 3) мечтать \n";
