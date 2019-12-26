@@ -2,7 +2,7 @@
 #include <iostream>
 #include <clocale>
 using namespace std;
-
+//
 /*class Question1{
 public:
     string name;
