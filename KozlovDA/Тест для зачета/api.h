@@ -14,7 +14,7 @@ public:
 };
 
 struct Answer {
-	bool is_correct;
+	bool is_correct = 0;
 	std::string answer;
 };
 
@@ -26,23 +26,23 @@ public:
 public:
 	void set_question(const std::string question);
 	void add_answer(const std::string answer, const bool is_correct);
-	int run(Person& student);
-private:
+	virtual int run(Person& student);
+protected:
 	std::string question;
 	std::list<Answer> answers;
 };
 
 class Quest {
 private:
-	std::vector<Ticket> tickets;
 	virtual void print_hello();
 	virtual void print_farewell();
 public:
 	Quest() {};
 	~Quest() {};
 public:
-	int run(Person& student);
-	void add_ticket(const Ticket ticket);//construct of copies
+	std::vector<Ticket> tickets;
+	virtual int run(Person& student);
+	virtual void add_ticket(const Ticket& ticket);//construct of copies
 };
 
 
