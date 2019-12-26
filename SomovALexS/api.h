@@ -1,6 +1,6 @@
 #ifndef SOMOVAS_API_H
 #define SOMOVAS_API_H
-
+//
 #include <string>
 #include <list>
 #include <vector>
