@@ -1,6 +1,6 @@
 ﻿// Heapsort.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
+//13244
 #include <iostream>
 
 void heapsort(int32_t* arr, int32_t size, int32_t count)
