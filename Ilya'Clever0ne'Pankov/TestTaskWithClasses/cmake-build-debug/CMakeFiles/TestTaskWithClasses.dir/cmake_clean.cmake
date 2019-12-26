@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TestTaskWithClasses.dir/main.cpp.obj"
+  "TestTaskWithClasses.pdb"
   "TestTaskWithClasses.exe"
   "TestTaskWithClasses.exe.manifest"
-  "TestTaskWithClasses.pdb"
   "libTestTaskWithClasses.dll.a"
 )
 

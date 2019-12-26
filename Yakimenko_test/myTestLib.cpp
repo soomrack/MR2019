@@ -3,8 +3,8 @@
 //
 
 #include "myTestLib.h"
-const unsigned int count_of_questions = 2;
-std::vector<List> questions(count_of_questions);
+const unsigned int questions_quantity = 2;
+std::vector<List> questions(questions_quantity);
 
 
 void addQuestion()
@@ -20,7 +20,7 @@ void startTest()
     addQuestion();
 
     int points = 0;
-    for (unsigned int i = 0; i < count_of_questions; ++i) {
+    for (unsigned int i = 0; i < questions_quantity; ++i) {
         std::cout << questions[i].question;
 
         std::string writing_ans;
@@ -34,7 +34,7 @@ void startTest()
             std::cout << "Bad answer :c Points: " << points << std::endl;
     }
 
-    if (points >= count_of_questions - 1)
+    if (points >= questions_quantity - 1)
         std::cout << "\nSo easy for you! Your result: " << points << std::endl;
     else
         std::cout << "\nLucky another time. Your result:  " << points << std::endl;

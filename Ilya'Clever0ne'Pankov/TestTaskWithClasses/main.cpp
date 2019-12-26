@@ -17,5 +17,6 @@ int main()
     initTest();
     Question Test = Question();
     Test.startTest();
+
     while(1);
 }

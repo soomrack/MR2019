@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lib1.dir/D_/For_Administrator/GitHub/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.cpp.obj"
-  "liblib1.a"
+  "CMakeFiles/lib1.dir/C_/Users/nne_l/CLionProjects/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.cpp.obj"
   "liblib1.pdb"
+  "liblib1.a"
 )
 
 # Per-language clean rules from dependency scanning.

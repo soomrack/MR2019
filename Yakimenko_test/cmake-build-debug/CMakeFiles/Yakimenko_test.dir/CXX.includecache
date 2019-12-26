@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/main.cpp
+myTestLib.h
+C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/myTestLib.h
+iostream
+-
+stdlib.h
+C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/stdlib.h
+stdlib.h
+C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/stdlib.h
+iostream
+-
+
 C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/myTestLib.cpp
 myTestLib.h
 C:/Users/nne_l/CLionProjects/MR2019/Yakimenko_test/myTestLib.h

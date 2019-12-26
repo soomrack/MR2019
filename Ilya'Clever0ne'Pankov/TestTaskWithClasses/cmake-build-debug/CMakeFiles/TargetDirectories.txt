@@ -1,6 +1,6 @@
-D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/TestTaskWithClasses.dir
-D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/mylib.dir
-D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/questions.dir
-D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/lib1.dir
-D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/nne_l/CLionProjects/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nne_l/CLionProjects/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/TestTaskWithClasses.dir
+C:/Users/nne_l/CLionProjects/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/mylib.dir
+C:/Users/nne_l/CLionProjects/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/questions.dir
+C:/Users/nne_l/CLionProjects/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/lib1.dir
+C:/Users/nne_l/CLionProjects/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/rebuild_cache.dir

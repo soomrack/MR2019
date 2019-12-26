@@ -6,8 +6,8 @@
 #include <iostream>
 int main()
 {
-    system("chcp 1251 > null");
+
     startTest();
-    system("pause>>null");
+
     return 0;
 }

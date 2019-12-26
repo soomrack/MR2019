@@ -8,226 +8,226 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TestTaskWithClasses">
-				<Option output="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/TestTaskWithClasses.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option output="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/TestTaskWithClasses.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 TestTaskWithClasses"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 TestTaskWithClasses"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TestTaskWithClasses/fast">
-				<Option output="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/TestTaskWithClasses.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option output="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/TestTaskWithClasses.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 TestTaskWithClasses/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 TestTaskWithClasses/fast"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="mylib">
-				<Option output="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/libmylib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option output="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/libmylib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 mylib"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 mylib"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="mylib/fast">
-				<Option output="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/libmylib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option output="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/libmylib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 mylib/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 mylib/fast"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="questions">
-				<Option output="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/libquestions.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option output="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/libquestions.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 questions"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 questions"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="questions/fast">
-				<Option output="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/libquestions.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option output="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/libquestions.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 questions/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 questions/fast"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lib1">
-				<Option output="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/liblib1.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option output="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/liblib1.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 lib1"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 lib1"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lib1/fast">
-				<Option output="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/liblib1.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option output="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/liblib1.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 lib1/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 lib1/fast"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
+				<Option working_dir="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/nne_l/.CLion2019.2/Min/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/main.cpp">
+		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/main.cpp">
 			<Option target="TestTaskWithClasses"/>
 		</Unit>
-		<Unit filename="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/mylib.cpp">
+		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/mylib.cpp">
 			<Option target="mylib"/>
 		</Unit>
-		<Unit filename="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/mylib.h">
+		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/mylib.h">
 			<Option target="mylib"/>
 		</Unit>
-		<Unit filename="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/questions.cpp">
+		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/questions.cpp">
 			<Option target="questions"/>
 		</Unit>
-		<Unit filename="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/questions.h">
+		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/questions.h">
 			<Option target="questions"/>
 		</Unit>
-		<Unit filename="D:/For Administrator/GitHub/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.cpp">
+		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.cpp">
 			<Option target="lib1"/>
 		</Unit>
-		<Unit filename="D:/For Administrator/GitHub/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.h">
+		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.h">
 			<Option target="lib1"/>
 		</Unit>
-		<Unit filename="D:/For Administrator/GitHub/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/CMakeLists.txt">
+		<Unit filename="C:/Users/nne_l/CLionProjects/MR2019/Ilya&apos;Clever0ne&apos;Pankov/TestTaskWithClasses/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

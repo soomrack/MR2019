@@ -1,2 +1,2 @@
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe qc libquestions.a  CMakeFiles/questions.dir/questions.cpp.obj
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ranlib.exe libquestions.a
+C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe qc libquestions.a  CMakeFiles/questions.dir/questions.cpp.obj
+C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ranlib.exe libquestions.a

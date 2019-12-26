@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/questions.cpp
+C:/Users/nne_l/CLionProjects/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/questions.cpp
 iostream
 -
 stdint.h
@@ -14,9 +14,9 @@ stdint.h
 string
 -
 questions.h
-D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/questions.h
+C:/Users/nne_l/CLionProjects/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/questions.h
 
-D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/questions.h
+C:/Users/nne_l/CLionProjects/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/questions.h
 string
 -
 

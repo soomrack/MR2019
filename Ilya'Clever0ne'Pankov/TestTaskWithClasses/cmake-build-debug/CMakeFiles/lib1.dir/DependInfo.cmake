@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/For Administrator/GitHub/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/Cmake_Test_library.cpp" "D:/For Administrator/GitHub/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/lib1.dir/D_/For_Administrator/GitHub/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.cpp.obj"
+  "C:/Users/nne_l/CLionProjects/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/Cmake_Test_library.cpp" "C:/Users/nne_l/CLionProjects/MR2019/Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/lib1.dir/C_/Users/nne_l/CLionProjects/MR2019/SOKOLOV-D-A/CMake_Quiz-with-lib/CMake_Test/CMake_Test_library.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
