@@ -8,7 +8,7 @@ void Ticket::set_question(const std::string question) {
 }
 Ticket::Ticket(const Ticket& ticket) {
 	question = ticket.question;
-	аnswers = ticket.answers;
+	answers = ticket.answers;
 
 }
 
