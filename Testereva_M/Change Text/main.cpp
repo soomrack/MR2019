@@ -1,6 +1,6 @@
 #include <iostream>
 #include "string"
-
+ 
 using namespace std;
 
 void to_change_small_on_big (string &text){
