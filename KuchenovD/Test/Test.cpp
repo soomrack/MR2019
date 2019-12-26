@@ -2,7 +2,7 @@
 #include <iostream>
 CXXQuest init_cxx_quest() {
 	setlocale(LC_ALL, "RUSSIAN");
-	CXXыQuestTicket ticket1;
+	CXXQuestTicket ticket1;
 	ticket1.set_question("Какое у Гомера Симпсона полное имя?");
 	ticket1.add_answer("Гомер Джобс Симпсон", false);
 	ticket1.add_answer("Гомер Джеймс Симпсон", false);
