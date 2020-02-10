@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/811243/CLionProjects/MR2019/SomovAS/BinarySearch/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+
