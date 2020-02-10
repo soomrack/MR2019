@@ -4,7 +4,7 @@
 void swap (int * a, int * b) { int t = *a; *a = *b; *b = t; }
 
 //Procedure for converting to a binary heap a subtree with root node i
-void heapify(int * arr, const int32_t size, int32_t current_element)
+void heapify(int * arr, const int32_t size, const int32_t current_element)
     {
         int32_t largest = current_element;
         int32_t left = 2*current_element + 1;
