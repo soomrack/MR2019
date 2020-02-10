@@ -18,7 +18,7 @@ int search(int* a, int first, int last, const int x)
 		}
 	int middle = (last - first) / 2 + first;
 
-	if (a[middle] < x) 
+	if (a[middle] <= x) 
 		return (search(a, middle + 1, last, x));
 	if (a[middle] > x) 
 		return (search(a, first, middle, x));
