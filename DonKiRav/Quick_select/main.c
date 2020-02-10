@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-int32_t bin_search( const int * arr, const int first, const int last, const uint32_t j )
+int32_t bin_search( const int * arr, const int first, const int last, const int32_t j )
 {
     if (first == last) {
         if (arr[first] == j) { return first;}
@@ -18,7 +18,7 @@ int main() {
     int size1 = 6;
     int a;
     int arr1[6] = {2, 5, 16, 22, 44, 647};
-    a = bin_search(arr1, 0, size1-1, 22);
+    a = bin_search(arr1, 0, size1-1, element);
     printf("%d", a);
     return (1);
 }
