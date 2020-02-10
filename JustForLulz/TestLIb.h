@@ -14,12 +14,12 @@ private:
     string question;
     string answer;
     string right_answer;
-    string getNextQuestion(int32_t);
+    string toNextQuestion(int32_t number_of_question);
 public:
     Question();
     void enterQuestion(string &, basic_string<char>);
-    void printQuestion(string &);
-    void getRightAnswer(int32_t, string);
+    void coutQuestion(string &question);
+    void toRightAnswer(int32_t number_of_question, string right_answer);
     void enterYourAnswer(string);
     bool checkAnswer(string, string);
     void startTest();
