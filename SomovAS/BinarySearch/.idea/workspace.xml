@@ -11,103 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53e94dc7-8251-4da6-ab8a-4741354a907a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../2020/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2020/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/2020.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/2020.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/2020.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/2020.dir/objects1.rsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2020/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/BinarySearch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/BinarySearch.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BinarySearch.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BinarySearch.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BinarySearch.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BinarySearch.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BinarySearch.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BinarySearch.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BinarySearch.dir/linklibs.rsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BinarySearch.dir/objects1.rsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BinarySearch.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/.idea/SomovALexS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/.idea/2020.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/api.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/api.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/SomovALexS.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/2020.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/SomovALexS.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/SomovALexS.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/SomovALexS.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/2020.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/SomovALexS.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/2020.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/SomovALexS.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/SomovALexS.dir/linklibs.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/2020.dir/linklibs.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/SomovALexS.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/SomovALexS.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/2020.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/SomovALexS.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/2020.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../2020/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/test.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SomovALexS/test.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../api.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api.h" beforeDir="false" afterPath="$PROJECT_DIR$/../api.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/SomovAS.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/SomovAS.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/SomovAS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/SomovAS.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test.h" beforeDir="false" afterPath="$PROJECT_DIR$/../test.h" afterDir="false" />
-    </list>
+    <list default="true" id="53e94dc7-8251-4da6-ab8a-4741354a907a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,6 +22,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IgnoredFileRootStore">
@@ -128,7 +38,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Xbix2OFHisOzKGtEpbmyrFgngS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -138,6 +50,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -182,21 +95,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="3" key="GridCell.Tab.0.bottom" timestamp="1581324082100">
+    <state x="176" y="7" key="CommitChangelistDialog2" timestamp="1581325144209">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="3" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581324082100" />
-    <state width="1493" height="3" key="GridCell.Tab.0.center" timestamp="1581324082100">
+    <state x="176" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581325144209" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1581325383686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="3" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581324082100" />
-    <state width="1493" height="3" key="GridCell.Tab.0.left" timestamp="1581324082100">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581325383686" />
+    <state width="746" height="162" key="GridCell.Tab.0.bottom" timestamp="1581325383690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="3" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581324082100" />
-    <state width="1493" height="3" key="GridCell.Tab.0.right" timestamp="1581324082100">
+    <state width="746" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581325383690" />
+    <state width="746" height="162" key="GridCell.Tab.0.center" timestamp="1581325383686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="3" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581324082100" />
+    <state width="746" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581325383686" />
+    <state width="746" height="162" key="GridCell.Tab.0.left" timestamp="1581325383686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581325383686" />
+    <state width="746" height="162" key="GridCell.Tab.0.right" timestamp="1581325383690">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581325383690" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581325245767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581325245767" />
   </component>
 </project>

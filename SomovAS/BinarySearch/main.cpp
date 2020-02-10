@@ -8,7 +8,7 @@ void binSearch(vector<int> arr, int find_number){
     int right = 20;
     int mid;
     bool flag = false;
-    while(left <= right && flag == false){
+    while(left <= right && !flag){
         mid = (left + right) / 2;
         if(arr[mid] == find_number){
             flag = true;
