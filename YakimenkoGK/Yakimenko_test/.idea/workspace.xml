@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Yakimenko_test" targetName="Yakimenko_test" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec8a8483-1390-4e3c-b6bc-5e29033ec192" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SOKOLOV-D-A/Test-by-lector/Testik_by_teacher/.idea/Testik_by_teacher.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/TestTaskWithClasses.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/CMakeFiles/TestTaskWithClasses.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/TestTaskWithClasses.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Ilya'Clever0ne'Pankov/TestTaskWithClasses/cmake-build-debug/TestTaskWithClasses.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ilya'Clever0ne'Pankov/TestTaskWithClasses/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Ilya'Clever0ne'Pankov/TestTaskWithClasses/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JustForLulz/TestLIb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../JustForLulz/TestLIb.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JustForLulz/TestLIb.h" beforeDir="false" afterPath="$PROJECT_DIR$/../JustForLulz/TestLIb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myTestLib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myTestLib.cpp" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\nne_l\CLionProjects\MR2019\Yakimenko_test\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VTx6aO0d31mHyJTQPl4cTia3Gw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SOKOLOV-D-A/Test-by-lector/Testik_by_teacher" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Yakimenko_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Yakimenko_test" TARGET_NAME="Yakimenko_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Yakimenko_test" RUN_TARGET_NAME="Yakimenko_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec8a8483-1390-4e3c-b6bc-5e29033ec192" name="Default Changelist" comment="" />
+      <created>1577290711414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577290711414</updated>
+      <workItem from="1577290713569" duration="7986000" />
+    </task>
+    <task id="LOCAL-00001" summary="First message">
+      <created>1577290818522</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577290818522</updated>
+    </task>
+    <task id="LOCAL-00002" summary="I need some sleep">
+      <created>1577322683957</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577322683957</updated>
+    </task>
+    <task id="LOCAL-00003" summary="I need some sleep">
+      <created>1577322895116</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577322895116</updated>
+    </task>
+    <task id="LOCAL-00004" summary="I need some sleep">
+      <created>1577360967932</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577360967932</updated>
+    </task>
+    <task id="LOCAL-00005" summary="I need some sleep">
+      <created>1577361048350</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577361048350</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First message" />
+    <MESSAGE value="I need some sleep" />
+    <option name="LAST_COMMIT_MESSAGE" value="I need some sleep" />
+  </component>
+</project>
