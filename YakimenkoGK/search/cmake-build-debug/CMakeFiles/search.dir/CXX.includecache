@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/nne_l/CLionProjects/MR2019/search/main.cpp
-stdio.h
--
-stdlib.h
+C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/search/main.cpp
+cstdint
+C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/search/cstdint
+iostream
 -
 

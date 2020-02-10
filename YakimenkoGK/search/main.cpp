@@ -1,68 +1,76 @@
-//#include <iostream>
-//
-//int search(int *a, int first, int last, int x){
-//    if (first >= last)
-//        if (a[first] == x){
-//            return (first);
-//        }
-//        else return (-1);
-//    int middle = (last - first) / 2 + first;
-//    //if (a[middle] == x) return middle;
-//    if (a[middle] < x) return (search(a, middle + 1, last, x));
-//    return (search(a, first, middle, x));
-//}
-//
-//int main() {
-//
-//};
-#define _CRT_SECURE_NO_WARNINGS // для корректной работы scanf()
-#include <stdio.h>
-#include <stdlib.h> // для использования функций system()
-int main()
-{
-    int k[20]; // массив ключей основной таблицы
-    int r[20]; // массив записей основной таблицы
-    int key, i;
-    system("chcp 1251"); // перевод русского языка в консоли
-    system("cls");     // очистка окна консоли
-    // Инициализация ключевых полей упорядоченными значениями
-    k[0] = 8;  k[1] = 14;
-    k[2] = 26;  k[3] = 28;
-    k[4] = 38;  k[5] = 47;
-    k[6] = 56;  k[7] = 60;
-    k[8] = 64;  k[9] = 69;
-    k[10] = 70; k[11] = 78;
-    k[12] = 80; k[13] = 82;
-    k[14] = 84; k[15] = 87;
-    k[16] = 90; k[17] = 92;
-    k[18] = 98; k[19] = 108;
-    // Ввод записей
-    for (i = 0; i < 20; i++)
-    {
-        printf("%2d. k[%2d]=%3d: r[%2d]= ", i, i, k[i], i);
-        scanf("%d", &r[i]);
-    }
-    printf("Введите key: "); // вводим искомое ключевое поле
-    scanf("%d", &key);
-    int left = 0; // задаем левую и правую границы поиска
-    int right = 19;
-    int search = -1; // найденный индекс элемента равен -1 (элемент не найден)
-    while (left <= right) // пока левая граница не "перескочит" правую
-    {
-        int mid = (left + right) / 2; // ищем середину отрезка
-        if (key == k[mid]) {  // если ключевое поле равно искомому
-            search = mid;     // мы нашли требуемый элемент,
-            break;            // выходим из цикла
+
+#include "cstdint"
+#include <iostream>
+void sort( int32_t * arr, uint32_t size){
+    int result_arr[size]; // Additional(result) array
+    int step = 1; // The step of partitioning the array
+
+    while (step < size){ // If step == size, the array is already sorted
+        int r = 0; // Index of result_arr
+        int left_border = 0; // Left border of the sortable bloc
+        int median = left_border + step; // Median of the sortable bloc
+        int right_border = left_border + step*2; // Right border of the sortable bloc
+
+        while (left_border < size){ // If left_border == size, array is ended
+            if (median >= size) { median = size; }              // Bloc dont overflow
+            if (right_border >= size) { right_border = size; }  // __________________
+            int i1 = left_border, i2 = median; // The indexes of the compared elements
+            //START "MERGE"
+            while (i1 < median && i2 < right_border){ // Compare elements and
+                if (arr[i1] < arr[i2]){             // min element add to result_arr
+                    result_arr[r] = arr[i1];
+                    r++; i1++;
+                }
+                else {
+                    result_arr[r] = arr[i2];
+                    r++; i2++;
+                }
+            }
+
+            while (i1 < median){           // Add the remaining elements
+                result_arr[r] = arr[i1]; // to the array after the comparison
+                r++; i1++;               // (only one "while" can be run)
+            }
+
+            while (i2 < right_border){     // Add the remaining elements
+                result_arr[r] = arr[i2]; // to the array after the comparison
+                r++; i2++;               // (only one "while" can be run)
+            }
+
+            left_border += step*2;  //
+            median += step*2;       // Update borders to move to the next bloc
+            right_border += step*2; //
         }
-        if (key < k[mid])     // если искомое ключевое поле меньше найденной середины
-            right = mid - 1;  // смещаем правую границу, продолжим поиск в левой части
-        else                  // иначе
-            left = mid + 1;   // смещаем левую границу, продолжим поиск в правой части
+        memcpy(arr,result_arr, sizeof(int)*size); // Update original array
+        step *= 2; // Update step
     }
-    if (search == -1)     // если индекс элемента по-прежнему -1, элемент не найден
-        printf("Элемент не найден!\n");
-    else          // иначе выводим элемент, его ключ и значение
-        printf("%d. key= %d. r[%d]=%d", search, k[search], search, r[search]);
-    getchar(); getchar();
-    return 0;
+
+}
+
+int search ( int n, uint32_t left, uint32_t right, int *array){
+    uint32_t median = (left + right)/2;
+    if (array[median] == n){ return median;}
+    else if (array[median] < n){
+        left = median;
+        search(n, left, right, array);
+    }
+    else if (array[median] > n){
+        right = median;
+        search(n, left, right, array);
+    }
+}
+
+int searchAfterSort( int n, uint32_t left, uint32_t right, int *array){
+    sort(array, right+1);
+    search(n,left,right,array);
+}
+
+using namespace std;
+int main(){
+
+    int arr[8]{ 5, 8, 12, 20, 22, 23, 89, 100};
+    int n;
+    cin >> n;
+    cout << search(n,0,7,arr);
+
 }
