@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-//
+//d
 void binSearch(vector<int> arr, int find_number){
     int left = 0;
     int right = 20;
