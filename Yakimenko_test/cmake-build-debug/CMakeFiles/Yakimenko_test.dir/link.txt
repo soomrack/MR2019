@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Yakimenko_test.dir/objects.a
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\Yakimenko_test.dir/objects.a @CMakeFiles\Yakimenko_test.dir\objects1.rsp
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Yakimenko_test.dir/objects.a -Wl,--no-whole-archive  -o Yakimenko_test.exe -Wl,--out-implib,libYakimenko_test.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Yakimenko_test.dir\linklibs.rsp
