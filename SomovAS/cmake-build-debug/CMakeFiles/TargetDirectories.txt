@@ -1,3 +1,0 @@
-C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/CMakeFiles/SomovAS.dir
-C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/811243/CLionProjects/MR2019/SomovAS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
