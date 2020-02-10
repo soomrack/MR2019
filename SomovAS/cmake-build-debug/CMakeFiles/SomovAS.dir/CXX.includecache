@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/811243/CLionProjects/MR2019/SomovAS/api.h
+string
+-
+list
+-
+vector
+-
+
+C:/Users/811243/CLionProjects/MR2019/SomovAS/test.cpp
+test.h
+C:/Users/811243/CLionProjects/MR2019/SomovAS/test.h
+iostream
+-
+
+C:/Users/811243/CLionProjects/MR2019/SomovAS/test.h
+api.h
+C:/Users/811243/CLionProjects/MR2019/SomovAS/api.h
+
