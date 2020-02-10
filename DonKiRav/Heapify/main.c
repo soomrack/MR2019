@@ -1,35 +1,28 @@
 #include <stdio.h>
 #include <stdint.h>
-
 //Procedure for exchange
-void swap (int *a, int *b) { int t = *a; *a = *b; *b = t; }
+void swap (int * a, int * b) { int t = *a; *a = *b; *b = t; }
+
 //Procedure for converting to a binary heap a subtree with root node i
-void heapify(int * arr, int32_t n, int32_t i)
-{
-//Initialize the largest element as root
-        int32_t largest = i;
-//Initialize the left child
-        int32_t left = 2*i + 1;
-//Initialize the right child
-        int32_t right = 2*i + 2;
-//If the left child is larger than the root
-        if (left < n && arr[left] > arr[largest])
+void heapify(int * arr, const int32_t size, int32_t current_element)
+    {
+        int32_t largest = current_element;
+        int32_t left = 2*current_element + 1;
+        int32_t right = 2*current_element + 2;
+        if (left < size && arr[left] > arr[largest])
         {
             largest = left;
         }
-//If the right child is larger than the largest at the moment
-        if (right < n && arr[right] > arr[largest])
+        if (right < size && arr[right] > arr[largest])
         {
             largest = right;
         }
-//If the biggest element is not root
-        if (largest != i)
+        if (largest != current_element)
         {
-            swap(&arr[i], &arr[largest]);
-//Recursively convert the affected subtree into a binary heap
-            heapify(arr, n, largest);
+            swap(&arr[current_element], &arr[largest]);
+            heapify(arr, size, largest);
         }
-}
+    }
 
 int main() {
 
