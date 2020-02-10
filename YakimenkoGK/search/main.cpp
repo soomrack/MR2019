@@ -1,6 +1,7 @@
-
+#include <conio.h>
 #include "cstdint"
 #include <iostream>
+#include <stdlib.h>
 void sort( int32_t * arr, uint32_t size){
     int result_arr[size]; // Additional(result) array
     int step = 1; // The step of partitioning the array
@@ -67,10 +68,11 @@ int searchAfterSort( int n, uint32_t left, uint32_t right, int *array){
 
 using namespace std;
 int main(){
-
-    int arr[8]{ 5, 8, 12, 20, 22, 23, 89, 100};
-    int n;
-    cin >> n;
-    cout << search(n,0,7,arr);
-
+    int arr[10000];
+    for (int i = 0; i<1000; i++){
+        arr[i] = rand() % 1000;
+    }
+    int test = rand() % 1000;
+    if (arr[searchAfterSort(test,0,9999,arr)] == test) { cout <<" YES!";}
+    else cout << "NO";
 }

@@ -7,8 +7,12 @@
 #IncludeRegexTransform: 
 
 C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/search/main.cpp
+conio.h
+-
 cstdint
 C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/search/cstdint
 iostream
+-
+stdlib.h
 -
 

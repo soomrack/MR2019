@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Heap.dir/objects.a
+C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe cr CMakeFiles\Heap.dir/objects.a @CMakeFiles\Heap.dir\objects1.rsp
+C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Heap.dir/objects.a -Wl,--no-whole-archive  -o Heap.exe -Wl,--out-implib,libHeap.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Heap.dir\linklibs.rsp
