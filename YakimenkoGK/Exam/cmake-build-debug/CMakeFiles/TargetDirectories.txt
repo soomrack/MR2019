@@ -1,3 +1,0 @@
-C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/Exam/cmake-build-debug/CMakeFiles/Exam.dir
-C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/Exam/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/nne_l/CLionProjects/MR2019/YakimenkoGK/Exam/cmake-build-debug/CMakeFiles/rebuild_cache.dir

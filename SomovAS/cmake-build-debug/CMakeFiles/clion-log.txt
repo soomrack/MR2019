@@ -1,6 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\nne_l\CLionProjects\MR2019\SomovAS
-CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
-  CMake 3.15 or higher is required.  You are running version 3.14.5
-
-
--- Configuring incomplete, errors occurred!

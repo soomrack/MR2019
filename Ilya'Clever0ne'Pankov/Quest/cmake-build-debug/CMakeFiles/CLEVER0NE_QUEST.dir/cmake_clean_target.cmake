@@ -1,3 +1,0 @@
-file(REMOVE_RECURSE
-  "libCLEVER0NE_QUEST.a"
-)

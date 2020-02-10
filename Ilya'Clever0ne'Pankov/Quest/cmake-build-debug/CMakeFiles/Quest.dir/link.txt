@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\QUEST.dir/objects.a
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\QUEST.dir/objects.a @CMakeFiles\QUEST.dir\objects1.rsp
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\QUEST.dir/objects.a -Wl,--no-whole-archive  -o QUEST.exe -Wl,--out-implib,libQUEST.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\QUEST.dir\linklibs.rsp

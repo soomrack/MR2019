@@ -79,20 +79,17 @@ void Question::printQuestion(string &question)
 {
     cout << question;
 }
-void Question::enterYourAnswer(string answer)
-{
-    cin >> answer;
-}
+
 bool Question::checkAnswer(string answer, string right_answer)
 {
     if (answer == right_answer) return true;
     else return false;
 }
 
-//void Question::enterYourAnswer(string answer)
-//{
-//    cin >> answer;
-//}
+void Question::enterYourAnswer(string answer)
+{
+    cin >> answer;
+}
 
 void printScore(int32_t score)
 {

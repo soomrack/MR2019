@@ -6,14 +6,12 @@ int process_answer(string answer, string users_answer)
 	setlocale(LC_ALL, "Russian");
 	if (answer != users_answer)
 	{
-		cout << "РќРµРІРµСЂРЅРѕ" << endl;
+		cout << "Неверно" << endl;
 		return 0;
 	}
 	else 
 	{
-		cout << "Р’РµСЂРЅРѕ" << endl;
+		cout << "Верно" << endl;
 		return 1;
 	}
 }
-//12345
-//12345

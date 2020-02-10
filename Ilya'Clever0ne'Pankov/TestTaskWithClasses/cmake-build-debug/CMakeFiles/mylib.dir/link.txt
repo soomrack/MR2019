@@ -1,2 +1,0 @@
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ar.exe qc libmylib.a  CMakeFiles/mylib.dir/mylib.cpp.obj
-C:\Users\nne_l\.CLion2019.2\Min\mingw32\bin\ranlib.exe libmylib.a
