@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SomovALexS.iml" filepath="$PROJECT_DIR$/.idea/SomovALexS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BinarySearch.iml" filepath="$PROJECT_DIR$/.idea/BinarySearch.iml" />
     </modules>
   </component>
 </project>
