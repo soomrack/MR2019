@@ -1,4 +1,4 @@
-# Install script for directory: D:/For Administrator/GitHub/MR2019/YakimenkoGK/LibExp_Yakimenko
+# Install script for directory: C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/For Administrator/GitHub/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
