@@ -1,4 +1,0 @@
-﻿  Program1.cpp
-D:\_Documents\Visual Studio\Program1\Program1.cpp(81,63): warning C4805:  ==: небезопасное смешение типа "char" и типа "bool" в операции
-D:\_Documents\Visual Studio\Program1\Program1.cpp(95,61): warning C4805:  ==: небезопасное смешение типа "char" и типа "bool" в операции
-  Program1.vcxproj -> D:\_Documents\Visual Studio\Program1\Debug\Program1.exe
