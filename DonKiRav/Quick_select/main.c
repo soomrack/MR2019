@@ -3,7 +3,7 @@
 
 int32_t bin_search( const int * arr, const int first, const int last, const int32_t j )
 {
-    if (first <= last) {
+    if (first == last) {
         if (arr[first] == j) { return first;}
         else { return -1;}
     }
