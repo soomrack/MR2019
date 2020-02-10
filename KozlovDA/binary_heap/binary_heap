@@ -1,0 +1,35 @@
+#include <iostream>
+#include <algorithm>
+
+void buildBinaryHeap(int* const array, int numberOfElements)
+{
+    for (int i = 0; i < numberOfElements; i++)
+    {
+        for (int root_nood = 0; root_nood < numberOfElements; root_nood++)
+        {
+            int left = 2 * root_nood + 1;
+            if (left > numberOfElements - 1)
+                break;
+            int right = 2 * root_nood + 2;
+            int max = std::max(array[left], array[right]);
+            if (array[root_nood] < max && max == array[left])
+            {
+                int temp = array[root_nood];
+                array[root_nood] = array[left];
+                array[left] = temp;
+            }
+            else if (array[root_nood] < max && max == array[right])
+            {
+                int temp = array[root_nood];
+                array[root_nood] = array[right];
+                array[right] = temp;
+            }
+        }
+    }
+}
+
+int main()
+{
+    int array[10]{ 72, 2, 1, 7, 9, 3, 4, 6 , 23, 5 };
+    buildBinaryHeap(array, 10);
+}
