@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/main.cpp" "C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/LibExp_Yakimenko.dir/main.cpp.obj"
-  "C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp" "C:/Users/79191/CLionProjects/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.obj"
+  "D:/For Administrator/GitHub/MR2019/YakimenkoGK/LibExp_Yakimenko/main.cpp" "D:/For Administrator/GitHub/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/LibExp_Yakimenko.dir/main.cpp.obj"
+  "D:/For Administrator/GitHub/MR2019/YakimenkoGK/LibExp_Yakimenko/sumator.cpp" "D:/For Administrator/GitHub/MR2019/YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

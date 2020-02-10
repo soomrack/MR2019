@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LibExp_Yakimenko.dir/main.cpp.obj"
   "CMakeFiles/LibExp_Yakimenko.dir/sumator.cpp.obj"
-  "LibExp_Yakimenko.pdb"
   "LibExp_Yakimenko.exe"
   "LibExp_Yakimenko.exe.manifest"
+  "LibExp_Yakimenko.pdb"
   "libLibExp_Yakimenko.dll.a"
 )
 
