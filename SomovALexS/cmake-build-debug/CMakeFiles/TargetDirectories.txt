@@ -1,3 +1,0 @@
-C:/Users/811243/CLionProjects/MR2019/SomovALexS/cmake-build-debug/CMakeFiles/SomovALexS.dir
-C:/Users/811243/CLionProjects/MR2019/SomovALexS/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/811243/CLionProjects/MR2019/SomovALexS/cmake-build-debug/CMakeFiles/rebuild_cache.dir

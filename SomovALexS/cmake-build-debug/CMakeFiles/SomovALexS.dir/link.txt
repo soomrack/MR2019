@@ -1,3 +1,0 @@
-C:\Users\811243\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5662.56\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\SomovALexS.dir/objects.a
-C:\PROGRA~1\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ar.exe cr CMakeFiles\SomovALexS.dir/objects.a @CMakeFiles\SomovALexS.dir\objects1.rsp
-C:\PROGRA~1\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\SomovALexS.dir/objects.a -Wl,--no-whole-archive  -o SomovALexS.exe -Wl,--out-implib,libSomovALexS.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SomovALexS.dir\linklibs.rsp
