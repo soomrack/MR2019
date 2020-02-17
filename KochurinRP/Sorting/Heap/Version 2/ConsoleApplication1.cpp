@@ -9,9 +9,9 @@ void swap(int* a, int* b)
 	return;
 }
 
-void ridding(int* arr, int parent, int length)
+void riddling(int* arr, int parent, int length)
 {
-	printf("Start ridding with parent %d.\n", parent);
+	printf("Start riddling with parent %d.\n", parent);
 	int leftchild = parent * 2 + 1;
 	int rightchild = leftchild + 1;
 	while (((arr[parent] < arr[rightchild]) || (arr[parent] < arr[leftchild])) && (rightchild < length))
@@ -37,7 +37,7 @@ void ridding(int* arr, int parent, int length)
 	{
 		swap(&arr[parent], &arr[leftchild]);
 	}
-	printf("End ridding\n\n");
+	printf("End riddling\n\n");
 	return;
 }
 
@@ -47,7 +47,7 @@ void heap(int* arr, int rightchild, int length)
 	if (rightchild != 0)
 	{
 		int parent = (rightchild - 1) / 2;
-		ridding(arr, parent, length);
+		riddling(arr, parent, length);
 		printf("End Heap with rightchild %d\n\n", rightchild);
 		heap(arr, rightchild - 2, length);
 	}
