@@ -119,9 +119,7 @@ void heapsort(int* arr, int length)
 	for (int i = length - 1; i > 0; i--)
 	{
 		startheap(arr, i);
-		printheap(arr, i + 1);
 		swap(&arr[0], &arr[i]);
-		printheap(arr, i + 1);
 	}
 	swap(&arr[0], &arr[1]);
 	return;
