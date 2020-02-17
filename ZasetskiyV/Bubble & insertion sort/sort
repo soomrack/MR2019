@@ -1,0 +1,49 @@
+#include <iostream>
+
+void bubbleSort (int * mas, const int size)
+{
+    int buf = 0;
+    for (int i = 0; i < size - 1; i++)
+    {
+        for (int j = i + 1; j < size; j++)
+        {
+            if (mas[i] > mas[j])
+            {
+                buf = mas[i];
+                mas[i] = mas[j];
+                mas[j] = buf;
+            }
+        }
+    }
+}
+
+
+void insertionSort (int * mas, const int size)
+{
+    int buf, item;
+    for (int i = 1; i < size; i++)
+    {
+        buf = mas[i];
+        item = i - 1;
+        while (item >= 0 && mas[item] > buf)
+        {
+            mas[item + 1] = mas[item];
+            mas[item] = buf;
+            item--;
+        }
+    }
+}
+
+int array[] = {9, 5, 3, 7, 2, 1, 8, 6, 4};
+
+void showArray (int * mas, int size)
+{
+    for (int i = 0; i < size; i++)
+        std::cout << mas[i] << "  ";
+}
+int main() {
+
+    bubbleSort(array, 9);
+    showArray(array, 9);
+    return 0;
+}
