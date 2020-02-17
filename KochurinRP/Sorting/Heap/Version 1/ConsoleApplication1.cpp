@@ -1,50 +1,56 @@
 ﻿#include <stdio.h>
 #define LEN 10
 
-void ridding(int* mass, int parent, int child)
+void swap(int* a, int* b)
 {
-	while ((mass[parent] < mass[child]) && (child != 0))
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+	return;
+}
+
+void ridding(int* arr, int parent, int child)
+{
+	while ((arr[parent] < arr[child]) && (child != 0))
 	{
-		int temp = mass[parent];
-		mass[parent] = mass[child];
-		mass[child] = temp;
+		swap(&arr[parent], &arr[child]);
 		child = parent;
 		parent = (parent - 1) / 2;
 	}
 }
 
-void heap(int* mass, int parent, int length)
+void heap(int* arr, int parent, int length)
 {
 	if ((parent * 2 + 2) <= (length))
 	{
 		int leftchild = parent * 2 + 1;
 		int rightchild = parent * 2 + 2;
-		ridding(mass, parent, leftchild);
-		ridding(mass, parent, rightchild);
-		heap(mass, leftchild, length);
-		heap(mass, rightchild, length);
+		ridding(arr, parent, leftchild);
+		ridding(arr, parent, rightchild);
+		heap(arr, leftchild, length);
+		heap(arr, rightchild, length);
 	}
 	else
 	{
 		if ((parent * 2 + 1) <= (length))
 		{
 			int leftchild = parent * 2 + 1;
-			heap(mass, leftchild, length);
-			ridding(mass, parent, leftchild);
+			heap(arr, leftchild, length);
+			ridding(arr, parent, leftchild);
 		}
 	}
 }
 
-void printmass(int* mass, int length)
+void printarr(int* arr, int length)
 {
 	for (int i = 0; i < length; i++)
 	{
-		printf("%3d  ", mass[i]);
+		printf("%3d  ", arr[i]);
 	}
 	printf("\n");
 }
 
-void printheap(int* mass, int length)
+void printheap(int* arr, int length)
 {
 	int level = 0;
 	int flag = 1;
@@ -61,7 +67,7 @@ void printheap(int* mass, int length)
 		{
 			for (int i = amount; i < (amount + quantity); i++)
 			{
-				printf("%3d ", mass[i]);
+				printf("%3d ", arr[i]);
 			}
 			printf("\n");
 			amount += quantity;
@@ -71,7 +77,7 @@ void printheap(int* mass, int length)
 		{
 			for (int i = amount; i < length; i++)
 			{
-				printf("%3d ", mass[i]);
+				printf("%3d ", arr[i]);
 			}
 			flag = 0;
 		}
@@ -81,10 +87,10 @@ void printheap(int* mass, int length)
 
 int main()
 {
-	int mass[LEN] = { 51, -7, 5, 36, 74, 68, 88, 4, 9, -88 };
-	printmass(mass, LEN);
-	heap(&mass[0], 0, LEN - 1);
-	printmass(mass, LEN);
-	printheap(mass, LEN);
+	int arr[LEN] = { 51, -7, 5, 36, 74, 68, 88, 4, 9, -88 };
+	printarr(arr, LEN);
+	heap(arr, 0, LEN - 1);
+	printarr(arr, LEN);
+	printheap(arr, LEN);
 	return 0;
 }

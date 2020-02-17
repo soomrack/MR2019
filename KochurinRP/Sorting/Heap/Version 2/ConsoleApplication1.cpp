@@ -1,11 +1,11 @@
 ﻿#include <stdio.h>
 #define LEN 10
 
-void swap(int* arr, int a, int b)
+void swap(int* a, int* b)
 {
-	int temp = arr[a];
-	arr[a] = arr[b];
-	arr[b] = temp;
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 	return;
 }
 
@@ -18,14 +18,14 @@ void ridding(int* arr, int parent, int length)
 	{
 		if ((arr[parent] < arr[leftchild]) && (arr[rightchild] < arr[leftchild]))
 		{
-			swap(arr, parent, leftchild);
+			swap(&arr[parent], &arr[leftchild]);
 			parent = leftchild;
 		}
 		else
 		{
 			if ((arr[parent] < arr[rightchild]) && (arr[leftchild] <= arr[rightchild]))
 			{
-				swap(arr, parent, rightchild);
+				swap(&arr[parent], &arr[rightchild]);
 				parent = rightchild;
 			}
 		}
@@ -35,7 +35,7 @@ void ridding(int* arr, int parent, int length)
 	}
 	if ((arr[parent] < arr[leftchild]) && (leftchild < length))
 	{
-		swap(arr, parent, leftchild);
+		swap(&arr[parent], &arr[leftchild]);
 	}
 	printf("End ridding\n\n");
 	return;
@@ -64,7 +64,7 @@ void startheap(int* arr, int length)
 		int leftchild = length - 1;
 		if (arr[parent] < arr[leftchild])
 		{
-			swap(arr, parent, leftchild);
+			swap(&arr[parent], &arr[leftchild]);
 		}
 		heap(arr, leftchild - 1, length);
 	}

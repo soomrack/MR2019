@@ -10,11 +10,12 @@ void printarr(int* arr, int length)
 	printf("\n");
 }
 
-void swap(int* arr, int a, int b)
+void swap(int* a, int* b)
 {
-	int temp = arr[a];
-	arr[a] = arr[b];
-	arr[b] = temp;
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+	return;
 }
 
 void BubbleSort(int* arr, int length)
@@ -25,7 +26,7 @@ void BubbleSort(int* arr, int length)
 		{
 			if (arr[j] > arr[j - 1])
 			{
-				swap(arr, j - 1, j);
+				swap(&arr[j - 1], &arr[j]);
 			}
 		}
 	}
@@ -40,6 +41,7 @@ void CyclicShiftRight(int* arr, int leftboard, int rightboard)
 		arr[i] = arr[i - 1];
 	}
 	arr[leftboard] = temp;
+	return;
 }
 
 void InsertsSort(int* arr, int length)
@@ -65,6 +67,7 @@ void InsertsSort(int* arr, int length)
 			CyclicShiftRight(arr, 0, i);
 		}
 	}
+	return;
 }
 
 int main()
