@@ -4,24 +4,24 @@
 void swap (int * a, int * b) { int t = *a; *a = *b; *b = t; }
 
 void bubbleSort (int * a, const uint32_t size) {
-    for (uint32_t sorted = 0; sorted < size; sorted++) {
-        for (uint32_t not_sorted = size - 1; not_sorted > sorted; not_sorted--) {
-            if (a[not_sorted] < a[not_sorted-1]) {
-                swap(&a[not_sorted], &a[not_sorted-1]);
+    for (uint32_t size_sorted_part = 0; size_sorted_part < size; size_sorted_part++) {
+        for (uint32_t size_not_sorted_part = size - 1; size_not_sorted_part > size_sorted_part; size_not_sorted_part--) {
+            if (a[size_not_sorted_part] < a[size_not_sorted_part-1]) {
+                swap(&a[size_not_sorted_part], &a[size_not_sorted_part-1]);
             }
         }
     }
 }
 
 void Vstavkami (int * a, const uint32_t size) {
-    for (uint32_t sorted = 0; sorted < size; sorted++){
-        uint32_t not_sorted = sorted - 1;
-        int x = a[sorted];
-        while (a[not_sorted] > x && not_sorted >= 0) {
-           a[not_sorted+1] = a[not_sorted];
-            not_sorted--;
+    for (uint32_t i = 0; i < size; i++){
+        uint32_t j = i - 1;
+        int x = a[i];
+        while (a[j] > x && j >= 0) {
+           a[j+1] = a[j];
+            j--;
         }
-        a[not_sorted+1] = x;
+        a[j+1] = x;
     }
 }
 int main() {
