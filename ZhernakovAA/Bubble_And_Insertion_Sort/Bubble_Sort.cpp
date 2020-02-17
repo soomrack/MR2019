@@ -21,14 +21,22 @@ int Bubble_Sort(int* array, const int size)
 
 int insertionSort(int* array, const int size)
 {
-    for (int i = 1; i < size - 1; i++)
+    for (int left = 0; left < size; left++)
     {
-        int j = i - 1;
-        while (j >= 0 && array[j] > array[j + 1])
+        int value = array[left];
+        int k = left - 1;
+        for (k; k >= 0; k--)
         {
-            swap(array[j], array[j + 1]);
-            j--;
+            if (value < array[k])
+            {
+                array[k + 1] = array[k];
+            }
+            else
+            {
+                break;
+            }
         }
+        array[k + 1] = value;
     }
     return 0;
 }
@@ -36,9 +44,9 @@ int insertionSort(int* array, const int size)
 int main()
 {
     Bubble_Sort(M1, 11);
-    for (int k = 0; k < 11; k++)
+    for (int n = 0; n < 11; n++)
     {
-        cout << M1[k] << endl;
+        cout << M1[n] << endl;
     }
     cout << endl;
 
@@ -47,8 +55,6 @@ int main()
     {
         cout << M2[g] << endl;
     }
+    return 0;
 }
-
-
-
    

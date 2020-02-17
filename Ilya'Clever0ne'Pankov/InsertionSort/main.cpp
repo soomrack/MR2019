@@ -13,8 +13,6 @@ static void printArray(int *array, int size);
 
 void insertionSort(int32_t *array, const int32_t size);
 
-void swap(int32_t &a, int32_t &b);
-
 int main()
 {
     srand( time(NULL) );
@@ -89,12 +87,13 @@ void insertionSort(int32_t *array, const int32_t size)
 {
     for(int32_t border = 1; border < size; border++)
     {
-        for(int32_t index = border; index > 0; index--)
+        int32_t index = border - 1;
+        int32_t current_element = array[border];
+        while(index >= 0 && array[index] > current_element)
         {
-            if(array[index] < array[index - 1])
-            {
-                swap(array[index], array[index - 1]);
-            }
+            array[index + 1] = array[index];
+            index--;
         }
+        array[index + 1] = current_element;
     }
 }
