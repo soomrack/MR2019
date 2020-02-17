@@ -10,22 +10,25 @@ int main() {
 
 }
 
-void BinaryHeap (int arr[], int index, const int size){
-    int left, right;
-    int temp;
-    left = 2*index+1;
-    right = 2*index+2;
-    if((arr[index] < arr[left]) && (left < size))  {
-        temp = arr[index];
-        arr[index] = arr[left];
-        arr[left] = temp;
-        BinaryHeap(arr, left, size);
-    }
-    if((arr[index] < arr[right]) && (right < size)) {
-        temp = arr[index];
-        arr[index] = arr[right];
-        arr[right] = temp;
-        BinaryHeap(arr, right, size);
+void BinaryHeap(int arr[], const int size, int i){
+    int largest = i;
+    int l = 2 * i + 1; // левый = 2*i + 1
+    int r = 2 * i + 2; // правый = 2*i + 2
+
+    if (l < n && arr[l] > arr[largest])
+        largest = l;
+
+
+        if (r < n && arr[r] > arr[largest])
+        largest = r;
+
+
+    if (largest != i){
+        int temp = arr[i];
+        arr[i] = arr[largest];
+        arr[largest] = temp;
+
+        heapify(arr, n, largest);
     }
 }
 
