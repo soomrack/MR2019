@@ -3,15 +3,15 @@
 
 void Combine(int* arr, int size1, int size2)
 {
-	int* mass1 = (int *)malloc(sizeof(size1) * size1);
-	int* mass2 = (int *)malloc(sizeof(size2) * size2);
+	int* arr1 = (int *)malloc(sizeof(size1) * size1);
+	int* arr2 = (int *)malloc(sizeof(size2) * size2);
 	for (int i = 0; i < size1; i++)
 	{
-		mass1[i] = arr[i];
+		arr1[i] = arr[i];
 	}
 	for (int i = 0; i < size2; i++)
 	{
-		mass2[i] = arr[size1 + i];
+		arr2[i] = arr[size1 + i];
 	}
 	int count1 = 0;
 	int count2 = 0;
@@ -19,14 +19,14 @@ void Combine(int* arr, int size1, int size2)
 	{
 		if ((count1 < size1) && (count2 < size2))
 		{
-			if ((mass1[count1] > mass2[count2]))
+			if ((arr1[count1] > arr2[count2]))
 			{
-				arr[count] = mass1[count1];
+				arr[count] = arr1[count1];
 				count1++;
 			}
 			else
 			{
-				arr[count] = mass2[count2];
+				arr[count] = arr2[count2];
 				count2++;
 			}
 		}
@@ -34,18 +34,20 @@ void Combine(int* arr, int size1, int size2)
 		{
 			while (count1 < size1)
 			{
-				arr[count] = mass1[count1];
+				arr[count] = arr1[count1];
 				count++;
 				count1++;
 			}
 			while (count2 < size2)
 			{
-				arr[count] = mass2[count2];
+				arr[count] = arr2[count2];
 				count++;
 				count2++;
 			}
 		}
 	}
+	free(arr1);
+	free(arr2);
 	return;
 }
 
