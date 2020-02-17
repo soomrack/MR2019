@@ -1,6 +1,33 @@
 #include <iostream>
 #include <algorithm>
 #include <cmath>
+void siftUp (int* const array, int current_element)
+{
+    int parent = (current_element - 1) / 2;
+    if (parent >= 0 && array[current_element] > array[parent])
+    {
+        std::swap(array[current_element], array[parent]);
+        siftUp(array, current_element);
+    }
+    else
+    {
+        return;
+    }
+}
+
+void buildBinaryHeapRecursion(int* const array, int heap_size, int current_element)
+{
+    if (current_element >= log2(heap_size) + 1)
+        return;
+    int left = 2 * current_element + 1;
+    int right = 2 * current_element + 2;
+    if (array[current_element] < array[left] && array[left] > array[right])
+        std::swap(array[current_element], array[left]);
+    if (array[current_element] < array[right] && array[right] > array[left])
+        std::swap(array[current_element], array[right]);
+    siftUp(array, current_element);
+    buildBinaryHeapRecursion(array, heap_size, current_element + 1);
+}
 
 void buildBinaryHeap(int* const array, int number_of_elements)
 {
@@ -21,6 +48,8 @@ void buildBinaryHeap(int* const array, int number_of_elements)
 
 int main()
 {
-    int array[10]{ 72, 2, 1, 7, 9, 3, 4, 6 , 23, 5};
-    buildBinaryHeap(array, 10);
+    int array1[10]{ 72, 2, 1, 7, 9, 3, 4, 6 , 23, 5 };
+    buildBinaryHeap(array1, 10);
+    int array2[10]{ 72, 2, 1, 7, 9, 3, 4, 6 , 23, 5 };
+    buildBinaryHeapRecursion(array2, 10, 0);
 }
