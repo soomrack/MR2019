@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <cmath>
-void siftUp (int* const array, int current_element)
+void siftUp (int* array, const int current_element)
 {
     int parent = (current_element - 1) / 2;
     if (parent >= 0 && array[current_element] > array[parent])
@@ -15,7 +15,7 @@ void siftUp (int* const array, int current_element)
     }
 }
 
-void buildBinaryHeapRecursion(int* const array, int heap_size, int current_element)
+void buildBinaryHeapRecursion(int* array, int const heap_size, const int current_element)
 {
     if (current_element >= log2(heap_size) + 1)
         return;
@@ -29,7 +29,7 @@ void buildBinaryHeapRecursion(int* const array, int heap_size, int current_eleme
     buildBinaryHeapRecursion(array, heap_size, current_element + 1);
 }
 
-void buildBinaryHeap(int* const array, int number_of_elements)
+void buildBinaryHeap(int* array, const int number_of_elements)
 {
     for (int heap_height = 0; heap_height < log2(number_of_elements); heap_height++)
     {
