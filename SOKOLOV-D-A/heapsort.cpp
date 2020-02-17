@@ -1,7 +1,7 @@
 #include <iostream>
 
 
-static void sieve_heap(int32_t* arr, int32_t size_of_heap, int32_t rooted_node)
+static void sieve_heap(int32_t* arr, const int32_t size_of_heap, int32_t rooted_node)
 {
 	int32_t root = rooted_node;
 	int32_t left_node = 2 * rooted_node + 1;
@@ -19,7 +19,7 @@ static void sieve_heap(int32_t* arr, int32_t size_of_heap, int32_t rooted_node)
 }
 
 
-void heapsort(int32_t* arr, uint32_t size)
+void heapsort(int32_t* arr, const uint32_t size)
 {
 
 	//Создание кучи из неупорядочных данных
