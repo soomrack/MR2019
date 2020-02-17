@@ -22,11 +22,11 @@ static void sieve_heap(int32_t* arr, int32_t size_of_heap, int32_t rooted_node)
 void heapsort(int32_t* arr, uint32_t size)
 {
 
-	//ñîçäàíèå êó÷è èç íåóïîğÿäî÷åííûõ äàííûõ
+	//Ğ¡Ğ¾Ğ·Ğ´Ğ°Ğ½Ğ¸Ğµ ĞºÑƒÑ‡Ğ¸ Ğ¸Ğ· Ğ½ĞµÑƒĞ¿Ğ¾Ñ€ÑĞ´Ğ¾Ñ‡Ğ½Ñ‹Ñ… Ğ´Ğ°Ğ½Ğ½Ñ‹Ñ…
 	for (int32_t i = (size / 2) - 1; i >= 0; i--)
 		sieve_heap(arr, size, i);
 
-	//ñîğòèğîâêà
+	//Ğ¡Ğ¾Ñ€Ñ‚Ğ¸Ñ€Ğ¾Ğ²ĞºĞ°
 	for (int32_t i = size - 1; i >= 0; i--) {
 		std::swap(arr[0], arr[i]);
 		sieve_heap(arr, i, 0);
