@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="experiment" targetName="experiment" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3794207-6478-4cfe-9e07-e6eb56c7eafb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/LibExp_Yakimenko.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/LibExp_Yakimenko.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../YakimenkoGK/LibExp_Yakimenko/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\79191\CLionProjects\MR2019\ArhipovAE\experiment\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UkIk9M6l5TItC0n4YT5v2rMPuz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../YakimenkoGK/LibExp_Yakimenko" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="experiment" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="experiment" TARGET_NAME="experiment" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="experiment" RUN_TARGET_NAME="experiment">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3794207-6478-4cfe-9e07-e6eb56c7eafb" name="Default Changelist" comment="" />
+      <created>1575894307000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575894307000</updated>
+      <workItem from="1575894308189" duration="800000" />
+    </task>
+    <task id="LOCAL-00001" summary="Changed stdout">
+      <created>1575894398568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575894398568</updated>
+    </task>
+    <task id="LOCAL-00002" summary=" Ups">
+      <created>1575894537595</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575894537595</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed stdout" />
+    <MESSAGE value=" Ups" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Ups" />
+  </component>
+</project>
