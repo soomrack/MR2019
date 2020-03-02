@@ -7,12 +7,13 @@
 int comp(const void *a, const void *b){
     return (*(int*)b-*(int*)a);
 }
-void SiftUP(int i, int *heap){
-    while (heap[i]<heap[(i-1)/2]){
-        std::swap(heap[i], heap[(i-1)/2]);
-        i=(i-1)/2;
-    }
-}
+//EXPERIMENT
+//void SiftUP(int i, int *heap){
+//    while (heap[i]<heap[(i-1)/2]){
+//        std::swap(heap[i], heap[(i-1)/2]);
+//        i=(i-1)/2;
+//    }
+//}
 class Heap {
     static const int SIZE = 100; // максимальный размер кучи
     int *h;         // указатель на массив кучи
