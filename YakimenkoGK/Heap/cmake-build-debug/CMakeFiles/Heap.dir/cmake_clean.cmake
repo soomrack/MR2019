@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Heap.dir/main.cpp.obj"
-  "Heap.pdb"
   "Heap.exe"
   "Heap.exe.manifest"
+  "Heap.pdb"
   "libHeap.dll.a"
 )
 
