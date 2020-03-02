@@ -9,7 +9,7 @@ void swap(int* a, int* b)
 	return;
 }
 
-void ridding(int* arr, int parent, int length)
+void riddling(int* arr, int parent, int length)
 {
 	int leftchild = parent * 2 + 1;
 	int rightchild = leftchild + 1;
@@ -43,7 +43,7 @@ void heap(int* arr, int rightchild, int length)
 	if (rightchild != 0)
 	{
 		int parent = (rightchild - 1) / 2;
-		ridding(arr, parent, length);
+		riddling(arr, parent, length);
 		heap(arr, rightchild - 2, length);
 	}
 	return;
@@ -119,9 +119,7 @@ void heapsort(int* arr, int length)
 	for (int i = length - 1; i > 0; i--)
 	{
 		startheap(arr, i);
-		printheap(arr, i + 1);
 		swap(&arr[0], &arr[i]);
-		printheap(arr, i + 1);
 	}
 	swap(&arr[0], &arr[1]);
 	return;
