@@ -1,52 +1,24 @@
 #include <stdio.h>
 #include <stdint.h>
 
-//Procedure for exchange
-void swap (int * a, int * b) { int t = *a; *a = *b; *b = t; }
-
-//Procedure for selecting and locating a pivot element
-int allocation(int32_t * arr, const uint32_t left, const uint32_t right)
+int32_t bin_search( const int * arr, const int first, const int last, const int32_t j )
 {
-  int pivot = arr[right];
-  int position = left;
-  for (uint32_t j = left; j <= right; j++)
-  {
-    if (arr[j] <= pivot)
-    {
-      swap(&arr[position++], &arr[j]);
+    if (first == last) {
+        if (arr[first] == j) { return first;}
+        else { return -1;}
     }
-  }
-  position--;
-  return position;
-}
-
-int32_t getOrderStatistic( int32_t * arr, const uint32_t size, const uint32_t j )
-{
-  uint32_t left = 0;
-  uint32_t right = size - 1;
-  for(;;)
-  {
-    uint32_t pivot = allocation(arr, left, right);
-    if (pivot > j)
-    {
-      right = pivot - 1;
-    }
-    else if (pivot < j)
-    {
-      left = pivot + 1;
-    }
-    else
-    {
-      return arr[j];
-    }
-  }
+    int middle = (last - first)/2 + first;
+    if (arr[middle] < j) { return bin_search(arr, middle+1, last, j);}
+    else { return bin_search(arr, first, middle, j);}
 }
 
 int main() {
-    int32_t size1 = 6;
+    int element;
+    scanf("%d", &element);
+    int size1 = 6;
     int a;
-    int arr1[6] = {2, 5, 66, 22, 14, 647};
-    a = getOrderStatistic(arr1, size1, 3);
+    int arr1[6] = {2, 5, 16, 22, 44, 647};
+    a = bin_search(arr1, 0, size1-1, element);
     printf("%d", a);
     return (1);
 }

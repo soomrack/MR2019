@@ -1,0 +1,49 @@
+#include <iostream>
+
+void heapify (int * array, const int size, const int root_index)
+{
+    int largest_index = root_index;
+    int left_index = 2 * root_index + 1;
+    int right_index = 2 * root_index + 2;
+    if (left_index < size && array[left_index] > array[largest_index])
+        largest_index = left_index;
+    if (right_index < size && array[right_index] > array[largest_index])
+        largest_index = right_index;
+    if (largest_index != root_index)
+    {
+        swap(array[root_index], array[largest_index]);
+        heapify(array, size, largest_index);
+    }
+}
+
+void buildHeap (int * array, const int size)
+{
+    for (int root_index = (size / 2) - 1; root_index >= 0; root_index--)
+    {
+        heapify(array, size, root_index);
+    }
+}
+
+void pyramidalSort (int * array, const int size)
+{
+    buildHeap(array, size);
+    for (int last_index = size - 1; last_index >= 0; last_index--)
+    {
+        swap(array[last_index], array[0]);
+        heapify(array, last_index, 0);
+    }
+}
+
+int array[] = {9, 5, 3, 7, 2, 1, 8, 6, 4};
+
+void showArray (int * mas, int size)
+{
+    for (int i = 0; i < size; i++)
+        std::cout << mas[i] << "  ";
+}
+int main() {
+
+    pyramidalSort(array, 9);
+    showArray(array, 9);
+    return 0;
+}

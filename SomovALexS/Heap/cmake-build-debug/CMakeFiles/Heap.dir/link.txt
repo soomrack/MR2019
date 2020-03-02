@@ -1,0 +1,3 @@
+C:\Users\811243\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5662.56\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\Heap.dir/objects.a
+C:\PROGRA~1\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ar.exe cr CMakeFiles\Heap.dir/objects.a @CMakeFiles\Heap.dir\objects1.rsp
+C:\PROGRA~1\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Heap.dir/objects.a -Wl,--no-whole-archive  -o Heap.exe -Wl,--out-implib,libHeap.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Heap.dir\linklibs.rsp

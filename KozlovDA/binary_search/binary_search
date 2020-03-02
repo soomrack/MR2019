@@ -1,0 +1,13 @@
+#include "Binary_search.h"
+
+int search(int* a, int first, int last, const int x)
+{
+    if (first == last)
+    {
+        if (a[first] == x) return(first);
+        else return(-1);
+    }
+    int middle = (last - first + 1) / 2 + first;
+    if (a[middle] <= x) return (search(a, middle, last, x));
+    else return (search(a, first, middle - 1, x));
+}
