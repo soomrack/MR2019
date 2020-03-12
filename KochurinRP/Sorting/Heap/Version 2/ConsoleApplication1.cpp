@@ -1,4 +1,5 @@
 ﻿#include <stdio.h>
+#include <iostream>
 #define LEN 10
 
 void swap(int* a, int* b)
@@ -9,9 +10,9 @@ void swap(int* a, int* b)
 	return;
 }
 
-void riddling(int* arr, int parent, int length)
+void ridding(int* arr, int parent, int length)
 {
-	printf("Start riddling with parent %d.\n", parent);
+	printf("Start ridding with parent %d.\n", parent);
 	int leftchild = parent * 2 + 1;
 	int rightchild = leftchild + 1;
 	while (((arr[parent] < arr[rightchild]) || (arr[parent] < arr[leftchild])) && (rightchild < length))
@@ -37,7 +38,7 @@ void riddling(int* arr, int parent, int length)
 	{
 		swap(&arr[parent], &arr[leftchild]);
 	}
-	printf("End riddling\n\n");
+	printf("End ridding\n\n");
 	return;
 }
 
@@ -47,7 +48,7 @@ void heap(int* arr, int rightchild, int length)
 	if (rightchild != 0)
 	{
 		int parent = (rightchild - 1) / 2;
-		riddling(arr, parent, length);
+		ridding(arr, parent, length);
 		printf("End Heap with rightchild %d\n\n", rightchild);
 		heap(arr, rightchild - 2, length);
 	}
@@ -76,17 +77,17 @@ void startheap(int* arr, int length)
 	return;
 }
 
-void printmass(int* mass, int length)
+void printarr(int* arr, int length)
 {
 	for (int i = 0; i < length; i++)
 	{
-		printf("%3d  ", mass[i]);
+		printf("%3d  ", arr[i]);
 	}
 	printf("\n");
 	return;
 }
 
-void printheap(int* mass, int length)
+void printheap(int* arr, int length)
 {
 	int level = 0;
 	int flag = 1;
@@ -103,7 +104,7 @@ void printheap(int* mass, int length)
 		{
 			for (int i = amount; i < (amount + quantity); i++)
 			{
-				printf("%3d ", mass[i]);
+				printf("%3d ", arr[i]);
 			}
 			printf("\n");
 			amount += quantity;
@@ -113,7 +114,7 @@ void printheap(int* mass, int length)
 		{
 			for (int i = amount; i < length; i++)
 			{
-				printf("%3d ", mass[i]);
+				printf("%3d ", arr[i]);
 			}
 			flag = 0;
 		}
@@ -125,9 +126,9 @@ void printheap(int* mass, int length)
 int main()
 {
 	int arr[LEN] = { 51, -7, 5, 36, 74, 68, 88, 4, 9, -88 };
-	printmass(arr, LEN);
+	printarr(arr, LEN);
 	startheap(arr, LEN);
-	printmass(arr, LEN);
+	printarr(arr, LEN);
 	printheap(arr, LEN);
 	return 0;
 }
