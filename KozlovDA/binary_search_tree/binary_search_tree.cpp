@@ -11,22 +11,24 @@ Node::Node (int key, void* data)
 
 Node* Tree::search_parent_for_new_data(int key, Node* root)
 {
+	Node* child = nullptr;
 	if (root != nullptr)
 	{
 		if (key < (root->key))
 		{
 			if (root->left_child != nullptr)
-				return search_parent_for_new_data(key, root->left_child);
+				child = root->left_child;
 			else
 				return root;
 		}
 		else
 		{	
 			if (root->right_child != nullptr)
-				return search_parent_for_new_data(key, root->right_child);
+				child = root->right_child;
 			else
 				return root;
 		}
+		return search_parent_for_new_data(key, child);
 	}
 	else
 	{
@@ -108,7 +110,7 @@ Node* Tree::search(int key)
 	return CurrentNode;
 }
 
-void Tree::delete_data(int key)
+void Tree::delete_node(int key)
 {
 	Node* Parent = search_parent(key, root);
 	Node* NodeToDelete = search(key);

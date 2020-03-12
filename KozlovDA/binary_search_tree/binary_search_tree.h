@@ -10,7 +10,6 @@ public:
 	Node* right_child;
 public:
 	Node(int key, void* data);
-	Node(const Node& other);
 	~Node() {};
 };
 
@@ -30,7 +29,7 @@ public:
 	}
 	void add_data(int key, void* data);
 	Node* search(int key);
-	void delete_data(int key);
+	void delete_node(int key);
 	void print_tree(Node* root, const char* dir, int level);
 };
 
