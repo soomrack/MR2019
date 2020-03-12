@@ -10,7 +10,7 @@ public:
 	Node* right_child;
 public:
 	Node(int key, void* data);
-	~Node() {};
+	~Node();
 };
 
 class Tree
@@ -27,10 +27,13 @@ public:
 	{ 
 		root = nullptr; 
 	}
+	~Tree() {};
+	void delete_tree(Node* root);
 	void add_data(int key, void* data);
 	Node* search(int key);
 	void delete_node(int key);
-	void print_tree(Node* root, const char* dir, int level);
+	void print_tree_with_levels_and_directions(Node* root, const char* dir, int level);
+	void print_tree_in_direct_order(Node* root);
 };
 
 #endif

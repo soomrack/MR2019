@@ -9,6 +9,12 @@ Node::Node (int key, void* data)
 	right_child = nullptr;
 }
 
+Node::~Node()
+{
+	delete left_child;
+	delete right_child;
+}
+
 Node* Tree::search_parent_for_new_data(int key, Node* root)
 {
 	Node* child = nullptr;
@@ -16,14 +22,14 @@ Node* Tree::search_parent_for_new_data(int key, Node* root)
 	{
 		if (key < (root->key))
 		{
-			if (root->left_child != nullptr)
+			if (root->left_child)
 				child = root->left_child;
 			else
 				return root;
 		}
 		else
 		{	
-			if (root->right_child != nullptr)
+			if (root->right_child)
 				child = root->right_child;
 			else
 				return root;
@@ -42,14 +48,14 @@ Node* Tree::search_parent(int key, Node* root)
 	{
 		if (key < root->key)
 		{
-			if (root->left_child->key == key)
+			if (root->left_child && root->left_child->key == key)
 				return root;
 			else
 				return search_parent(key, root->left_child);
 		}
 		else
 		{
-			if (root->right_child->key == key)
+			if (root->right_child && root->right_child->key == key)
 				return root;
 			else
 				return search_parent(key, root->right_child);
@@ -59,103 +65,132 @@ Node* Tree::search_parent(int key, Node* root)
 		return nullptr;
 }
 
-void Tree::copy_key_and_data(Node* CopyIn, Node* CopyFrom)
+void Tree::copy_key_and_data(Node* copy_in, Node* CopyFrom)
 {
-	CopyIn->key = CopyFrom->key;
-	CopyIn->data = CopyFrom->data;
+	copy_in->key = CopyFrom->key;
+	copy_in->data = CopyFrom->data;
 }
 
 Node* Tree::find_max_node(Node* root)
 {
-	if (root->right_child)
-		root = find_max_node(root->right_child);
+	while (root->right_child)
+		root = root->right_child;
 	return root;
 }
 
 void Tree::add_data(int key, void* data)
 {
-	Node* NewNode = new Node(key, data);
+	Node* new_node = new Node(key, data);
 	Node* parent = search_parent_for_new_data(key, root);
 	if (parent != nullptr)
 	{
 		if (key < parent->key)
 		{
-			parent->left_child = NewNode;
+			parent->left_child = new_node;
 		}
 		else
 		{
-			parent->right_child = NewNode;
+			parent->right_child = new_node;
 		}
 	}
 	else
 	{
-		root = NewNode;
+		root = new_node;
 	}
 }
 
 Node* Tree::search(int key)
 {
-	Node* CurrentNode = root;
-	while (CurrentNode->key != key && CurrentNode != nullptr)
+	Node* current_node = root;
+	while (current_node && current_node->key != key)
 	{
-		if (key < CurrentNode->key)
+		if (key < current_node->key)
 		{
-			CurrentNode = CurrentNode->left_child;
+			current_node = current_node->left_child;
 		}
 		else
 		{
-			CurrentNode = CurrentNode->right_child;
+			current_node = current_node->right_child;
 		}
 	}
-	return CurrentNode;
+	return current_node;
 }
 
 void Tree::delete_node(int key)
 {
-	Node* Parent = search_parent(key, root);
-	Node* NodeToDelete = search(key);
-	if (NodeToDelete->left_child && NodeToDelete->right_child)
+	Node* parent = search_parent(key, root);
+	Node* node_to_delete = search(key);
+	if (node_to_delete == nullptr)
+		return;
+	else if (node_to_delete->left_child && node_to_delete->right_child)
 	{
-		Node* MaxNode = find_max_node(NodeToDelete->left_child);
-		Node* ParentOfMaxNode = search_parent(MaxNode->key, root);
-		copy_key_and_data(NodeToDelete, MaxNode);
-		if (MaxNode == ParentOfMaxNode->left_child)
-			ParentOfMaxNode->left_child = nullptr;
+		Node* max_node = find_max_node(node_to_delete->left_child);
+		Node* parent_of_max_node = search_parent(max_node->key, root);
+		copy_key_and_data(node_to_delete, max_node);
+		if (max_node == parent_of_max_node->left_child)
+			parent_of_max_node->left_child = max_node->left_child;
 		else
-			ParentOfMaxNode->right_child = nullptr;
-		delete MaxNode;
+			parent_of_max_node->right_child = max_node->left_child;
+		delete max_node;
 	}
-	else if (NodeToDelete->left_child && !NodeToDelete->right_child)
+	else if (node_to_delete->left_child && !node_to_delete->right_child)
 	{
-		if (NodeToDelete == Parent->left_child)
-			Parent->left_child = NodeToDelete->left_child;
+		if (node_to_delete == parent->left_child)
+			parent->left_child = node_to_delete->left_child;
 		else
-			Parent->right_child = NodeToDelete->left_child;
-		delete NodeToDelete;
+			parent->right_child = node_to_delete->left_child;
+		delete node_to_delete; 
 	}
-	else if (NodeToDelete->right_child && !NodeToDelete->left_child)
+	else if (node_to_delete->right_child && !node_to_delete->left_child)
 	{
-		if (NodeToDelete == Parent->left_child)
-			Parent->left_child = NodeToDelete->right_child;
+		if (node_to_delete == parent->left_child)
+			parent->left_child = node_to_delete->right_child;
 		else
-			Parent->right_child = NodeToDelete->right_child;
-		delete NodeToDelete;
+			parent->right_child = node_to_delete->right_child;
+		delete node_to_delete;
 	}
 	else
 	{
-		if (NodeToDelete == Parent->left_child)
-			Parent->left_child = nullptr;
+		if (node_to_delete == parent->left_child)
+			parent->left_child = nullptr;
 		else
-			Parent->right_child = nullptr;
-		delete NodeToDelete;
+			parent->right_child = nullptr;
+		delete node_to_delete;
 	}
 }
 
-void Tree::print_tree(Node* root, const char* dir, int level) {
+void Tree::print_tree_with_levels_and_directions(Node* root, const char* dir, int level) {
 	if (root) 
 	{
 		std::cout << "lvl " << level << " " << dir << " = " << root->key << std::endl;
-		print_tree(root->left_child, "left", level + 1);
-		print_tree(root->right_child, "right", level + 1);
+		print_tree_with_levels_and_directions(root->left_child, "left", level + 1);
+		print_tree_with_levels_and_directions(root->right_child, "right", level + 1);
+	}
+}
+
+void Tree::print_tree_in_direct_order(Node* root)
+{
+	if (root != nullptr)
+	{
+		std::cout << root->key << std::endl;
+		print_tree_in_direct_order(root->left_child);
+		print_tree_in_direct_order(root->right_child);
+	}
+	else
+		return;
+}
+
+void Tree::delete_tree(Node* root)
+{
+	delete root;
+	if (root == this->root)
+		this->root = nullptr;
+	else
+	{
+		Node* parent = search_parent(root->key, this->root);
+		if (root == parent->left_child)
+			parent->left_child = nullptr;
+		else
+			parent->right_child = nullptr;
 	}
 }
