@@ -17,85 +17,74 @@ Node::~Node()
 
 Node* Tree::search_parent_for_new_data(int key, Node* root)
 {
-	Node* child = nullptr;
-	if (root != nullptr)
+	if (root == nullptr)
+		return nullptr;
+	Node* next_child = nullptr;
+	if (key < (root->key))
 	{
-		if (key < (root->key))
-		{
-			if (root->left_child)
-				child = root->left_child;
-			else
-				return root;
-		}
+		if (root->left_child)
+			next_child = root->left_child;
 		else
-		{	
-			if (root->right_child)
-				child = root->right_child;
-			else
-				return root;
-		}
-		return search_parent_for_new_data(key, child);
+			return root;
 	}
 	else
-	{
-		return nullptr;
+	{	
+		if (root->right_child)
+			next_child = root->right_child;
+		else
+			return root;
 	}
+	return search_parent_for_new_data(key, next_child);
 }
 
 Node* Tree::search_parent(int key, Node* root)
 {
-	if (root != nullptr)
-	{
-		if (key < root->key)
-		{
-			if (root->left_child && root->left_child->key == key)
-				return root;
-			else
-				return search_parent(key, root->left_child);
-		}
-		else
-		{
-			if (root->right_child && root->right_child->key == key)
-				return root;
-			else
-				return search_parent(key, root->right_child);
-		}
-	}
-	else
+	if (root == nullptr)
 		return nullptr;
+	Node* next_child = nullptr;
+	if (key < root->key && root->left_child)
+	{
+		if (root->left_child->key == key)
+			return root;
+		else
+			next_child = root->left_child;
+	}
+	if (key >= root->key && root->right_child)
+	{
+		if (root->right_child->key == key)
+			return root;
+		else
+			next_child = root->right_child;
+	}
+	return search_parent(key, next_child);
 }
 
-void Tree::copy_key_and_data(Node* copy_in, Node* CopyFrom)
+Node* Tree::find_max_node(Node* node)
 {
-	copy_in->key = CopyFrom->key;
-	copy_in->data = CopyFrom->data;
-}
-
-Node* Tree::find_max_node(Node* root)
-{
-	while (root->right_child)
-		root = root->right_child;
-	return root;
+	while (node->right_child)
+		node = node->right_child;
+	return node;
 }
 
 void Tree::add_data(int key, void* data)
 {
 	Node* new_node = new Node(key, data);
-	Node* parent = search_parent_for_new_data(key, root);
-	if (parent != nullptr)
+	Node* parent_of_new_node = search_parent_for_new_data(key, root);
+	if (!parent_of_new_node)
 	{
-		if (key < parent->key)
+		root = new_node;
+		return;
+	}
+	if (parent_of_new_node)
+	{
+		if (key < parent_of_new_node->key)
 		{
-			parent->left_child = new_node;
+			parent_of_new_node->left_child = new_node;
 		}
 		else
 		{
-			parent->right_child = new_node;
+			parent_of_new_node->right_child = new_node;
 		}
-	}
-	else
-	{
-		root = new_node;
 	}
 }
 
@@ -116,47 +105,84 @@ Node* Tree::search(int key)
 	return current_node;
 }
 
-void Tree::delete_node(int key)
+void Tree::delete_node_with_2_children(Node* redundant_node)
 {
-	Node* parent = search_parent(key, root);
-	Node* node_to_delete = search(key);
-	if (node_to_delete == nullptr)
+	Node* parent_of_redundant_node = search_parent(redundant_node->key, root);
+	Node* successor = find_max_node(redundant_node->left_child);
+	Node* parent_of_successor = search_parent(successor->key, root);
+	if (parent_of_redundant_node->left_child == redundant_node)
+		parent_of_redundant_node->left_child = successor;
+	if (parent_of_redundant_node->right_child == redundant_node)
+		parent_of_redundant_node->right_child = successor;
+	if (redundant_node == parent_of_successor)
+	{
+		successor->right_child = redundant_node->right_child;
+	}
+	if (redundant_node != parent_of_successor)
+	{
+		parent_of_successor->right_child = successor->left_child;
+		successor->right_child = redundant_node->right_child;
+		successor->left_child = redundant_node->left_child;
+	}
+	redundant_node->left_child = nullptr;
+	redundant_node->right_child = nullptr;
+	delete redundant_node;
+}
+
+void Tree::delete_node_with_left_child(Node* redundant_node)
+{
+	Node* parent_of_redundant_node = search_parent(redundant_node->key, root);
+	if (redundant_node == parent_of_redundant_node->left_child)
+		parent_of_redundant_node->left_child = redundant_node->left_child;
+	if (redundant_node == parent_of_redundant_node->right_child)
+		parent_of_redundant_node->right_child = redundant_node->left_child;
+	redundant_node->left_child = nullptr;
+	delete redundant_node;
+}
+
+void Tree::delete_node_with_right_child(Node* redundant_node)
+{
+	Node* parent_of_redundant_node = search_parent(redundant_node->key, root);
+	if (redundant_node == parent_of_redundant_node->left_child)
+		parent_of_redundant_node->left_child = redundant_node->right_child;
+	if (redundant_node == parent_of_redundant_node->right_child)
+		parent_of_redundant_node->right_child = redundant_node->right_child;
+	redundant_node->right_child = nullptr;
+	delete redundant_node;
+}
+
+void Tree::delete_node_without_children(Node* redundant_node)
+{
+	Node* parent_of_redundant_node = search_parent(redundant_node->key, root);
+	if (redundant_node == parent_of_redundant_node->left_child)
+		parent_of_redundant_node->left_child = nullptr;
+	if (redundant_node == parent_of_redundant_node->right_child)
+		parent_of_redundant_node->right_child = nullptr;
+	delete redundant_node;
+}
+
+void Tree::delete_node(int key) //разнести эу функции по разным private функциям для каждого случая
+{								// назвать все участвующие переменные: наследник, redundant_node, ...
+	Node* redundant_node = search(key);
+	if (redundant_node == nullptr)
 		return;
-	else if (node_to_delete->left_child && node_to_delete->right_child)
+	if (redundant_node->left_child && redundant_node->right_child)
 	{
-		Node* max_node = find_max_node(node_to_delete->left_child);
-		Node* parent_of_max_node = search_parent(max_node->key, root);
-		copy_key_and_data(node_to_delete, max_node);
-		if (max_node == parent_of_max_node->left_child)
-			parent_of_max_node->left_child = max_node->left_child;
-		else
-			parent_of_max_node->right_child = max_node->left_child;
-		delete max_node;
+		delete_node_with_2_children(redundant_node);
+		return;
 	}
-	else if (node_to_delete->left_child && !node_to_delete->right_child)
+	if (redundant_node->left_child && !redundant_node->right_child)
 	{
-		if (node_to_delete == parent->left_child)
-			parent->left_child = node_to_delete->left_child;
-		else
-			parent->right_child = node_to_delete->left_child;
-		delete node_to_delete; 
+		delete_node_with_left_child(redundant_node);
+		return;
 	}
-	else if (node_to_delete->right_child && !node_to_delete->left_child)
+	if (!redundant_node->left_child && redundant_node->right_child)
 	{
-		if (node_to_delete == parent->left_child)
-			parent->left_child = node_to_delete->right_child;
-		else
-			parent->right_child = node_to_delete->right_child;
-		delete node_to_delete;
+		delete_node_with_right_child(redundant_node);
+		return;
 	}
-	else
-	{
-		if (node_to_delete == parent->left_child)
-			parent->left_child = nullptr;
-		else
-			parent->right_child = nullptr;
-		delete node_to_delete;
-	}
+	if (!redundant_node->left_child && !redundant_node->right_child)	
+		delete_node_without_children(redundant_node);
 }
 
 void Tree::print_tree_with_levels_and_directions(Node* root, const char* dir, int level) {
@@ -184,13 +210,15 @@ void Tree::delete_tree(Node* root)
 {
 	delete root;
 	if (root == this->root)
+	{
 		this->root = nullptr;
+	}
 	else
 	{
 		Node* parent = search_parent(root->key, this->root);
-		if (root == parent->left_child)
+		if (parent->left_child == root)
 			parent->left_child = nullptr;
-		else
+		if (parent->right_child == root)
 			parent->right_child = nullptr;
 	}
 }
