@@ -11,6 +11,7 @@ public:
 public:
 	Node(int key, void* data);
 	~Node();
+	void print_key();
 };
 
 class Tree
@@ -21,6 +22,7 @@ private:
 	Node* search_parent_for_new_data(int key, Node* root);
 	Node* search_parent(int key, Node* root);
 	Node* find_max_node(Node* root);
+	Node* next_node(bool restart = false);
 	void delete_node_with_2_children(Node* redundant_node);
 	void delete_node_with_left_child(Node* redundant_node);
 	void delete_node_with_right_child(Node* redundant_node);
@@ -35,8 +37,9 @@ public:
 	void add_data(int key, void* data);
 	Node* search(int key);
 	void delete_node(int key);
-	void print_tree_with_levels_and_directions(Node* root, const char* dir, int level);
-	void print_tree_in_direct_order(Node* root);
+	void print_with_levels_and_directions(Node* root, const char* dir, int level);
+	void print_in_direct_order(Node* root);
+	void print();
 };
 
 #endif

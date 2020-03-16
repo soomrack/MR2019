@@ -1,5 +1,6 @@
 #include "binary_search_tree.h"
 #include <iostream>
+#include <queue>
 
 Node::Node (int key, void* data)
 {
@@ -13,6 +14,11 @@ Node::~Node()
 {
 	delete left_child;
 	delete right_child;
+}
+
+void Node::print_key()
+{
+	std::cout << this->key;
 }
 
 Node* Tree::search_parent_for_new_data(int key, Node* root)
@@ -185,25 +191,22 @@ void Tree::delete_node(int key) //разнести эу функции по разным private функциям
 		delete_node_without_children(redundant_node);
 }
 
-void Tree::print_tree_with_levels_and_directions(Node* root, const char* dir, int level) {
+void Tree::print_with_levels_and_directions(Node* root, const char* dir, int level) {
 	if (root) 
 	{
 		std::cout << "lvl " << level << " " << dir << " = " << root->key << std::endl;
-		print_tree_with_levels_and_directions(root->left_child, "left", level + 1);
-		print_tree_with_levels_and_directions(root->right_child, "right", level + 1);
+		print_with_levels_and_directions(root->left_child, "left", level + 1);
+		print_with_levels_and_directions(root->right_child, "right", level + 1);
 	}
 }
 
-void Tree::print_tree_in_direct_order(Node* root)
+void Tree::print_in_direct_order(Node* root)
 {
-	if (root != nullptr)
-	{
-		std::cout << root->key << std::endl;
-		print_tree_in_direct_order(root->left_child);
-		print_tree_in_direct_order(root->right_child);
-	}
-	else
+	if (root == nullptr)
 		return;
+	std::cout << root->key << std::endl;
+	print_in_direct_order(root->left_child);
+	print_in_direct_order(root->right_child);
 }
 
 void Tree::delete_tree(Node* root)
@@ -220,5 +223,35 @@ void Tree::delete_tree(Node* root)
 			parent->left_child = nullptr;
 		if (parent->right_child == root)
 			parent->right_child = nullptr;
+	}
+}
+
+Node* Tree::next_node(bool restart)
+{
+	static std::queue <Node*> check_children;
+	if (check_children.empty() && !restart) return nullptr;
+	if (restart == true)
+	{
+		while (!check_children.empty())
+			check_children.pop();
+		check_children.push(this->root);
+	}
+	Node* current_node = check_children.front();
+	check_children.pop();
+	if (current_node->left_child)
+		check_children.push(current_node->left_child);
+	if (current_node->right_child)
+		check_children.push(current_node->right_child);
+	return current_node;
+}
+
+void Tree::print()
+{
+	this->next_node(true)->print_key();
+	std::cout << " ";
+	while (Node* node = this->next_node(false))
+	{
+		node->print_key();
+		std::cout << " ";
 	}
 }
