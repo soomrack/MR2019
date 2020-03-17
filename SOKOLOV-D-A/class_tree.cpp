@@ -215,7 +215,6 @@ public:
 	{
 		std::queue<Node*> queue_node;
 		std::queue<int> queue_key;
-		std::vector<bool> used;
 
 		if (root == nullptr)
 			return queue_key;
