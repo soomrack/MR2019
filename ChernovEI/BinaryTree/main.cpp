@@ -1,5 +1,5 @@
 #include <iostream>
-#include "src/Data.h"
+#include "tests/Data.h"
 
 int main() {
     for (int i = 0; i < 10; i++) {

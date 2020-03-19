@@ -1,6 +1,3 @@
-//
-// Created by chern_000 on 16.03.2020.
-//
 #include <cstdlib>
 #include <ctime>
 
@@ -15,12 +12,12 @@ Data::Data(int num) {
     this->num = num;
 }
 
-int Data::compareTo(Data data) {
+int Data::compare_to(Data data) {
     return this->get() - data.get();
 }
 
-int Data::hashCode() {
-    return num % INT_MAX;
+int Data::hash_code() {
+    return num;
 }
 
 int Data::get() {

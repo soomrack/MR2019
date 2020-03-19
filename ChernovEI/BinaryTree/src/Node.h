@@ -6,7 +6,7 @@
 #define BINARYTREEV2_NODE_H
 
 
-#include "Data.h"
+#include "../tests/Data.h"
 
 class Node {
 private:

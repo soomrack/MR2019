@@ -7,7 +7,7 @@
 
 
 #include "Node.h"
-#include "Data.h"
+#include "../tests/Data.h"
 
 class Tree {
 private:
