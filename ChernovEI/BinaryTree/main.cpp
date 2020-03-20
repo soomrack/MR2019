@@ -1,9 +1,6 @@
 #include <iostream>
-#include "tests/Data.h"
+#include "tests/Main_test.h"
 
 int main() {
-    for (int i = 0; i < 10; i++) {
-        std::cout << (new Data())->get() << std::endl;
-    }
-    return 0;
+    Main_test::set_tree(nullptr);
 }
