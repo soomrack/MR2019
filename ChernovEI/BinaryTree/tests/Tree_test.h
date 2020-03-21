@@ -36,6 +36,8 @@ public:
 
 private:
     static int get_nodes_count(Binary_tree *tree);
+
+    static void test_tree_nodes_values(Binary_tree *tree);
 };
 
 

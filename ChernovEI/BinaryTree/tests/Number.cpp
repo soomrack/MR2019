@@ -13,6 +13,7 @@ Number::Number(int num) {
 }
 
 int Number::compare_to(Data number) {
+//    TODO: dynamic_cast
     return this->get() - dynamic_cast<Number*>(&number)->get();
 }
 

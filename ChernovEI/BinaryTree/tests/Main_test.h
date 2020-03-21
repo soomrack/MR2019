@@ -5,6 +5,7 @@
 #include "../src/Binary_tree.h"
 
 #include <stdexcept>
+#include <cassert>
 
 
 class Main_test {
