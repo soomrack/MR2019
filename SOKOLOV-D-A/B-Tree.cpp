@@ -4,7 +4,7 @@
 const int M = 4;
 
 
-class B_Node
+class B_Node 
 {
 public:
     B_Node(int key, void* data = nullptr);
