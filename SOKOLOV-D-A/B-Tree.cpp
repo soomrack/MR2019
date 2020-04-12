@@ -1,8 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <sstream>
+#include<iterator>
 const int M = 4;
-
+#define MIN_SIZE 1
 
 class B_Node 
 {
@@ -11,18 +13,25 @@ public:
 
     ~B_Node(){}
 
-    // обход + вывод в консоль
+    // РѕР±С…РѕРґ + РІС‹РІРѕРґ РІ РєРѕРЅСЃРѕР»СЊ
     void print();
 
     friend class B_Tree;
+    friend class BTreePrinter;
 private:
-    //метод проверяет можно ли добавить ключ в узел
+    //РјРµС‚РѕРґ РїСЂРѕРІРµСЂСЏРµС‚ РјРѕР¶РЅРѕ Р»Рё РґРѕР±Р°РІРёС‚СЊ РєР»СЋС‡ РІ СѓР·РµР»
     bool canPush();
-    // смещение ключей на один вправо
+    // СЃРјРµС‰РµРЅРёРµ РєР»СЋС‡РµР№ РЅР° РѕРґРёРЅ РІРїСЂР°РІРѕ
     void shiftKeyRight();
-    // метод делит узел на три 
+    // РјРµС‚РѕРґ РґРµР»РёС‚ СѓР·РµР» РЅР° С‚СЂРё 
     B_Node* divideNode();
     void* search(int key);
+    B_Node* searchNode(int key);
+    int deleteData(int key, B_Node* parent);
+    // РјРµС‚РѕРґ СѓРґР°Р»РµРЅРёСЏ РёР· Р»РёСЃС‚Р°
+    void deleteFromLeaf(int key);
+    // РїРѕРёСЃРє СЃРѕСЃРµРґРµР№. Р•СЃС‚СЊ Р»Рё РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РѕР±СЉРµРґРёРЅРёС‚СЊСЃСЏ
+    B_Node* findNeighbour(B_Node* parent);
 
     std::vector <B_Node*> childrens;
     std::vector < std::pair<int, void*>> key;
@@ -35,21 +44,24 @@ class B_Tree
 public:
     B_Tree() {this->root = nullptr;}
     ~B_Tree(){}
-    //метод добавления нового ключа в дерево
+
+    //РјРµС‚РѕРґ РґРѕР±Р°РІР»РµРЅРёСЏ РЅРѕРІРѕРіРѕ РєР»СЋС‡Р° РІ РґРµСЂРµРІРѕ
     int addData(int key, void* data = nullptr);
-    //вывод дерева на экран
+    //РІС‹РІРѕРґ РґРµСЂРµРІР° РЅР° СЌРєСЂР°РЅ
     void print();
-    //Поиск элемента по ключу
+    //РџРѕРёСЃРє СЌР»РµРјРµРЅС‚Р° РїРѕ РєР»СЋС‡Сѓ
     void* search(int key);
+    //РЈРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
+    int deleteData(int key);
 
     B_Node* root;
 
 private:
-    // вспомогательный метод для рекурсии
+    // РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅС‹Р№ РјРµС‚РѕРґ РґР»СЏ СЂРµРєСѓСЂСЃРёРё
     int addData(int key, B_Node* root, void* data = nullptr);
-    //флаг для роста дерева вверх
+    //С„Р»Р°Рі РґР»СЏ СЂРѕСЃС‚Р° РґРµСЂРµРІР° РІРІРµСЂС…
     bool riseUpFlag{0};
-    // метод, реализующий поднятие узла на уровень выше
+    // РјРµС‚РѕРґ, СЂРµР°Р»РёР·СѓСЋС‰РёР№ РїРѕРґРЅСЏС‚РёРµ СѓР·Р»Р° РЅР° СѓСЂРѕРІРµРЅСЊ РІС‹С€Рµ
     int riseUpNode(B_Node* node, B_Node* root);
     
 };
@@ -82,8 +94,12 @@ int B_Tree::addData(int key, void* data)
             }
             else
             {
-                if (this->root->key.at(i+1).first == 0)
-                    this->root->key.at(i+1) = std::make_pair(key, data);
+                if (this->root->key.size() - i == 1)
+                {
+                    this->root->key.push_back(std::make_pair(key, data));
+                    break;
+                }
+                    
             }
         }
         root->numberOfKeys++;
@@ -98,6 +114,7 @@ int B_Tree::addData(int key, void* data)
     {
         addData(key, this->root, data);
     }
+    return 0;
 }
 
 int B_Tree::addData(int key, B_Node* root, void* data)
@@ -114,16 +131,14 @@ int B_Tree::addData(int key, B_Node* root, void* data)
                 {
                     riseUpFlag = false;
                     riseUpNode(root->childrens[i], root);
-
-                    addData(key, root, data);
+                    if (!riseUpFlag)
+                        addData(key, root, data);
                 }
                 return 0;
             }
             else
             {
-                if (i < M / 2 && root->key.at(i+1).first == 0)
-                    addData(key, root->childrens[i + 1], data);
-                else if (i == M/2)
+                if (root->key.size() - i == 1)
                     addData(key, root->childrens[i + 1], data);
                 else
                 {
@@ -164,8 +179,12 @@ int B_Tree::addData(int key, B_Node* root, void* data)
                 }
                 else
                 {
-                    if (root->key.at(i+1).first == 0)
-                        root->key.at(i+1) = std::make_pair(key, data);
+                    if (root->key.size() - i == 1)
+                    {
+                        root->key.push_back(std::make_pair(key, data));
+                        break;
+                    }
+                        
                 }
             }
 
@@ -173,13 +192,13 @@ int B_Tree::addData(int key, B_Node* root, void* data)
             return 0;
         }
         else
-        {// поднять наверх
+        {// РїРѕРґРЅСЏС‚СЊ РЅР°РІРµСЂС…
             root->divideNode();
             riseUpFlag = true;
             return 0;           
         }
     }
-    
+    return 0;
 }
 
 
@@ -195,23 +214,23 @@ int B_Tree::riseUpNode(B_Node* node, B_Node* root)
                 {
                     root->shiftKeyRight();
                     root->key.at(i).first = node->key.at(0).first;
-                    root->childrens[i] = node->childrens[i];
-                    root->childrens[i + 1] = node->childrens[i + 1];
+                    root->childrens[i] = node->childrens[0];
+                    root->childrens[i + 1] = node->childrens[1];
 
                 }
                 else
                 {
                     root->key.at(i).first = node->key.at(0).first;
-                    root->childrens[i] = node->childrens[i];
-                    root->childrens[i + 1] = node->childrens[i + 1];
+                    root->childrens[i] = node->childrens[0];
+                    root->childrens[i + 1] = node->childrens[1];
                 }
                 break;
             }
             else
             {
-                if (root->key.at(i+1).first == 0)
+                if (root->key.size() - i == 1)
                 {
-                    root->key.at(i+1).first = node->key.at(0).first;
+                    root->key.push_back(std::make_pair(node->key.at(0).first, node->key.at(0).second));
                     root->childrens[i + 1] = node->childrens[0];
                     root->childrens.push_back(node->childrens[1]);
 
@@ -249,10 +268,6 @@ B_Node::B_Node(int key, void* data)
 {
     childrens.clear();
     this->key.push_back(std::make_pair(key, data));
-    for (size_t i = 1; i < M - 1; i++)
-    {
-        this->key.push_back(std::make_pair(0, nullptr));
-    }
     numberOfKeys = 1;
 }
 
@@ -285,13 +300,36 @@ B_Node* B_Node::divideNode()
 
 void* B_Node::search(int key)
 {
+
+    for (size_t i = 0; i < this->key.size(); i++)
+    {
+        if (key == this->key.at(i).first)
+            return this->key.at(i).second;
+
+        else if (key < this->key.at(i).first)
+        {
+            this->childrens[i]->search(key);
+            break;
+        }
+        else
+        {
+            if (this->key.size() - i > 1)
+                continue;
+            this->childrens[i + 1]->search(key);
+            break;
+        }
+    }
+}
+
+B_Node* B_Node::searchNode(int key)
+{
     if (this->childrens.empty())
     {
-        for (auto i = 0; i < M - 1; i++)
+        for (size_t i = 0; i < this->key.size(); i++)
             if (key == this->key.at(i).first)
-                return this->key.at(i).second;
+                return this;
     }
-    for (auto i = 0; i < M - 1; i++)
+    for (size_t i = 0; i < this->key.size(); i++)
     {
         if (key < this->key.at(i).first)
         {
@@ -300,7 +338,7 @@ void* B_Node::search(int key)
         }
         else
         {
-            if (this->key.at(i+1).first != 0 && (i + 1) != M)
+            if (this->key.size() - i > 1)
                 continue;
             this->childrens[i + 1]->search(key);
             break;
@@ -308,12 +346,121 @@ void* B_Node::search(int key)
     }
 }
 
+int B_Node::deleteData(int key, B_Node* parent)
+{
+    //B_Node* targetNode = this->searchNode(key);
+
+    //if (this->childrens.empty()) // РµСЃР»Рё СѓРґР°Р»РµРЅРёРµ РёР· Р»РёСЃС‚Р°
+    //{
+    //    if (targetNode->key.size() > MIN_SIZE)
+    //    {
+    //        deleteFromNode(targetNode, key);
+    //    }
+    //    else
+    //    {
+
+    //    }
+    //}
+
+    for (size_t i = 0; i < this->key.size(); i++)
+    {
+        if (key == this->key.at(i).first)
+        {
+            // РµСЃР»Рё СѓРґР°Р»РµРЅРёРµ РёР· Р»РёСЃС‚Р°
+            if (this->childrens.empty())
+            {
+                if (this->key.size() > MIN_SIZE)
+                {
+                    this->deleteFromLeaf(key);
+                }
+                else
+                {
+                    B_Node* neighbour = this->findNeighbour(parent);
+                    // РµСЃР»Рё РµСЃС‚СЊ СЃРѕСЃРµРґ СЃ РєР»СЋС‡Р°РјРё
+                    if (1)
+                    {
+
+                    }
+                    // РёРЅР°С‡Рµ (СЃРѕСЃРµРґРё СЃРѕРґРµСЂР¶Р°С‚ РјРёРЅРёРјСѓРј РєР»СЋС‡РµР№)
+                    else
+                    {
+
+                    }
+                }
+                
+            }
+            // РёРЅР°С‡Рµ
+            else
+            {
+
+            }
+        }
+
+        else if (key < this->key.at(i).first)
+        {
+            this->childrens[i]->deleteData(key, this);
+            break;
+        }
+        else
+        {
+            if (this->key.size() - i > 1)
+                continue;
+            this->childrens[i + 1]->deleteData(key, this);
+            break;
+        }
+    }
+
+    return 0;
+}
+
+
+void B_Node::deleteFromLeaf(int key)
+{
+    for (auto i = this->key.begin(); i != this->key.end(); i++)
+    {
+        if (key == i->first)
+        {
+            this->key.erase(i);
+            return;
+        }
+            
+    }
+}
+
+
+B_Node* B_Node::findNeighbour(B_Node* parent)
+{
+    // РµСЃР»Рё РµСЃС‚СЊ СЃРѕСЃРµРґ СЃ РєР»СЋС‡Р°РјРё
+    for (auto i = parent->childrens.begin(); i < parent->childrens.end(); i++)
+    {
+        if (*i == this)
+        {
+            if ((*(--i))->key.size() > MIN_SIZE)
+            {
+                return *i;
+            }
+            else if ((*(++i))->key.size() > MIN_SIZE)
+            {
+                return *i;
+            }
+        }
+    }
+    // РёРЅР°С‡Рµ. СЃРѕСЃРµРґРё РµСЃС‚СЊ, РЅРѕ РєР»СЋС‡РµР№ РјР°Р»Рѕ
+
+    return 0;
+}
+
 
 void B_Node::shiftKeyRight()
 {
     for (size_t i = this->numberOfKeys; i > 0; i--)
     {
-        this->key.at(i).first = this->key.at(i - 1).first;
+        if (this->key.size() < M-1)
+            this->key.push_back(std::make_pair(this->key.at(i - 1).first, this->key.at(i - 1).second));
+        else
+        {
+            this->key[i] = this->key[i - 1];
+        }
         if (!this->childrens.empty())
         {
             if (this->childrens.size() < M)
@@ -328,23 +475,17 @@ void B_Node::shiftKeyRight()
 void B_Node::print()
 {
     size_t i;
-    for (i = 0; i < M-1; i++)
+    for (i = 0; i < this->key.size(); i++)
     {
         if (i < this->childrens.size())
-        {
             childrens[i]->print();
-            //std::cout << "\n";
-        }
-        if (key.at(i).first != 0)
-        {
-            std::cout << " " << key.at(i).first;
-            //std::cout << "\n";
-        }
-            
+
+        std::cout << " " << key.at(i).first;   
     }
     std::cout << "\n";
     if (i < this->childrens.size())
         childrens[i]->print();
+    std::cout << "\n";
 }
 
 void B_Tree::print()
@@ -356,11 +497,11 @@ void* B_Tree::search(int key)
 {
     if (this->root->childrens.empty())
     {
-        for (auto i = 0; i < M - 1; i++)
+        for (size_t i = 0; i < M - 1; i++)
             if (key == this->root->key.at(i).first)
                 return this->root->key.at(i).second;
     }
-    for (auto i = 0; i < M - 1; i++)
+    for (size_t i = 0; i < this->root->key.size(); i++)
     {
         if (key < this->root->key.at(i).first)
         {
@@ -369,40 +510,161 @@ void* B_Tree::search(int key)
         }
         else
         {
-            if (this->root->key.at(i+1).first != 0 && (i+1) != M)
+            if (this->root->key.size() - i > 1)
                 continue;
             this->root->childrens[i+1]->search(key);
             break;
         }
     }
+
 }
+
+int B_Tree::deleteData(int key)
+{
+    root->deleteData(key, root);
+    return 0;
+}
+
+
+//-----------------------------------------------------------------------
+class BTreePrinter
+{
+    struct NodeInfo
+    {
+        std::string text;
+        unsigned text_pos, text_end; 
+    };
+
+    typedef std::vector<NodeInfo> LevelInfo;
+
+    std::vector<LevelInfo> levels;
+
+    std::string node_text(std::vector < std::pair<int, void*>> const keys, unsigned key_count);
+
+    void before_traversal()
+    {
+        levels.resize(0);
+        levels.reserve(10);   
+    }
+
+    void visit(B_Node const* node, unsigned level = 0, unsigned child_index = 0);
+
+    void after_traversal();
+
+public:
+    void print(B_Tree const& tree)
+    {
+        before_traversal();
+        visit(tree.root);
+        after_traversal();
+    }
+};
+
+
+void BTreePrinter::visit(B_Node const* node, unsigned level, unsigned child_index)
+{
+    if (level >= levels.size())
+        levels.resize(level + 1);
+
+    LevelInfo& level_info = levels[level];
+    NodeInfo info;
+
+    info.text_pos = 0;
+    if (!level_info.empty())  
+        info.text_pos = level_info.back().text_end + (child_index == 0 ? 2 : 1);
+
+    info.text = node_text(node->key, unsigned(node->key.size()));
+
+    if (node->childrens.empty())
+    {
+        info.text_end = info.text_pos + unsigned(info.text.length());
+    }
+    else 
+    {
+        for (unsigned i = 0, e = unsigned(node->key.size()); i <= e; ++i)  
+            visit(node->childrens[i], level + 1, i);
+
+        info.text_end = levels[level + 1].back().text_end;
+    }
+
+    levels[level].push_back(info);
+}
+
+
+std::string BTreePrinter::node_text(std::vector < std::pair<int, void*>> const keys, unsigned key_count)
+{
+    std::ostringstream os;
+    char const* sep = "";
+
+    os << "[";
+    for (unsigned i = 0; i < key_count; ++i, sep = " ")
+        os << sep << keys[i].first;
+    os << "]";
+
+    return os.str();
+}
+
+
+void print_blanks(unsigned n)
+{
+    while (n--)
+        std::cout << ' ';
+}
+
+
+void BTreePrinter::after_traversal()
+{
+    for (std::size_t l = 0, level_count = levels.size(); ; )
+    {
+        auto const& level = levels[l];
+        unsigned prev_end = 0;
+
+        for (auto const& node : level)
+        {
+            unsigned total = node.text_end - node.text_pos;
+            unsigned slack = total - unsigned(node.text.length());
+            unsigned blanks_before = node.text_pos - prev_end;
+
+            print_blanks(blanks_before + slack / 2);
+            std::cout << node.text;
+
+            if (&node == &level.back())
+                break;
+
+            print_blanks(slack - slack / 2);
+
+            prev_end += blanks_before + total;
+        }
+
+        if (++l == level_count)
+            break;
+
+        std::cout << "\n\n";
+    }
+
+    std::cout << "\n";
+}
+//--------------------------------------------------------------------------------------
+
 
 int main()
 {
-    std::string data6 = "Putin";
-    B_Tree b_tree;
-    b_tree.addData(1);
-    b_tree.addData(2);
-    b_tree.addData(3); 
-    b_tree.addData(4);
-    b_tree.addData(17);
-    b_tree.addData(31);
-    b_tree.addData(7);
-    b_tree.addData(9);
-    b_tree.addData(11);
-    b_tree.addData(13);
-    b_tree.addData(16);
-    b_tree.addData(19);
-    b_tree.addData(26);
-    b_tree.addData(27);
-    b_tree.addData(96, &data6);
-    b_tree.addData(99);
-    b_tree.addData(97);
-    b_tree.addData(14);
-    std::string* a = 0;
-    a = (std::string*)b_tree.search(96);
-    b_tree.print();
+   
+    BTreePrinter printer;
+    B_Tree t;
 
+    srand(29324);
+
+    for (unsigned i = 0; i < 14; ++i)
+    {
+        int p = rand() % 100;
+        t.addData(p);
+        
+    }
+    printer.print(t);
+    t.addData(4);
+    void* sear = t.search(56);
+    t.deleteData(42);
     system("pause");
     return 0;
 }
