@@ -1,0 +1,181 @@
+class Node
+{
+public:
+    int * key; //массив ключей
+    int t; //минимальная степень
+    Node * * child_node_pointer; //массив указателей на узлы-потомки
+    int number_of_keys; //кол-во ключей
+    bool is_leaf; //является ли листом
+public:
+    Node(int t, bool is_leaf)
+    {
+        this->t = t;
+        this->is_leaf = is_leaf;
+    }
+
+    int split_child(int, Node *);
+    int insert_to_nonfull_node(int);
+};
+
+class Tree
+{
+private:
+    Node * root;
+    int t;
+public:
+    Tree(int t)
+    {
+        this->root = nullptr;
+        this->t = t;
+    }
+
+    Node * search(Node *, int);
+    int insert(int);
+};
+
+
+
+
+//(вспомогательный) Метод разбивает узел old_node, являющийся index_of_old_node-тым потомком данного узла, на 2 узла, добавляет
+// новый узел в массив потомков на (index_of_old_node+1)-ую позицию и помещает (t-1)-ый ключ узла old_node в массив ключей
+//данного узла на index_of_old_node-тую позицию
+int Node::split_child(int index_of_old_node, Node * old_node)
+{
+    //СОЗДАЁМ НОВЫЙ УЗЕЛ, КУДА ПЕРЕНЕСЁМ ПОЛОВИНУ СТАРОГО
+    Node * new_node = new Node(old_node->t, old_node->is_leaf);
+    new_node->number_of_keys = t - 1;
+    //копируем правую половину (t-1) ключей в новый узел
+    for (int j = 0; j != (t-1); j++)
+    {
+        new_node->key[j] = old_node->key[j + t];
+    }
+    //копируем правую половину (t) потомков в новый узел
+    if (old_node->is_leaf == false)
+    {
+        for (int j = 0; j != t; j++)
+        {
+            new_node->child_node_pointer[j] = old_node->child_node_pointer[j + t];
+        }
+    }
+    old_node->number_of_keys = t - 1;
+    //ВЫДЕЛИМ МЕСТО В МАССИВЕ ПОТОМКОВ РОДИТЕЛЯ ДЛЯ НОВОГО ПОТОМКА (ИНДЕКС ПОСЛЕДНЕГО ПОТОМКА СОВПАДАЕТ С КОЛИЧЕСТВОМ КЛЮЧЕЙ)
+    for (int j = this->number_of_keys; j != index_of_old_node; j--)
+    {
+        this->child_node_pointer[j + 1] = this->child_node_pointer[j];
+    } //таким образом, (index_of_old_node + 1)-й элемент остался свободным
+    //помещаем новый узел на это место
+    this->child_node_pointer[index_of_old_node + 1] = new_node;
+    //ОСВОБОДИМ index_of_old_node-ТОЕ МЕСТО В МАССИВЕ КЛЮЧЕЙ РОДИТЕЛЯ ДЛЯ СЕРЕДИННОГО КЛЮЧА РАЗБИВАЕМОГО УЗЛА И ПОМЕСТИМ ЕГО ТУДА
+    for (int j = this->number_of_keys - 1; j >= index_of_old_node; j--)
+    {
+        this->key[j + 1] = this->key[j];
+    }
+    //помещаем серединный ключ в массив ключей родителя
+    this->key[index_of_old_node] = old_node->key[t - 1];
+    this->number_of_keys = number_of_keys + 1;
+    return 0;
+}
+
+//(вспомогательный) Метод для вставки ключа в незаполненный узел
+int Node::insert_to_nonfull_node(int key)
+{
+    int index_of_insertion = this->number_of_keys - 1;
+    //ЕСЛИ УЗЕЛ ЯВЛЯЕТСЯ ЛИСТОМ
+    if (this->is_leaf)
+    //ищем индекс для вставки ключа key
+    {
+        while ((this->key[index_of_insertion] > key) && (index_of_insertion != -1))
+        {
+            //сдвигаем элемент на 1 вправо
+            this->key[index_of_insertion + 1] = this->key[index_of_insertion];
+            index_of_insertion--;
+        }//таким образом, мы освободили (index_of_insertion + 1)-тое место для key
+        //помещаем key на это место
+        this->key[index_of_insertion + 1] = key;
+        this->number_of_keys = number_of_keys + 1;
+    }
+    //ЕСЛИ УЗЕЛ НЕ ЯВЛЯЕТСЯ ЛИСТОМ
+    else
+    {
+        //ищем индекс потомка для вставки ключа
+        while ((this->key[index_of_insertion] > key) && (index_of_insertion != -1))
+        {
+            index_of_insertion--;
+        } //по выходе из цикла index_of_insertion будет соответствовать первому меньшему key ключу =>
+          //=> для индексации потомка используется index_of_insertion + 1
+        //ПРОВЕРИМ ЗАПОЛНЕННОСТЬ ПОТОМКА
+        //если потомок заполнен
+        if (this->child_node_pointer[index_of_insertion + 1]->number_of_keys == 2 * t + 1)
+        {
+            //разделяем потомка
+            this->split_child(index_of_insertion + 1, this->child_node_pointer[index_of_insertion + 1]);
+            //выбираем, в какого потомка добавлять ключ
+            if (key > this->key[index_of_insertion + 1])
+                index_of_insertion++;
+            //добавляем ключ в потомка
+            this->child_node_pointer[index_of_insertion + 1]->insert_to_nonfull_node(key);
+        }
+        //если потомок не заполнен, вставляем в него ключ
+        else
+        {
+            this->child_node_pointer[index_of_insertion + 1]->insert_to_nonfull_node(key);
+        }
+    }
+    return  0;
+}
+
+//Метод ищет ключ и возвращает указатель на узел с ключём в случае успешного поиска, нулевой указатель в остальных случаях
+Node * Tree::search(Node * node, int key)
+{
+    //найдём индекс первыйого ключа, большего или равного key
+    int first_greater_or_equal_key_index = 0;
+    while ((first_greater_or_equal_key_index < node->number_of_keys) && (key > node->key[first_greater_or_equal_key_index]))
+        first_greater_or_equal_key_index++;
+
+    //если ключ найден, возвращаем указатель на его узел
+    if (node->key[first_greater_or_equal_key_index] == key)
+        return node;
+
+    //если узел является листом
+    if (node->is_leaf)
+        return nullptr;
+
+    //в остальных случаях производим поиск в левом потомке от первого большего key ключа
+    //(или в правом от последнего меньшего, что то же самое)
+    return search(node->child_node_pointer[first_greater_or_equal_key_index], key);
+}
+
+//Метод добавляет новый ключ в дерево
+int Tree::insert(int key)
+{
+    //если корня нет, создаём его
+    if (root == nullptr)
+    {
+        root = new Node(t, true);
+        root->key[0] = key;
+        root->number_of_keys = 1;
+    }
+    else
+    {
+        //если корень заполнен, создаём новый корень, а старый делим на два потомка
+        if (root->number_of_keys == 2 * t - 1)
+        {
+            Node * new_root = new Node(t, false);
+            new_root->child_node_pointer[0] = root;
+            new_root->split_child(0, root);
+            //вставляем ключ в одного из двух потомков нового корня
+            int index_of_child_to_insert = 0;
+            //сравниваем ключ со средним элементом массива ключей бывшего корня
+            if (key > new_root->key[0])
+                index_of_child_to_insert++;
+            new_root->child_node_pointer[index_of_child_to_insert]->insert_to_nonfull_node(key);
+            root = new_root;
+        }
+        //если корень не заполнен, вызываем для него рекурсивую функцию вставки ключа в неполный узел
+        else
+        {
+            root->insert_to_nonfull_node(key);
+        }
+    }
+    return 0;
+}
