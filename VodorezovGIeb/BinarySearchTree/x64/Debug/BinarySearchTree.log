@@ -1,0 +1,5 @@
+﻿  BinarySearchTree.cpp
+  treeMethods.cpp
+  Создание кода...
+C:\Users\glebo\OneDrive\Рабочий стол\Учеба в Поликеке\Программировани С++\Binary search tree\дерево без parent\BinarySearchTree\treeMethods.cpp(34): warning C4715: Tree::search_parent_for_new_child: значение возвращается не при всех путях выполнения
+  BinarySearchTree.vcxproj -> C:\Users\glebo\OneDrive\Рабочий стол\Учеба в Поликеке\Программировани С++\Binary search tree\дерево без parent\BinarySearchTree\x64\Debug\BinarySearchTree.exe
