@@ -4,12 +4,12 @@
 #include <sstream>
 #include<iterator>
 const int M = 4;
-#define MIN_SIZE 1
+#define MIN_SIZE ((M-1)/2)
 
 class B_Node 
 {
 public:
-    B_Node(int key, void* data = nullptr);
+    B_Node(int key = 0, void* data = nullptr);
 
     ~B_Node(){}
 
@@ -26,16 +26,14 @@ private:
     // метод делит узел на три 
     B_Node* divideNode();
     void* search(int key);
-    B_Node* searchNode(int key);
-    int deleteData(int key, B_Node* parent);
+
     // метод удаления из листа
     void deleteFromLeaf(int key);
     // поиск соседей. Есть ли возможность объединиться
-    B_Node* findNeighbour(B_Node* parent);
+    std::pair<B_Node*, B_Node*> findNeighbours(B_Node* parent);
 
-    std::vector <B_Node*> childrens;
+    std::vector <B_Node*> children;
     std::vector < std::pair<int, void*>> key;
-    int numberOfKeys;
 };
 
 
@@ -54,83 +52,67 @@ public:
     //Удаление элемента
     int deleteData(int key);
 
+    friend class BTreePrinter;
+private:
     B_Node* root;
 
-private:
     // вспомогательный метод для рекурсии
     int addData(int key, B_Node* root, void* data = nullptr);
     //флаг для роста дерева вверх
     bool riseUpFlag{0};
     // метод, реализующий поднятие узла на уровень выше
     int riseUpNode(B_Node* node, B_Node* root);
+    int insertToNode(B_Node* node, std::pair<int, void*> key);
+    int insertNodeToRoot(B_Node* node, B_Node* root);
+    void restructNodes(B_Node* currentNode, B_Node* parent, B_Node* neighbour);
+    int mergeNodes(B_Node* currentNode, B_Node* parent, B_Node* neighbour, int key);
+    B_Node* mergeChildren(B_Node* currentNode, B_Node* childL, B_Node* childR, size_t indx);
+    int deleteData(int key, B_Node* node, B_Node* parent);
+    int deleteLikeFromLeaf(int key, B_Node* node, B_Node* parent);
     
 };
 
 
 int B_Tree::addData(int key, void* data)
 {
-    if (!this->root)
+    if (!this->root) //если корень
     {
         root = new B_Node(key, data);
         return 0;
-    }
-               
-    if (this->root->canPush() && this->root->childrens.empty())
+    }         
+    if (this->root->canPush() && this->root->children.empty())  // если лист и можно добавить
     {
-        for (size_t i = 0; i < M - 1; i++)
-        {
-            if (key <= this->root->key.at(i).first)
-            {
-                if (i != (M - 2))
-                {
-                    this->root->shiftKeyRight();
-                    this->root->key.at(i) = std::make_pair(key, data);
-                }
-                else
-                {
-                    this->root->key.at(i) = std::make_pair(key, data);
-                }
-                break;
-            }
-            else
-            {
-                if (this->root->key.size() - i == 1)
-                {
-                    this->root->key.push_back(std::make_pair(key, data));
-                    break;
-                }
-                    
-            }
-        }
-        root->numberOfKeys++;
+        insertToNode(this->root, std::make_pair(key, data));
         return 0;
     }
-    else if (!this->root->canPush() && this->root->childrens.empty())
+    if (!this->root->canPush() && this->root->children.empty()) // если лист и нельзя добавить
     {
         this->root->divideNode();
         addData(key, this->root, data);
+        return 0;
     }
-    else
+    if (!this->root->children.empty())                          // если не лист. идем глубже
     {
         addData(key, this->root, data);
     }
+    riseUpFlag = false;
     return 0;
 }
 
 int B_Tree::addData(int key, B_Node* root, void* data)
 {
     
-    if (!root->childrens.empty())
+    if (!root->children.empty()) // если не лист
     { 
         for (size_t i = 0; i < M - 1; i++)
         {
             if (key <= root->key.at(i).first)
             {
-                addData(key, root->childrens[i], data);
+                addData(key, root->children[i], data);
                 if (riseUpFlag)
                 {
                     riseUpFlag = false;
-                    riseUpNode(root->childrens[i], root);
+                    riseUpNode(root->children[i], root);
                     if (!riseUpFlag)
                         addData(key, root, data);
                 }
@@ -139,7 +121,7 @@ int B_Tree::addData(int key, B_Node* root, void* data)
             else
             {
                 if (root->key.size() - i == 1)
-                    addData(key, root->childrens[i + 1], data);
+                    addData(key, root->children[i + 1], data);
                 else
                 {
                     continue;
@@ -148,7 +130,7 @@ int B_Tree::addData(int key, B_Node* root, void* data)
                 if (riseUpFlag)
                 {
                     riseUpFlag = false;
-                    riseUpNode(root->childrens[i + 1], root);
+                    riseUpNode(root->children[i + 1], root);
                     if (riseUpFlag)
                         continue;
                     addData(key, root, data);
@@ -157,45 +139,90 @@ int B_Tree::addData(int key, B_Node* root, void* data)
             }
         }
     }
-    else
+    else // если лист
     {
         
         if (root->canPush())
         {
-            for (size_t i = 0; i < M - 1; i++)
-            {
-                if (key <= root->key.at(i).first)
-                {
-                    if (i != (M - 2))
-                    {
-                        root->shiftKeyRight();
-                        root->key.at(i) = std::make_pair(key, data);
-                    }
-                    else
-                    {
-                        root->key.at(i) = std::make_pair(key, data);
-                    }
-                    break;
-                }
-                else
-                {
-                    if (root->key.size() - i == 1)
-                    {
-                        root->key.push_back(std::make_pair(key, data));
-                        break;
-                    }
-                        
-                }
-            }
-
-            root->numberOfKeys++;
+            insertToNode(root, std::make_pair(key, data));
             return 0;
         }
         else
-        {// поднять наверх
+        {
             root->divideNode();
             riseUpFlag = true;
             return 0;           
+        }
+    }
+    return 0;
+}
+
+
+int B_Tree::insertToNode(B_Node* node, std::pair<int, void*> key)
+{
+    for (size_t i = 0; i < M - 1; i++)                                   
+    {                                                                    
+        if (key.first <= node->key.at(i).first)                          
+        {                                                                
+            if (i != (M - 2))                                            
+            {                                                            
+                node->shiftKeyRight();
+                node->key.at(i) = key;
+            }                                                            
+            else                                                         
+            {                                                            
+                node->key.at(i) = key;
+            }                                                            
+            break;                                                       
+        }                                                                
+        else                                                             
+        {                                                                
+            if (node->key.size() - i == 1)
+            {                                                            
+                node->key.push_back(key);
+                break;                                                   
+            }                                                            
+                                                                         
+        }                                                                
+    }                                                                      
+    return 0;
+}
+
+int B_Tree::insertNodeToRoot(B_Node* node, B_Node* root)
+{
+    for (size_t i = 0; i < M - 1; i++)
+    {
+        if (node->key.at(0).first <= root->key.at(i).first)
+        {
+            if (i != (M - 2))
+            {
+                root->shiftKeyRight();
+                root->key.at(i).first = node->key.at(0).first;
+                root->children[i] = node->children[0];
+                root->children[i + 1] = node->children[1];
+
+            }
+            else
+            {
+                root->key.at(i).first = node->key.at(0).first;
+                root->children[i] = node->children[0];
+                root->children[i + 1] = node->children[1];
+            }
+            break;
+        }
+        else
+        {
+            if (root->key.size() - i == 1)
+            {
+                root->key.push_back(std::make_pair(node->key.at(0).first, node->key.at(0).second));
+                root->children[i + 1] = node->children[0];
+                root->children.push_back(node->children[1]);
+
+            }
+            else
+                continue;
+
+            break;
         }
     }
     return 0;
@@ -206,59 +233,19 @@ int B_Tree::riseUpNode(B_Node* node, B_Node* root)
 {
     if (root->canPush())
     {
-        for (size_t i = 0; i < M - 1; i++)
-        {
-            if (node->key.at(0).first <= root->key.at(i).first)
-            {
-                if (i != (M - 2))
-                {
-                    root->shiftKeyRight();
-                    root->key.at(i).first = node->key.at(0).first;
-                    root->childrens[i] = node->childrens[0];
-                    root->childrens[i + 1] = node->childrens[1];
-
-                }
-                else
-                {
-                    root->key.at(i).first = node->key.at(0).first;
-                    root->childrens[i] = node->childrens[0];
-                    root->childrens[i + 1] = node->childrens[1];
-                }
-                break;
-            }
-            else
-            {
-                if (root->key.size() - i == 1)
-                {
-                    root->key.push_back(std::make_pair(node->key.at(0).first, node->key.at(0).second));
-                    root->childrens[i + 1] = node->childrens[0];
-                    root->childrens.push_back(node->childrens[1]);
-
-                }
-                else
-                    continue;
-
-                break;
-            }
-        }
-        root->numberOfKeys++;
+        insertNodeToRoot(node, root);
         return 0;
     }
     else
     {
+        insertNodeToRoot(node, root);
         root->divideNode();
         
-        if (node->key.at(0).first <= root->key.at(0).first && root == this->root)
-            riseUpNode(node, root->childrens[0]);
-        else if (root == this->root)
-        {
-            riseUpNode(node, root->childrens[1]);
-        }
+
+        if (root == this->root)
+            riseUpFlag = false;
         else
             riseUpFlag = true;
-            
-
-
         return 0;
     }
 }
@@ -266,15 +253,14 @@ int B_Tree::riseUpNode(B_Node* node, B_Node* root)
 
 B_Node::B_Node(int key, void* data)
 {
-    childrens.clear();
+    children.clear();
     this->key.push_back(std::make_pair(key, data));
-    numberOfKeys = 1;
 }
 
 
 bool B_Node::canPush()
 {
-    if (numberOfKeys >= (M - 1))
+    if (this->key.size() >= (M - 1))
         return false;
     else
         return true;
@@ -283,15 +269,18 @@ bool B_Node::canPush()
 B_Node* B_Node::divideNode()
 {
     B_Node* main = new B_Node(this->key.at((M / 2) - 1).first, this->key.at((M / 2) - 1).second);
-    main->childrens.push_back(new B_Node(this->key.at(0).first, this->key.at(0).second));
-    main->childrens.push_back(new B_Node(this->key.at(M-2).first, this->key.at(M - 2).second));
-    if (!this->childrens.empty())
+    main->children.push_back(new B_Node(this->key.at(0).first, this->key.at(0).second));
+    main->children.push_back(new B_Node(this->key.at(M - 2).first, this->key.at(M - 2).second));
+    if (this->key.size() > (M - 1))
+        main->children[1]->key.push_back(this->key.back());
+
+    if (!this->children.empty())
     {
         for (size_t sourceIterator = 0, destinationIterator = 0;
-            sourceIterator < this->childrens.size();
+            sourceIterator < this->children.size();
             sourceIterator++, destinationIterator = sourceIterator > 1 ? 1: 0)
         {
-            main->childrens[destinationIterator]->childrens.push_back(this->childrens[sourceIterator]);
+            main->children[destinationIterator]->children.push_back(this->children[sourceIterator]);
         }
     }
     *this = *main;
@@ -306,111 +295,254 @@ void* B_Node::search(int key)
         if (key == this->key.at(i).first)
             return this->key.at(i).second;
 
-        else if (key < this->key.at(i).first)
-        {
-            this->childrens[i]->search(key);
-            break;
-        }
-        else
-        {
-            if (this->key.size() - i > 1)
-                continue;
-            this->childrens[i + 1]->search(key);
-            break;
-        }
-    }
-}
-
-B_Node* B_Node::searchNode(int key)
-{
-    if (this->childrens.empty())
-    {
-        for (size_t i = 0; i < this->key.size(); i++)
-            if (key == this->key.at(i).first)
-                return this;
-    }
-    for (size_t i = 0; i < this->key.size(); i++)
-    {
         if (key < this->key.at(i).first)
         {
-            this->childrens[i]->search(key);
+            this->children[i]->search(key);
             break;
         }
-        else
+        if (key > this->key.at(i).first && !this->children.empty())
         {
             if (this->key.size() - i > 1)
                 continue;
-            this->childrens[i + 1]->search(key);
+            this->children[i + 1]->search(key);
             break;
         }
     }
+    return nullptr;
 }
 
-int B_Node::deleteData(int key, B_Node* parent)
+//B_Node* B_Node::searchNode(int key)
+//{
+//    if (this->children.empty())
+//    {
+//        for (size_t i = 0; i < this->key.size(); i++)
+//            if (key == this->key.at(i).first)
+//                return this;
+//    }
+//    for (size_t i = 0; i < this->key.size(); i++)
+//    {
+//        if (key < this->key.at(i).first)
+//        {
+//            this->children[i]->search(key);
+//            break;
+//        }
+//        else
+//        {
+//            if (this->key.size() - i > 1)
+//                continue;
+//            this->children[i + 1]->search(key);
+//            break;
+//        }
+//    }
+//}
+
+int B_Tree::deleteData(int key, B_Node* currentNode, B_Node* parent)
 {
-    //B_Node* targetNode = this->searchNode(key);
-
-    //if (this->childrens.empty()) // если удаление из листа
-    //{
-    //    if (targetNode->key.size() > MIN_SIZE)
-    //    {
-    //        deleteFromNode(targetNode, key);
-    //    }
-    //    else
-    //    {
-
-    //    }
-    //}
-
-    for (size_t i = 0; i < this->key.size(); i++)
+    for (size_t i = 0; i < currentNode->key.size(); i++)
     {
-        if (key == this->key.at(i).first)
+        if (key == currentNode->key.at(i).first) // если ключ найден
         {
-            // если удаление из листа
-            if (this->childrens.empty())
+            
+            if (currentNode->children.empty())   // если удаление из листа
             {
-                if (this->key.size() > MIN_SIZE)
-                {
-                    this->deleteFromLeaf(key);
-                }
-                else
-                {
-                    B_Node* neighbour = this->findNeighbour(parent);
-                    // если есть сосед с ключами
-                    if (1)
-                    {
+                deleteLikeFromLeaf(key, currentNode, parent); // ПЕРЕИМЕНОВАТЬ!!!!!!!!!
+            }
+            else // иначе - рекурсия
+            {
+                // удаление по алгоритму, но если в ребенке ключ совпадает с удаляемым - особый случай.
+                // это указывает на то, что происходит удаление. сразу можно удалить, если ключей много
 
+                if (currentNode->children[i]->key.size() > MIN_SIZE ||      // если ключей достаточно
+                    currentNode->children[i + 1]->key.size() > MIN_SIZE)    // переносим ключ вверх
+                {
+                    B_Node* child = (currentNode->children[i]->key.size() > MIN_SIZE) ?
+                        currentNode->children[i] :
+                        currentNode->children[i + 1];
+
+                    if (child->key[0].first > key)
+                    {
+                        currentNode->key.at(i) = child->key.at(0);
+                        deleteData(child->key[0].first, child, currentNode);
                     }
-                    // иначе (соседи содержат минимум ключей)
                     else
                     {
-
+                        currentNode->key.at(i) = child->key.back();
+                        deleteData(child->key[0].first, child, currentNode);
                     }
                 }
-                
-            }
-            // иначе
-            else
-            {
+                else //ключей у детей мало
+                {
+                    if (currentNode->key.size() > MIN_SIZE)
+                    {
+                        B_Node* tmp = mergeChildren(currentNode, currentNode->children[i], currentNode->children[i + 1], i);
+                        insertToNode(tmp, currentNode->key.at(i));
+                        //currentNode->deleteFromLeaf(key);
+                        deleteData(key, currentNode, parent);
+                        deleteData(key, tmp, currentNode);
+                    }
+                    else
+                    {
+                        B_Node* tmp = mergeChildren(currentNode, currentNode->children[i], currentNode->children[i + 1], i);
+                        insertToNode(tmp, currentNode->key.at(i));
+                        //----
+                        auto neighbours = currentNode->findNeighbours(parent);
 
+                        if (neighbours.first->key.size() > MIN_SIZE ||         // если есть сосед с ключами
+                            neighbours.second->key.size() > MIN_SIZE)
+                        {
+                            B_Node* neighbour = (neighbours.first->key.size() > MIN_SIZE) ?
+                                neighbours.first :
+                                neighbours.second;
+
+                            restructNodes(currentNode, parent, neighbour);     // метод перестройки
+
+                            currentNode->deleteFromLeaf(key);
+                        }
+                        else // иначе (соседи содержат минимум ключей)
+                        {
+                            B_Node* neighbour = (key == neighbours.first->key[0].first ? neighbours.second : neighbours.first);
+                            mergeNodes(currentNode, parent, neighbour, key); // метод слияния
+                            
+                        }
+                        deleteData(key, currentNode, parent);
+                    }
+                }
             }
+            return 0;
         }
 
-        else if (key < this->key.at(i).first)
+        else if (key < currentNode->key.at(i).first) // если ключ меньше
         {
-            this->childrens[i]->deleteData(key, this);
+            deleteData(key, currentNode->children[i], currentNode);
             break;
+            // проверит на ребаланс
         }
-        else
+        else                                  // если ключ больше
         {
-            if (this->key.size() - i > 1)
+            if (currentNode->key.size() - i > 1)
                 continue;
-            this->childrens[i + 1]->deleteData(key, this);
+            deleteData(key, currentNode->children[i + 1], currentNode);
             break;
+            // проверка
         }
     }
 
     return 0;
+}
+
+
+int B_Tree::deleteLikeFromLeaf(int key, B_Node* currentNode, B_Node* parent)
+{
+    if (currentNode->key.size() > MIN_SIZE)
+    {
+        currentNode->deleteFromLeaf(key);
+        return 0;
+    }
+    else
+    {
+        auto neighbours = currentNode->findNeighbours(parent);
+
+        if (neighbours.first->key.size() > MIN_SIZE ||         // если есть сосед с ключами
+            neighbours.second->key.size() > MIN_SIZE)
+        {
+            B_Node* neighbour = (neighbours.first->key.size() > MIN_SIZE) ?
+                neighbours.first :
+                neighbours.second;
+
+            restructNodes(currentNode, parent, neighbour);     // метод перестройки
+        }
+        else // иначе (соседи содержат минимум ключей)
+        {
+            B_Node* neighbour = (key == neighbours.first->key[0].first ? neighbours.second : neighbours.first);
+            mergeNodes(currentNode, parent, neighbour, key); // метод слияния
+        }
+    }
+
+    return 0;
+}
+
+
+
+void B_Tree::restructNodes(B_Node* currentNode, B_Node* parent, B_Node* neighbour)
+{
+    size_t currentNodeIndex = 0;
+    size_t neighbourIndex = 0;
+
+    for (size_t i = 0; i < parent->children.size(); i++)
+    {
+        if (parent->children[i] == currentNode)
+            currentNodeIndex = i;
+        if (parent->children[i] == neighbour)
+            neighbourIndex = i;
+    }
+    size_t parentKeyIndex = currentNodeIndex < neighbourIndex ? currentNodeIndex : neighbourIndex;
+    size_t neighbourKeyIndex = currentNodeIndex < neighbourIndex ? 0 : (neighbour->key.size() - 1);
+
+    insertToNode(currentNode, parent->key[parentKeyIndex]);
+    parent->key[parentKeyIndex] =
+        neighbour->key[neighbourKeyIndex];
+    neighbour->deleteFromLeaf(neighbour->key[neighbourKeyIndex].first);
+
+    if (currentNodeIndex < neighbourIndex)
+    {
+        currentNode->children.push_back(neighbour->children.at(0));
+        neighbour->children.erase(neighbour->children.begin());
+    }
+    else
+    {
+        currentNode->children.insert(currentNode->children.begin(), neighbour->children.back());
+        neighbour->children.erase(neighbour->children.end());
+    }
+
+}
+
+
+int B_Tree::mergeNodes(B_Node* currentNode, B_Node* parent, B_Node* neighbour, int key)
+{
+    size_t currentNodeIndex = 0;
+    size_t neighbourIndex = 0;
+
+    for (size_t i = 0; i < parent->children.size(); i++)
+    {
+        if (parent->children[i] == currentNode)
+            currentNodeIndex = i;
+        if (parent->children[i] == neighbour)
+            neighbourIndex = i;
+    }
+    size_t parentKeyIndex = currentNodeIndex < neighbourIndex ? currentNodeIndex : neighbourIndex;
+    insertToNode(currentNode, parent->key[parentKeyIndex]);
+    insertToNode(currentNode, neighbour->key.at(0));
+    if (!neighbour->children.empty())
+    {
+        for (size_t i = 0; i <= neighbour->children.size(); i++)
+        {
+            if (currentNodeIndex < neighbourIndex)
+            {
+                currentNode->children.push_back(neighbour->children.at(0));
+                neighbour->children.erase(neighbour->children.begin());
+            }
+            else
+            {
+                currentNode->children.insert(currentNode->children.begin(), neighbour->children.back());
+                neighbour->children.erase(neighbour->children.end());
+            }
+        }
+
+    }
+    parent->children.erase(parent->children.begin() + neighbourIndex);
+    if (parent->key.size() > MIN_SIZE)
+        parent->key.erase(parent->key.begin() + parentKeyIndex);
+    //deleteData(key, currentNode, parent);
+    currentNode->deleteFromLeaf(key);
+    return 0;
+}
+
+
+B_Node* B_Tree::mergeChildren(B_Node* currentNode, B_Node* childL, B_Node* childR, size_t indx)
+{
+    insertToNode(childR, childL->key.back());
+    currentNode->children.erase(currentNode->children.begin() + indx);
+    return childR;
 }
 
 
@@ -422,38 +554,28 @@ void B_Node::deleteFromLeaf(int key)
         {
             this->key.erase(i);
             return;
-        }
-            
+        }  
     }
 }
 
 
-B_Node* B_Node::findNeighbour(B_Node* parent)
-{
-    // если есть сосед с ключами
-    for (auto i = parent->childrens.begin(); i < parent->childrens.end(); i++)
+std::pair<B_Node*, B_Node*> B_Node::findNeighbours(B_Node* parent)
+{  
+    for (auto i = parent->children.begin(); i < parent->children.end(); i++)
     {
         if (*i == this)
         {
-            if ((*(--i))->key.size() > MIN_SIZE)
-            {
-                return *i;
-            }
-            else if ((*(++i))->key.size() > MIN_SIZE)
-            {
-                return *i;
-            }
+            return std::make_pair((i != parent->children.begin()) ? *(i - 1) : *i,
+                                  (i != --parent->children.end()) ? *(i + 1) : *i);
+
         }
     }
-    // иначе. соседи есть, но ключей мало
-
-    return 0;
 }
 
 
 void B_Node::shiftKeyRight()
 {
-    for (size_t i = this->numberOfKeys; i > 0; i--)
+    for (size_t i = this->key.size(); i > 0; i--)
     {
         if (this->key.size() < M-1)
             this->key.push_back(std::make_pair(this->key.at(i - 1).first, this->key.at(i - 1).second));
@@ -461,11 +583,11 @@ void B_Node::shiftKeyRight()
         {
             this->key[i] = this->key[i - 1];
         }
-        if (!this->childrens.empty())
+        if (!this->children.empty())
         {
-            if (this->childrens.size() < M)
-                this->childrens.push_back(this->childrens[i]);
-            this->childrens[i] = this->childrens[i - 1];
+            if (this->children.size() < M)
+                this->children.push_back(this->children[i]);
+            this->children[i] = this->children[i - 1];
         }
     }
 
@@ -477,14 +599,14 @@ void B_Node::print()
     size_t i;
     for (i = 0; i < this->key.size(); i++)
     {
-        if (i < this->childrens.size())
-            childrens[i]->print();
+        if (i < this->children.size())
+            children[i]->print();
 
         std::cout << " " << key.at(i).first;   
     }
     std::cout << "\n";
-    if (i < this->childrens.size())
-        childrens[i]->print();
+    if (i < this->children.size())
+        children[i]->print();
     std::cout << "\n";
 }
 
@@ -495,7 +617,7 @@ void B_Tree::print()
 
 void* B_Tree::search(int key)
 {
-    if (this->root->childrens.empty())
+    if (this->root->children.empty())
     {
         for (size_t i = 0; i < M - 1; i++)
             if (key == this->root->key.at(i).first)
@@ -505,23 +627,24 @@ void* B_Tree::search(int key)
     {
         if (key < this->root->key.at(i).first)
         {
-            this->root->childrens[i]->search(key);
+            this->root->children[i]->search(key);
             break;
         }
         else
         {
             if (this->root->key.size() - i > 1)
                 continue;
-            this->root->childrens[i+1]->search(key);
+            this->root->children[i+1]->search(key);
             break;
         }
     }
+    return nullptr;
 
 }
 
 int B_Tree::deleteData(int key)
 {
-    root->deleteData(key, root);
+    deleteData(key, root, root);
     return 0;
 }
 
@@ -575,14 +698,14 @@ void BTreePrinter::visit(B_Node const* node, unsigned level, unsigned child_inde
 
     info.text = node_text(node->key, unsigned(node->key.size()));
 
-    if (node->childrens.empty())
+    if (node->children.empty())
     {
         info.text_end = info.text_pos + unsigned(info.text.length());
     }
     else 
     {
         for (unsigned i = 0, e = unsigned(node->key.size()); i <= e; ++i)  
-            visit(node->childrens[i], level + 1, i);
+            visit(node->children[i], level + 1, i);
 
         info.text_end = levels[level + 1].back().text_end;
     }
@@ -653,18 +776,19 @@ int main()
     BTreePrinter printer;
     B_Tree t;
 
-    srand(29324);
+    srand(2934);
 
-    for (unsigned i = 0; i < 14; ++i)
+    for (int i = 1; i < 17; i++)
     {
         int p = rand() % 100;
-        t.addData(p);
+        t.addData(i);
         
     }
     printer.print(t);
-    t.addData(4);
     void* sear = t.search(56);
-    t.deleteData(42);
+    t.deleteData(11);
+    printer.print(t);
+    t.deleteData(4);
     system("pause");
     return 0;
 }
