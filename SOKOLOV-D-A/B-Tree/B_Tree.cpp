@@ -4,23 +4,23 @@
 
 int B_Tree::add_data(int key, void* data)
 {
-    if (!this->root) //если корень пуст
+    if (!this->root) //РµСЃР»Рё РєРѕСЂРµРЅСЊ РїСѓСЃС‚
     {
         root = new B_Node(key, data);
         return 0;
     }
-    if (this->root->can_push(M) && this->root->children.empty())  // если лист и можно добавить
+    if (this->root->can_push(M) && this->root->children.empty())  // РµСЃР»Рё Р»РёСЃС‚ Рё РјРѕР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ
     {
         insert_key(this->root, std::make_pair(key, data));
         return 0;
     }
-    if (!this->root->can_push(M) && this->root->children.empty()) // если лист и нельзя добавить
+    if (!this->root->can_push(M) && this->root->children.empty()) // РµСЃР»Рё Р»РёСЃС‚ Рё РЅРµР»СЊР·СЏ РґРѕР±Р°РІРёС‚СЊ
     {
         this->root->split(M);
         add_data(key, this->root, data);
         return 0;
     }
-    if (!this->root->children.empty())                          // если не лист. идем глубже
+    if (!this->root->children.empty())                          // РµСЃР»Рё РЅРµ Р»РёСЃС‚. РёРґРµРј РіР»СѓР±Р¶Рµ
     {
         add_data(key, this->root, data);
     }
@@ -31,7 +31,7 @@ int B_Tree::add_data(int key, void* data)
 int B_Tree::add_data(int key, B_Node* root, void* data)
 {
 
-    if (!root->children.empty()) // если не лист
+    if (!root->children.empty()) // РµСЃР»Рё РЅРµ Р»РёСЃС‚
     {
         for (size_t i = 0; i < M - 1; i++)
         {
@@ -68,7 +68,7 @@ int B_Tree::add_data(int key, B_Node* root, void* data)
             }
         }
     }
-    else // если лист
+    else // РµСЃР»Рё Р»РёСЃС‚
     {
 
         if (root->can_push(M))
@@ -239,10 +239,10 @@ int B_Tree::delete_data(int key, B_Node* currentNode, B_Node* parent)
 {
     for (size_t i = 0; i < currentNode->key.size(); i++)
     {
-        if (key == currentNode->key.at(i).first) // если ключ найден
+        if (key == currentNode->key.at(i).first) // РµСЃР»Рё РєР»СЋС‡ РЅР°Р№РґРµРЅ
         {
 
-            if (currentNode->children.empty())   // если удаление из листа
+            if (currentNode->children.empty())   // РµСЃР»Рё СѓРґР°Р»РµРЅРёРµ РёР· Р»РёСЃС‚Р°
             {
                 if (currentNode->key.size() > MIN_SIZE)
                 {
@@ -257,8 +257,8 @@ int B_Tree::delete_data(int key, B_Node* currentNode, B_Node* parent)
             }
             else
             {
-                if (currentNode->children[i]->key.size() > MIN_SIZE ||      // если ключей достаточно
-                    currentNode->children[i + 1]->key.size() > MIN_SIZE)    // переносим ключ вверх
+                if (currentNode->children[i]->key.size() > MIN_SIZE ||      // РµСЃР»Рё РєР»СЋС‡РµР№ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ
+                    currentNode->children[i + 1]->key.size() > MIN_SIZE)    // РїРµСЂРµРЅРѕСЃРёРј РєР»СЋС‡ РІРІРµСЂС…
                 {
                     B_Node* child = (currentNode->children[i]->key.size() > MIN_SIZE) ?
                         currentNode->children[i] :
@@ -276,7 +276,7 @@ int B_Tree::delete_data(int key, B_Node* currentNode, B_Node* parent)
                         currentNode->key.at(i) = child->key.back();
                     }
                 }
-                else //ключей у детей мало
+                else //РєР»СЋС‡РµР№ Сѓ РґРµС‚РµР№ РјР°Р»Рѕ
                 {
                     if (currentNode->key.size() > MIN_SIZE)
                     {
@@ -295,12 +295,12 @@ int B_Tree::delete_data(int key, B_Node* currentNode, B_Node* parent)
             return 0;
         }
 
-        else if (key < currentNode->key.at(i).first) // если ключ меньше
+        else if (key < currentNode->key.at(i).first) // РµСЃР»Рё РєР»СЋС‡ РјРµРЅСЊС€Рµ
         {
             delete_data(key, currentNode->children[i], currentNode);
             break;
         }
-        else                                  // если ключ больше
+        else                                  // РµСЃР»Рё РєР»СЋС‡ Р±РѕР»СЊС€Рµ
         {
             if (currentNode->key.size() - i > 1)
                 continue;
@@ -318,19 +318,19 @@ void B_Tree::rebalance(int key, B_Node* currentNode, B_Node* parent)
 {
     auto neighbours = currentNode->find_neighbours(parent);
 
-    if (neighbours.first->key.size() > MIN_SIZE ||         // если есть сосед с ключами
+    if (neighbours.first->key.size() > MIN_SIZE ||         // РµСЃР»Рё РµСЃС‚СЊ СЃРѕСЃРµРґ СЃ РєР»СЋС‡Р°РјРё
         neighbours.second->key.size() > MIN_SIZE)
     {
         B_Node* neighbour = (neighbours.first->key.size() > MIN_SIZE) ?
             neighbours.first :
             neighbours.second;
 
-        restruct_nodes(currentNode, parent, neighbour);     // метод перестройки
+        restruct_nodes(currentNode, parent, neighbour);     // РјРµС‚РѕРґ РїРµСЂРµСЃС‚СЂРѕР№РєРё
     }
-    else // иначе (соседи содержат минимум ключей)
+    else // РёРЅР°С‡Рµ (СЃРѕСЃРµРґРё СЃРѕРґРµСЂР¶Р°С‚ РјРёРЅРёРјСѓРј РєР»СЋС‡РµР№)
     {
         B_Node* neighbour = (key == neighbours.first->key[0].first ? neighbours.second : neighbours.first);
-        merge_nodes(currentNode, parent, neighbour, key); // метод слияния
+        merge_nodes(currentNode, parent, neighbour, key); // РјРµС‚РѕРґ СЃР»РёСЏРЅРёСЏ
     }
 }
 
