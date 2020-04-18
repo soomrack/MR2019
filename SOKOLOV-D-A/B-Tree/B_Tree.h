@@ -12,13 +12,13 @@ public:
     B_Node(int key = 0, void* data = nullptr);
     ~B_Node() {}
 
-    void* search(int key);                  // поиск по ключу
-    void delete_key(int key);               // метод удаления из листа  
-    void print();                           // обход + вывод в консоль
-    void shift_right(unsigned M);                     // смещение ключей на один вправо
-    bool can_push(unsigned M);                        // метод проверяет можно ли добавить ключ в узел  
-    B_Node* split(unsigned M);                        // метод разделяет узел 
-    std::pair<B_Node*, B_Node*> find_neighbours(B_Node* parent); // поиск соседей. Есть ли возможность объединиться
+    void* search(int key);                  // РїРѕРёСЃРє РїРѕ РєР»СЋС‡Сѓ
+    void delete_key(int key);               // РјРµС‚РѕРґ СѓРґР°Р»РµРЅРёСЏ РёР· Р»РёСЃС‚Р°  
+    void print();                           // РѕР±С…РѕРґ + РІС‹РІРѕРґ РІ РєРѕРЅСЃРѕР»СЊ
+    void shift_right(unsigned M);                     // СЃРјРµС‰РµРЅРёРµ РєР»СЋС‡РµР№ РЅР° РѕРґРёРЅ РІРїСЂР°РІРѕ
+    bool can_push(unsigned M);                        // РјРµС‚РѕРґ РїСЂРѕРІРµСЂСЏРµС‚ РјРѕР¶РЅРѕ Р»Рё РґРѕР±Р°РІРёС‚СЊ РєР»СЋС‡ РІ СѓР·РµР»  
+    B_Node* split(unsigned M);                        // РјРµС‚РѕРґ СЂР°Р·РґРµР»СЏРµС‚ СѓР·РµР» 
+    std::pair<B_Node*, B_Node*> find_neighbours(B_Node* parent); // РїРѕРёСЃРє СЃРѕСЃРµРґРµР№. Р•СЃС‚СЊ Р»Рё РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РѕР±СЉРµРґРёРЅРёС‚СЊСЃСЏ
 
     friend class B_Tree;
     friend class BTreePrinter;
@@ -38,26 +38,26 @@ public:
 
     const unsigned M;
 
-    int add_data(int key, void* data = nullptr);    // метод добавления нового ключа в дерево   
-    void print();                                   // вывод дерева на экран   
-    void* search(int key);                          // поиск элемента по ключу
-    int delete_data(int key);                       // удаление элемента
+    int add_data(int key, void* data = nullptr);    // РјРµС‚РѕРґ РґРѕР±Р°РІР»РµРЅРёСЏ РЅРѕРІРѕРіРѕ РєР»СЋС‡Р° РІ РґРµСЂРµРІРѕ   
+    void print();                                   // РІС‹РІРѕРґ РґРµСЂРµРІР° РЅР° СЌРєСЂР°РЅ   
+    void* search(int key);                          // РїРѕРёСЃРє СЌР»РµРјРµРЅС‚Р° РїРѕ РєР»СЋС‡Сѓ
+    int delete_data(int key);                       // СѓРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
 
     friend class BTreePrinter;
 private:
     B_Node* root;
     
 
-    int add_data(int key, B_Node* root, void* data = nullptr);                                  // вспомогательный метод для рекурсии
-    bool lift_flag{ 0 };                                                                        // флаг для роста дерева вверх
-    int lift_node(B_Node* node, B_Node* root);                                                  // метод, реализующий поднятие узла на уровень выше
-    int insert_key(B_Node* node, std::pair<int, void*> key);                                    // вставить ключ в узел
-    int insert_node(B_Node* node, B_Node* root);                                                // вставить один узел в другой
-    void restruct_nodes(B_Node* currentNode, B_Node* parent, B_Node* neighbour);                // метод осуществляет замену ключа нужным значением. а искомый  ключ опускает ниже
-    int merge_nodes(B_Node* currentNode, B_Node* parent, B_Node* neighbour, int key);           // слияние соседних узлов
-    B_Node* merge_children(B_Node* currentNode, B_Node* childL, B_Node* childR, size_t indx);   // слияние детей родителя
-    int delete_data(int key, B_Node* node, B_Node* parent);                                     // вспомогательный метод удаления
-    void rebalance(int key, B_Node* currentNode, B_Node* parent);                               // ребаланс дерева. предостерегает от недостатка ключей
+    int add_data(int key, B_Node* root, void* data = nullptr);                                  // РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅС‹Р№ РјРµС‚РѕРґ РґР»СЏ СЂРµРєСѓСЂСЃРёРё
+    bool lift_flag{ 0 };                                                                        // С„Р»Р°Рі РґР»СЏ СЂРѕСЃС‚Р° РґРµСЂРµРІР° РІРІРµСЂС…
+    int lift_node(B_Node* node, B_Node* root);                                                  // РјРµС‚РѕРґ, СЂРµР°Р»РёР·СѓСЋС‰РёР№ РїРѕРґРЅСЏС‚РёРµ СѓР·Р»Р° РЅР° СѓСЂРѕРІРµРЅСЊ РІС‹С€Рµ
+    int insert_key(B_Node* node, std::pair<int, void*> key);                                    // РІСЃС‚Р°РІРёС‚СЊ РєР»СЋС‡ РІ СѓР·РµР»
+    int insert_node(B_Node* node, B_Node* root);                                                // РІСЃС‚Р°РІРёС‚СЊ РѕРґРёРЅ СѓР·РµР» РІ РґСЂСѓРіРѕР№
+    void restruct_nodes(B_Node* currentNode, B_Node* parent, B_Node* neighbour);                // РјРµС‚РѕРґ РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚ Р·Р°РјРµРЅСѓ РєР»СЋС‡Р° РЅСѓР¶РЅС‹Рј Р·РЅР°С‡РµРЅРёРµРј. Р° РёСЃРєРѕРјС‹Р№  РєР»СЋС‡ РѕРїСѓСЃРєР°РµС‚ РЅРёР¶Рµ
+    int merge_nodes(B_Node* currentNode, B_Node* parent, B_Node* neighbour, int key);           // СЃР»РёСЏРЅРёРµ СЃРѕСЃРµРґРЅРёС… СѓР·Р»РѕРІ
+    B_Node* merge_children(B_Node* currentNode, B_Node* childL, B_Node* childR, size_t indx);   // СЃР»РёСЏРЅРёРµ РґРµС‚РµР№ СЂРѕРґРёС‚РµР»СЏ
+    int delete_data(int key, B_Node* node, B_Node* parent);                                     // РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅС‹Р№ РјРµС‚РѕРґ СѓРґР°Р»РµРЅРёСЏ
+    void rebalance(int key, B_Node* currentNode, B_Node* parent);                               // СЂРµР±Р°Р»Р°РЅСЃ РґРµСЂРµРІР°. РїСЂРµРґРѕСЃС‚РµСЂРµРіР°РµС‚ РѕС‚ РЅРµРґРѕСЃС‚Р°С‚РєР° РєР»СЋС‡РµР№
 
 };
 
