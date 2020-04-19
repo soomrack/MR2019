@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-int mas[] = { 2, 6, 3, 7 };
+int mas[] = { 6, 7, 3, 2 };
 
 // вспомогательная функция нахождения факториала числа
 int factorial(int i)
@@ -17,6 +17,8 @@ void narayana(int array[], const int n)
     int i = n - 2;
     while (i >= 0 && array[i] > array[i + 1])
         i--;
+    if (i == -1)
+        return;
     // реализация второго шага
     int j = n - 1;
     while (array[j] < array[i])
@@ -47,10 +49,10 @@ int bubble_Sort(int* array, const int size)
 // применение алгоритма Нарайаны
 void application(int array[], int n)
 {
-    bubble_Sort(array, n);
+    bubble_Sort(array, n); // сортировка массива по возрастанию
     for (int g = 0; g < n; g++)
         cout << array[g];
-    int f = factorial(n);
+    int f = factorial(n); // нахождение количества возможных перестановок
     for (int r = 1; r < f; r++)
     {
         cout << "\n";
