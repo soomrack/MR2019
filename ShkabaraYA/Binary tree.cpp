@@ -27,6 +27,7 @@ public:
     void add_data(int key, void* data);
     Node* node_search(int key, Node* root);
     Node* parent_node_search(int key, Node* root);
+    Node* min_left(Node* root);
     void delete_data(int key);
 };
 
@@ -60,11 +61,18 @@ Node* Tree::node_search(int key, Node* root) {
     else node_search(key, root->right_child);
 }
 
-Node* Tree::parent_node_search(int key, Node* root)
-{
+Node* Tree::parent_node_search(int key, Node* root) {
     if ((key == root->left_child->key) || (key == root->right_child->key)) return root;
     if (key < root->key) parent_node_search(key, root->left_child);
     else parent_node_search(key, root->right_child);
+}
+
+Node* Tree::min_left(Node* root) {
+    Node* find_min = root;
+    while (find_min->left_child != nullptr) {
+        find_min = find_min->left_child;
+    }
+    return find_min;
 }
 
 void Tree::delete_data(int key) {
@@ -93,11 +101,25 @@ void Tree::delete_data(int key) {
         return;
     }
 
-    //У удаляемого узла два ребенка
+    //У удаляемого узла два ребенка 
+    Node* temp = min_left(delete_node->right_child);
+    if (temp == delete_node->right_child) {
+        delete_node->key = temp->key;
+        delete_node->data = temp->data;
+        delete_node->right_child = temp->right_child;
+        return;
+    }
+    else {
+        delete_node->data = temp->data;
+        delete_node->key = temp->key;
+        delete_data(temp->key);
+        return;
+    }
+    //Что делать, если удаляемый узел - корень дерева, у которого нет родителя?
+
 }
 
-int main()
-{
+int main() {
     Tree trii;
     trii.add_data(8, nullptr);
     trii.add_data(1, nullptr);
