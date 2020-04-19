@@ -4,6 +4,7 @@ using namespace std;
 
 int mas[] = { 2, 6, 3, 7 };
 
+// вспомогательная функция нахождения факториала числа
 int factorial(int i)
 {
     if (i == 0) return 1;
@@ -12,22 +13,24 @@ int factorial(int i)
 
 void narayana(int array[], const int n)
 {
+    // реализация первого шага
     int i = n - 2;
     while (i >= 0 && array[i] > array[i + 1])
         i--;
-
+    // реализация второго шага
     int j = n - 1;
     while (array[j] < array[i])
         j--;
     swap(array[i], array[j]);
-
+    // реализация третьего шага
     for (int t = i + 1, k = n - 1; t < k; t++, k--)
         swap(array[t], array[k]);
-
+    // вывод новой перестановки в консоль
     for (i = 0; i < n; i++)
         cout << array[i];
 }
 
+// сортировка
 int bubble_Sort(int* array, const int size)
 {
     for (int i = 0; i < size - 1; i++)
@@ -41,6 +44,7 @@ int bubble_Sort(int* array, const int size)
     return 0;
 }
 
+// применение алгоритма Нарайаны
 void application(int array[], int n)
 {
     bubble_Sort(array, n);
