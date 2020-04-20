@@ -1,6 +1,4 @@
 
-
-
 #include <iostream>
 using namespace std;
 
@@ -43,6 +41,8 @@ public:
     }
     void add_data(int key);
     void print_tree(BNode* root);
+    void delete_key(int key);
+    BNode* search_node(int key, BNode* root); // возвращает ссылку на узел, который содержит данный ключ
 private:
     void insert(int key, BNode* node);
     void sort_node(BNode *node);
@@ -259,6 +259,49 @@ void Tree::print_tree(BNode* root)
     }
 }
 
+BNode* Tree::search_node(int key, BNode* root)
+{
+    for (int i = 0; i < (root->count); i++)
+    {
+        if (root->keys[i] == key)
+        {
+            return root;
+        }
+    }
+
+    for (int i = 0; i < (root->count); i++)
+    {
+        if (key < root->keys[i])
+        {
+            return search_node(key, root->children[i]);
+        }
+        if ((key > root->keys[i]) && (root->count = (i + 1)))
+        {
+            return search_node(key, root->children[i+1]);
+        }
+    }
+    
+}
+
+void Tree::delete_key(int key)
+{
+    BNode* node_for_delete = search_node(key, root);
+
+    if ((node_for_delete->leaf = true) && (node_for_delete->count = t)) // если узел был листом и при удалении у него останется t-1 ключей
+    {
+        for (int i = 0; i < (node_for_delete->count); i++)
+        {
+            if (node_for_delete->keys[i] == key)
+            {
+                for (int j = i; j < (node_for_delete->count); j++)
+                {
+                    node_for_delete->keys[j] = node_for_delete->keys[j + 1];
+                }
+                node_for_delete->count = node_for_delete->count - 1;
+            }
+        }
+    }
+}
 
 int main()
 {
