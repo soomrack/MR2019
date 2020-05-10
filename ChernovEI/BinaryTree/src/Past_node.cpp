@@ -4,16 +4,16 @@
 
 #include "Past_node.h"
 
-Past_node::Past_node(Number data) {
+Past_node::Past_node(Data data) {
     this->data = &data;
-    this->key = data.hashCode();
+    this->key = data.hash_code();
 }
 
-Number Past_node::get_data() {
+Data Past_node::get_data() {
     return *data;
 }
 
-void Past_node::set_data(Number aData) {
+void Past_node::set_data(Data aData) {
     data = &aData;
 }
 
