@@ -2,7 +2,7 @@
 #define BINARYTREEV2_TREE_TEST_H
 
 
-#include "../src/Binary_tree.h"
+#include "../../src/Binary_tree.h"
 #include "Main_test.h"
 
 class Tree_test : public Main_test {

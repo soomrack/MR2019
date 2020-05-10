@@ -2,7 +2,7 @@
 #define BINARYTREEV2_MAIN_TEST_H
 
 
-#include "../src/Binary_tree.h"
+#include "../../src/Binary_tree.h"
 
 #include <stdexcept>
 #include <cassert>

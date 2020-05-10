@@ -51,7 +51,7 @@ private:
         Node *right_child = nullptr;
 
     public:
-        Node(Data *data);
+        explicit Node(Data *data);
 
         Data *get_ptr_data();
 
