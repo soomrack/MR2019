@@ -6,7 +6,7 @@
 #define BINARYTREEV2_PAST_NODE_H
 
 
-#include "../tests/Number.h"
+#include "entities/Number.h"
 
 class Past_node {
 private:

@@ -1,7 +1,7 @@
 #ifndef BINARYTREEV2_NUMBER_H
 #define BINARYTREEV2_NUMBER_H
 
-#include "../src/Data.h"
+#include "Data.h"
 
 /**
  * Class for testing of the Tree class.
