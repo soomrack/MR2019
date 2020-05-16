@@ -299,7 +299,7 @@ int main()
 {
 	Graph One;
 
-	//Addding
+	//Adding
 	int arrayOne[NUMBER_NODE] = { 0, 2, 5, 7, 7, 10 };
 	One.add_node(arrayOne);
 
@@ -320,7 +320,7 @@ int main()
 
 	One.print_graph();
 
-	//Search short way
+	//Search short way between nodes
 	One.search_way(1, 6);
 
 	return 1;
