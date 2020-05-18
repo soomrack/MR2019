@@ -1,0 +1,2 @@
+C:\Users\glebo\OneDrive\Рабочий стол\Учеба в Поликеке\Программировани С++\Binary search tree\дерево без parent\BinarySearchTree\x64\Debug\BinarySearchTree.exe
+C:\Users\glebo\OneDrive\Рабочий стол\Учеба в Поликеке\Программировани С++\Binary search tree\дерево без parent\BinarySearchTree\x64\Debug\BinarySearchTree.pdb
