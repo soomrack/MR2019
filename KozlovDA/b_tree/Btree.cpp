@@ -1,7 +1,6 @@
 #include "Btree.h"
 #include <queue>
 #include <iostream>
-#include <queue>
 
 BNode::BNode()
 {
@@ -9,9 +8,8 @@ BNode::BNode()
 		keys[i] = 0;
 	for (int i = 0; i < (2 * t); i++)
 		children[i] = nullptr;
-	//parent = nullptr;
-	int count = 0;
-	bool leaf = false;
+	count = 0;
+	leaf = false;
 }
 
 void BNode::print()
@@ -40,9 +38,16 @@ void Tree::sort_node(BNode* node)
 	node->keys[posSortedElem + 1] = unsortedElem;
 }
 
-BNode* Tree::search_parent(int key)
+BNode* Tree::search_parent(BNode* node, BNode* root)
 {
-	return nullptr;
+	for (int i = 0; i < (2 * t); i++)
+	{
+		if (root->children[i] == node) return root;
+	}
+	for (int i = 0; i < (2 * t); i++)
+	{
+		if (root->children[i]) search_parent(node, root->children[i]);
+	}
 }
 
 void Tree::insert_to_node(int key, BNode* node)
@@ -113,7 +118,7 @@ void Tree::add_data(int key)
 			}
 			else
 			{
-				BNode* parent = node->parent;
+				BNode* parent = search_parent(node, this->root);
 				restruct(node);
 				node = parent;
 			}
@@ -121,9 +126,31 @@ void Tree::add_data(int key)
 	}
 }
 
+void Tree::delete_node(int key) //удаляет лист
+{
+	BNode* redundant_node = find_node(key, root);
+	BNode* parent_of_redundant_node = search_parent(redundant_node, root);
+	if (!redundant_node->leaf) return;
+	for (int i = 0; i < (2 * t); i++)
+	{
+		if (parent_of_redundant_node->children[i] == redundant_node)
+			parent_of_redundant_node->children[i] = nullptr;
+	}
+	delete redundant_node;
+}
+
 void Tree::delete_tree(BNode* root)
 {
-
+	for (int i = 0; i < (2 * t); i++)
+	{
+		if (root->children[i])
+		{
+			if (root->children[i]->leaf) delete_node(root->children[i]->keys[0]);
+			else delete_tree(root->children[i]);
+		}
+	}
+	delete root;
+	this->root = nullptr;
 }
 
 void Tree::restruct(BNode* node)
@@ -139,7 +166,6 @@ void Tree::restruct(BNode* node)
 		for (int j = 0; j < t; j++)
 		{
 			child1->children[j] = node->children[j];
-			child1->children[j]->parent = child1;
 		}
 	}
 	BNode* child2 = new BNode;
@@ -153,7 +179,6 @@ void Tree::restruct(BNode* node)
 		for (int j = 0; j < t; j++)
 		{
 			child2->children[j] = node->children[j+ t];
-			child2->children[j]->parent = child2;
 		}
 	}
 	if (node->leaf)
@@ -170,29 +195,26 @@ void Tree::restruct(BNode* node)
 		for (int j = 2; j < (2 * t); j++) node->children[j] = nullptr;
 		node->leaf = false;
 		node->count = 1;
-		child1->parent = node;
-		child2->parent = node;
 	}
 	else
 	{
-		insert_to_node(node->keys[t - 1], node->parent);
+		BNode* parent = search_parent(node, this->root);
+		insert_to_node(node->keys[t - 1], parent);
 		for (int j = 0; j < (2 * t); j++)
 		{
-			if (node->parent->children[j] == node) node->parent->children[j] = nullptr;
+			if (parent->children[j] == node) parent->children[j] = nullptr;
 		}
 		for (int i = 0; i < (2 * t); i++) 
 		{
-			if (node->parent->children[i] == nullptr) 
+			if (parent->children[i] == nullptr) 
 			{
 				for (int j = (2 * t - 1); j > (i + 1); j--) 
-					node->parent->children[j] = node->parent->children[j - 1];
-				node->parent->children[i] = child1;
-				node->parent->children[i + 1] = child2;
+					parent->children[j] = parent->children[j - 1];
+				parent->children[i] = child1;
+				parent->children[i + 1] = child2;
 				break;
 			}
 		}
-		child1->parent = node->parent;
-		child2->parent = node->parent;
 	}
 }
 
@@ -221,6 +243,7 @@ BNode* Tree::next_node_bsf(const bool restart = false)
 
 void Tree::print()
 {
+	if (!root) return;
 	next_node_bsf(true)->print();
 	std::cout << std::endl;
 	while (BNode* node = next_node_bsf())
