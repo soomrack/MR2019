@@ -8,7 +8,6 @@ class BNode
 public:
 	int keys[2 * t - 1];
 	BNode* children[2 * t];
-	BNode* parent;
 	int count;
 	bool leaf;
 public:
@@ -27,10 +26,11 @@ public:
 	BNode* find_node(int key, BNode* root);
 	void add_data(int key);
 	void delete_tree(BNode* root);
+	void delete_node(int key);
 	void print();
 private:
 	int binary_search(int* a, int first, int last, const int x);
-	BNode* search_parent(int key);
+	BNode* search_parent(BNode* node, BNode* root);
 	void insert_to_node(int key, BNode* node);
 	void sort_node(BNode* node);
 	BNode* find_position_for_new_node(int key);
