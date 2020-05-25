@@ -1,0 +1,2 @@
+C:\Users\glebo\OneDrive\Рабочий стол\Учеба в Поликеке\Программировани С++\Heap sort\heap sort\Debug\heap sort.exe
+C:\Users\glebo\OneDrive\Рабочий стол\Учеба в Поликеке\Программировани С++\Heap sort\heap sort\Debug\heap sort.pdb
