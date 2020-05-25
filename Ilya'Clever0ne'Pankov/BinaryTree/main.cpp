@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class Node {
+class Node{
     public:
         int key;
         void *data;
@@ -15,7 +15,7 @@ class Node {
         ~Node() {};
 };
 
-class Tree : public Node {
+class Tree : public Node{
     public:
         Node *root;
     public:
