@@ -2,9 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-**/.vs
-**/.idea
-**/cmake-build-debug
+/.vs
+/.idea
 /DonKiRav
 /SOKOLOV-D-A/CMake_Quiz-with-lib/out/build/x64-Debug/.cmake/api/v1
 /SOKOLOV-D-A/Quiz-with-another-lib/out
@@ -43,4 +42,3 @@
 /ArhipovAE/6_sem/BinaryHeap/.idea/
 /ArhipovAE/6_sem/HeapSort/.idea/
 /ArhipovAE/6_sem/HeapSort/cmake-build-debug/
-**/ex
