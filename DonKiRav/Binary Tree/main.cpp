@@ -1,209 +1,176 @@
 #include <iostream>
 using namespace std;
-const int t = 2; ///минимальная степень
 
-class B_Node {
+class BinaryTreeNode {
 public:
-    int keys[(2 * t - 1)]{};
-    B_Node *children[(2 * t)]{};
-    int count;
-    bool leaf;
-    explicit B_Node(int key);
+    int key;
+    int* data;
+    BinaryTreeNode* left_child;
+    BinaryTreeNode* right_child;
+public:
+    BinaryTreeNode(int key, int* data);
 };
 
-B_Node::B_Node(int key) {
-    this->keys[0] = key;
-    for (int i = 1; i < (2 * t - 1); i++)
-        this->keys[i] = 0;
-    for (auto & i : this->children)
-        i = nullptr;
-    this->leaf = true;
-    this->count = 1;
+BinaryTreeNode::BinaryTreeNode(int key, int* data)
+{
+    this->key = key;
+    this->data = data;
+    left_child = nullptr;
+    right_child = nullptr;
 }
 
-class B_Tree {
+class BinaryTree
+{
 public:
-    B_Node* root;
-    B_Tree() { root = nullptr; }
-
-    void ADD(int key);
-    static B_Node* FIND(int key, B_Node* root);
-    void REMOVE(int key);
-    static void PRINT(B_Node* root);
+    BinaryTreeNode* root;
+public:
+    BinaryTree()
+    {
+        root = nullptr;
+    }
+public:
+    static void     PRINT(BinaryTreeNode* root);
+    int             ADD(int key, int* data);
+    static BinaryTreeNode* FIND(BinaryTreeNode* root, int key);
+    static BinaryTreeNode* REMOVE(BinaryTreeNode* root, int key);
 private:
-    static void simple_insert(int key, B_Node* node);
-    static void sort(B_Node *node);
-    void restruct(B_Node* node);
-    static B_Node* find_parent(B_Node* node, B_Node* root);
+    static BinaryTreeNode* parent_node(BinaryTreeNode* root, int key);
+    static BinaryTreeNode* min_node(BinaryTreeNode* root);
+    static BinaryTreeNode* max_node(BinaryTreeNode* root);
+    static BinaryTreeNode* find_parent_for_new_node(BinaryTreeNode* root, int key);
 };
 
-void B_Tree::ADD(int key) {
+int BinaryTree::ADD(int key, int* data) {
+    auto* child = new BinaryTreeNode(key, data);
     if (root == nullptr) {
-        root = new B_Node(key);
-        return;
+        root = child;
+        return 1;
     }
-    B_Node *temp = root;
-    while (!temp->leaf) {
-        for (int i = 0; i < (2 * t - 1); i++) {
-            if (temp->keys[i] != 0) {
-                if (key < temp->keys[i]) {
-                    temp = temp->children[i];
-                    break;
-                }
-                if ((temp->keys[i+1] == 0) && (key > temp->keys[i])) {
-                    temp = temp->children[i + 1];
-                    break;
-                }
-            }
-            else
-                break;
-        }
-    }
-    simple_insert(key, temp);
-    B_Node* temp_parent = find_parent(temp, root);
-    while (temp->count >= (2*t-1)) {
-        if (temp == root)
-            restruct(temp);
-        else {
-            restruct(temp);
-            temp = temp_parent;
-        }
-    }
+    BinaryTreeNode* parent = find_parent_for_new_node(root, key);
+    if (key <= parent->key)
+        parent->left_child = child;
+    else
+        parent->right_child = child;
+    return 1;
 }
 
-void B_Tree::simple_insert(int key, B_Node* node) {
-    node->keys[node->count] = key;
-    node->count = node->count + 1;
-    sort(node);
+BinaryTreeNode* BinaryTree::REMOVE(BinaryTreeNode* root, int key)
+{
+    BinaryTreeNode* delete_node = FIND(root, key);
+    BinaryTreeNode* parent_delete_node = parent_node(root, key);
+    /// Нет детей
+    if((delete_node->left_child == nullptr) && (delete_node->right_child == nullptr)) {
+        if ((parent_delete_node->left_child) == delete_node)
+            parent_delete_node->left_child = nullptr;
+        else
+            parent_delete_node->right_child = nullptr;
+    }
+    /// Левый ребёнок
+    if ((delete_node->left_child != nullptr) && (delete_node->right_child == nullptr)) {
+        if (parent_delete_node->left_child == delete_node)
+            parent_delete_node->left_child = delete_node->left_child;
+        else
+            parent_delete_node->right_child = delete_node->left_child;
+    }
+    /// Правый ребёнок
+    if ((delete_node->left_child == nullptr) && (delete_node->right_child != nullptr)) {
+        if (parent_delete_node->left_child == delete_node)
+            parent_delete_node->left_child = delete_node->right_child;
+        else
+            parent_delete_node->right_child = delete_node->right_child;
+    }
+    BinaryTreeNode* a = nullptr;
+    BinaryTreeNode* b = nullptr;
+    if ((delete_node->left_child != nullptr) && (delete_node->right_child != nullptr)) {
+        if (delete_node->right_child != nullptr)
+            a = min_node(delete_node->right_child);
+        b = parent_node(root, a->key);
+        (delete_node->key) = (a->key);
+        if (a == b->left_child)
+            b->left_child = a->right_child;
+        if (a == b->right_child)
+            b->right_child = a->right_child;
+    }
+    return root;
 }
 
-void B_Tree::sort(B_Node* node) {
-    int temp;
-    for (int i = 0; i < (node->count); i++) {
-        for (int j = i + 1; j < (node->count); j++) {
-            if (node->keys[i] > node->keys[j]) {
-                temp = node->keys[i];
-                node->keys[i] = node->keys[j];
-                node->keys[j] = temp;
-            }
-        }
-    }
+BinaryTreeNode* BinaryTree::FIND(BinaryTreeNode* root, int key) {
+    if ((root == nullptr) || (root->key == key))
+        return root;
+    if (root->key > key)
+        return FIND(root->left_child, key);
+    else
+        return FIND(root->right_child, key);
 }
 
-B_Node* B_Tree::FIND(int key, B_Node* root) {
-    for (int i = 0; i < (root->count); i++) {
-        if (root->keys[i] == key)
-            return root;
-    }
-    for (int i = 0; i < (root->count); i++) {
-        if (key < root->keys[i])
-            return FIND(key, root->children[i]);
-        if ((key > root->keys[i]) && (root->count = (i + 1)))
-            return FIND(key, root->children[i + 1]);
-    }
-    return nullptr;
-}
-
-void B_Tree::restruct(B_Node* node) {
-    auto* new_child1 = new B_Node(0);
-    new_child1->count = 0;
-    auto* new_child2 = new B_Node(0);
-    new_child2->count = 0;
-
-    for (int i = 0; i < (t - 1); i++) {
-        new_child1->keys[i] = node->keys[i];
-        new_child2->keys[i] = node->keys[i + t];
-    }
-    new_child1->count = t - 1;
-    new_child2->count = t - 1;
-    if (node->children[0] != nullptr) {
-        for (int i = 0; i <= (t - 1); i++) {
-            new_child1->children[i] = node->children[i];
-            new_child2->children[i] = node->children[i + t];
-        }
-        new_child1->leaf = false;
-        new_child2->leaf = false;
-    }
-
-    if (node == root) {
-        node->keys[0] = node->keys[t-1];
-        for (int i = 1; i < (2 * t - 1); i++)
-            node->keys[i] = 0;
-        node->count = 1;
-        node->children[0] = new_child1;
-        node->children[1] = new_child2;
-        for (int i = 2; i < (2 * t); i++)
-            node->children[i] = nullptr;
-        node->leaf = false;
-    }
-    else {
-        B_Node* parent_node = find_parent(node, root);
-        simple_insert(node->keys[t - 1], parent_node);
-        for (auto & i : parent_node->children) {
-            if (i == node)
-                i = nullptr;
-        }
-        for (int i = 0; i < (2 * t); i++) {
-            if (parent_node->children[i] == nullptr) {
-                for (int j = (2 * t - 1); j > (i + 1); j--)
-                    parent_node->children[j] = parent_node->children[j - 1];
-                parent_node->children[i + 1] = new_child2;
-                parent_node->children[i] = new_child1;
-                break;
-            }
-        }
-        parent_node->leaf = false;
-    }
-}
-
-B_Node* B_Tree::find_parent(B_Node* node, B_Node* root) {
-    for (auto & i : root->children) {
-        if (i == node)
-            return root;
-    }
-    for (auto & i : root->children) {
-        if (i != nullptr)
-            find_parent(node, i);
-    }
-    return nullptr;
-}
-
-void B_Tree::REMOVE(int key) {
-    B_Node* node_for_delete = FIND(key, root);
-    if ((node_for_delete->leaf = true) && (node_for_delete->count = t)) { // если узел был листом и при удалении у него останется t-1 ключей
-        for (int i = 0; i < (node_for_delete->count); i++) {
-            if (node_for_delete->keys[i] == key) {
-                for (int j = i; j < (node_for_delete->count); j++)
-                    node_for_delete->keys[j] = node_for_delete->keys[j + 1];
-                node_for_delete->count = node_for_delete->count - 1;
-            }
-        }
-    }
-}
-
-void B_Tree::PRINT(B_Node* root) {
+void BinaryTree::PRINT(BinaryTreeNode* root) {
     if (root == nullptr)
         return;
-    for (int i = 0; i < (2 * t - 1); i++) {
-        if (root->count > i)
-            cout << root->keys[i] << ",";
+    if (root->key)
+        cout << root->key << endl;
+    PRINT(root->left_child);
+    PRINT(root->right_child);
+}
+
+BinaryTreeNode* BinaryTree::parent_node(BinaryTreeNode* root, int key) {
+    if ((root == nullptr) || ((root->left_child)->key == key) || ((root->right_child)->key == key))
+        return root;
+    if (root->key > key)
+        return parent_node(root->left_child, key);
+    if(root->key < key)
+        return parent_node(root->right_child, key);
+    return nullptr;
+}
+
+BinaryTreeNode* BinaryTree::min_node(BinaryTreeNode* root) {
+    BinaryTreeNode* MIN = root;
+    while (MIN->left_child != nullptr)
+        MIN = MIN->left_child;
+    return MIN;
+}
+
+BinaryTreeNode *BinaryTree::max_node(BinaryTreeNode* root) {
+    BinaryTreeNode* Max = root;
+    while (Max->right_child != nullptr)
+        Max = Max->right_child;
+    return Max;
+}
+
+BinaryTreeNode* BinaryTree::find_parent_for_new_node(BinaryTreeNode* root, int key) {
+    if (root->key <= key) {
+        if (root->right_child == nullptr)
+            return root;
+        return find_parent_for_new_node(root->right_child, key);
     }
-    cout << '\n';
-    for (auto & i : root->children) {
-        if (i != nullptr)
-            PRINT(i);
+    if (root->key > key) {
+        if (root->left_child == nullptr)
+            return root;
+        return find_parent_for_new_node(root->left_child, key);
     }
+    return nullptr;
 }
 
 int main() {
-    B_Tree tree1 = B_Tree();
 
-    tree1.ADD(5);
-    tree1.ADD(9);
-    tree1.ADD(12);
+    BinaryTree tree1 = BinaryTree();
+
+    tree1.ADD(40, nullptr);
+    tree1.ADD(20, nullptr);
+    tree1.ADD(60, nullptr);
+    tree1.ADD(5, nullptr);
+    tree1.ADD(30, nullptr);
+    tree1.ADD(50, nullptr);
+    tree1.ADD(80, nullptr);
+
     tree1.PRINT(tree1.root);
-    cout << endl;
-    tree1.REMOVE(12);
+
+    int * a;
+    a = tree1.FIND(tree1.root, 1)->data;
+    cout << a <<'\n';
+
+    tree1.REMOVE(tree1.root, 30);
+    cout << '\n';
+
     tree1.PRINT(tree1.root);
 
     return 0;
