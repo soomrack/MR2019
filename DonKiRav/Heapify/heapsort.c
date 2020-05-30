@@ -32,13 +32,22 @@ void heapify(int * arr, const int32_t n, const int32_t i)
   }
 }
 
+void heapify_up (int *arr, int i)
+{
+  while (arr[i] > arr[(i-1)/2])
+  {
+    swap (arr[i],arr[(i-1)/2]);
+    i = i-1)/2;
+  }
+}
+
 //The main function that performs heap sorting
 void heapSort(int * arr, const int32_t n)
 {
   //Heap building (array rearrangement)
   for (int32_t i = n / 2 - 1; i >= 0; i--)
   {
-    heapify(arr, n, i);
+    heapify_up(arr, n, i);
   }
   //One by one we extract elements from a heap
   for (int32_t i = n - 1; i >= 0; i--)
