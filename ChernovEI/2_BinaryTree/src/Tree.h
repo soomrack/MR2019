@@ -21,10 +21,6 @@ public:
 
     void printTree();
 
-    static Node *maxNode(Node *localRoot);
-
-    static Node *minNode(Node *localRoot);
-
 private:
     Node *search(int key);
 
@@ -34,15 +30,15 @@ private:
 
     static void printLocalTree(Node *localRoot);
 
-    static bool pullIfNoChildren(Node *removable, Node *parent);
-
-    static bool pullIfNoLeftChild(Node *removable, Node *parent);
-
-    static bool pullIfNoRightChild(Node *removable, Node *parent);
-
-    static bool pullIfHaveChildren(Node *removable, Node *parent);
-
     static Node *parentSearch(int childKey, Node *localRoot);
+
+    static void *pullRightChild(Node *parentOfRemovable);
+
+    static void *pullLeftChild(Node *parentOfRemovable);
+
+    static Node *localMinNode(Node *localRoot);
+
+    void *pullRoot();
 };
 
 

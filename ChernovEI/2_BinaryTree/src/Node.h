@@ -1,12 +1,13 @@
 #ifndef BINARYTREE_NODE_H
 #define BINARYTREE_NODE_H
 
-#include "InnerNode.h"
-
 
 class Node {
 private:
-    InnerNode innerNode;
+    int key;
+    void *data;
+    Node *leftChild;
+    Node *rightChild;
 
 public:
     Node() = default;

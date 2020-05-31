@@ -1,38 +1,40 @@
 #include "Node.h"
 
-
 Node::Node(int key, void *data) {
-    innerNode = new InnerNode(key, data);
+    this->key = key;
+    this->data = data;
+    this->leftChild = nullptr;
+    this->rightChild = nullptr;
 }
 
 int Node::getKey() {
-    innerNode.getKey();
+    return key;
 }
 
 Node *Node::getLeftChild() {
-    innerNode.getLeftChild();
+    return leftChild;
 }
 
 Node *Node::getRightChild() {
-    innerNode.getRightChild();
+    return rightChild;
 }
 
 void *Node::getData() {
-    innerNode.getData();
+    return data;
 }
 
 void Node::setKey(int aKey) {
-    innerNode.setKey(aKey);
+    key = aKey;
 }
 
 void Node::setLeftChild(Node *aLeftChild) {
-    innerNode.setLeftChild(aLeftChild);
+    leftChild = aLeftChild;
 }
 
 void Node::setRightChild(Node *aRightChild) {
-    innerNode.setRightChild(aRightChild);
+    rightChild = aRightChild;
 }
 
 void Node::setData(void *aData) {
-    innerNode.setData(aData);
+    data = aData;
 }
