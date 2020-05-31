@@ -3,5 +3,5 @@ project(BinaryTree)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(BinaryTree src/Ex.cpp src/Node src/Tree src/main.cpp src/InnerNode)
+add_executable(BinaryTree src/Node src/Tree src/main.cpp)
 
